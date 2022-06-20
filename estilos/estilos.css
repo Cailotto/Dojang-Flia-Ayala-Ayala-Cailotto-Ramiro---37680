@@ -49,6 +49,12 @@ a{
     text-decoration:none;
 
 }
+a h1{
+    color: white;
+    font-size: 1.50em;
+    font-weight: bold;
+
+}
 
 
 
@@ -871,6 +877,7 @@ margin-top: 5px;
     background-color: rgba(0, 0, 0, 0.664);
     border-left: solid rgba(255, 255, 255, 0.116) 1px;
     border-bottom: 3px solid black;
+
     
 }
 
@@ -929,7 +936,7 @@ margin-top: 5px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
 }
 
-/*Estilos para contacto*/
+
 
 .nav4{
     display: grid;
