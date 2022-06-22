@@ -38,8 +38,7 @@ body::-webkit-scrollbar-thumb{
     grid-template-areas: "logo     logo     escuela tangsoo eventos"
                          "logo     logo     escuela tangsoo eventos"
                          "contacto contacto contacto contacto contacto";
-    
-                         
+                             
 }
 
 /*Estilos para los Container*/
@@ -57,84 +56,26 @@ body::-webkit-scrollbar-thumb{
     padding-right:0px;
 }
 
-
-
 /*Estilos para el nav*/
 nav{
     max-height: 50px;
     padding-left: 0px;
-}
-
-
-.ul1{
-    display: grid;
-    grid-area: ul;
-    width: 100%;
-    height: 150px;
-    grid-template-columns: 5fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "escuela1 tangsoo1 eventos1 contacto1";
     animation: bajar .4s linear forwards;
-    padding-left: 0%;
-}
-
-.ul2{
-    display: grid;
-    grid-area: ul;
-    width: 100%;
-    height: 150px;
-    grid-template-columns: 1fr 5fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "escuela2 tangsoo2 eventos2 contacto2";
-    animation: bajar .4s linear forwards, backgroundn2 .92s linear forwards;
-    padding-left: 0%;
-    background-color: #000;
-    
-}
-
-
-row .ul3{
-    /* display: grid;
-    grid-area: ul; */
-    display: flex;
-    width: 100%;
-    height: 150px;
-    /* grid-template-columns: 1fr 1fr 5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "escuela3 tangsoo3 eventos3 contacto3"; */
-    animation: bajar .4s linear forwards;
-    padding-left: 0%;
-}
-
-.ul4{
-    display: grid;
-    grid-area: ul;
-    width: 100%;
-    height: 150px;
-    grid-template-columns: 1fr 1fr 1fr 5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "escuela4 tangsoo4 eventos4 contacto4";
-    animation: bajar .4s linear forwards;
-    padding-left: 0%;
 }
 
 ul li{
     list-style: none;
+    font-size: 1.5em;
 }
-
-
 a{
     text-align: center;
     letter-spacing: 2px;
     text-decoration:none;
     color: white;
-    font-size: 1.50em;
     font-weight: bold;
     text-decoration: none;
 
 }
-
-
 
 
  .escuela{
@@ -274,19 +215,10 @@ to{background-image: url(../recursos/logowtsd.png);
 }
 
 .contacto:active{
-    background-color: rgba(255, 255, 255, 0.527);
-
-}
-
-.contacto:active{
     color: black;
     text-shadow: 1px 1px 2px black, 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
+    background-color: rgba(255, 255, 255, 0.527);
 }
-
-
-
-
-
 
 /*Estilos para Nuestra Escuela*/
 
@@ -315,141 +247,6 @@ to{background-image: url(../recursos/logowtsd.png);
     width: 100%;
     height: 100%;
 }
-
-
-.nav1{
-    display: grid;
-    width: 100%;
-    height: 150px;
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows: 1fr;
-
-    grid-template-areas: "logo1 ul";
-    animation: bajar .4s linear forwards;
-
-
-}
-
-
-.logo1{
-    grid-area: logo1;
-    width: 100%;
-    max-height: 57px;
-    overflow: visible;
-    background-color:rgba(0, 0, 0, 0.864) ;
-}
-
-#logo1__img{
-    display: flex;
-    cursor: pointer;
-    position: relative;
-    height: 150px;
-    transform: translateY(-15px);
-    z-index: 1;
-    animation: izquierda 1.2s linear forwards;
-
-    
-}
-
-#escuela1{
-    grid-area: escuela1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-
-}
-
-#tangSoo1{
-    grid-area: tangsoo1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-    
-}
-
-#contacto1{
-    grid-area: contacto1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-    
-}
-
-#eventos1{
-    grid-area: eventos1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-    
-}
-
-#escuela1:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(184, 50, 50);
-    color: white;
-    
-}
-
-#escuela1:active{
-    background-color: rgba(92, 0, 0, 0.795);
-}
-
-#tangSoo1:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(12, 12, 153);
-    color: white;
-}
-
-#tangSoo1:active{
-    background-color: rgba(1, 1, 48, 0.733);
-}
-#eventos1:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 15px yellow, 0 0 5px rgba(133, 133, 8, 0.616);  
-    color: white;
-}
-
-#eventos1:active{
-    background-color: rgba(63, 63, 2, 0.582);
-}
-
-
-#contacto1:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 15px rgb(255, 253, 253), 0 0 5px rgba(255, 255, 255, 0.493);
-    color: white;
-}
-
-#contacto1:active{
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
-}
-
 
 .main1__video{
     width: 100%;
@@ -480,16 +277,12 @@ hr {
        z-index: 1;
     position: relative;
     height: 40px;
-    
-
 }
 .separador__frase {
     width: 100%;
     text-align: center;
     position: relative;
     z-index: 2;
-
- 
 }
 
 .separador__frase h2{
@@ -530,12 +323,7 @@ p{
     justify-content: center;
     width: 100%;
     height: 150vh;
-    background-color: black;
-    
-    
-
-
-    
+    background-color: black; 
 }
 
 .tramado__back::before {    
@@ -550,10 +338,6 @@ p{
     left: 0px;
 
 }
-
-
-
-
 .tramadoOndas{
 
     width: 70%;
@@ -760,412 +544,80 @@ footer{
 margin-top: 5px;
     height: 200px;
 }
-
-
-.nav2{
-    display: grid;
-    width: 100%;
-    height: 150px;
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows: 1fr;
-
-    grid-template-areas: "logo2 ul";
-    animation: bajar .4s linear forwards;
-
-
-}
-
-.logo2{
-    grid-area: logo2;
-    width: 100%;
-    max-height: 57px;
-    overflow: visible;
-    background-color:rgba(0, 0, 0, 0.864) ;
-}
-
-#logo2__img{
-    display: flex;
-    cursor: pointer;
-    position: relative;
-    height: 150px;
-    transform: translateY(-15px);
-    z-index: 1;
-    animation: izquierda 1.2s linear forwards;
-
-    
-}
-
-/*Estilos para Nuestra Tang soo do*/
-
-#escuela2{
-    grid-area: escuela2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    line-height: 25px;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-
-}
-
-#tangSoo2{
-    grid-area: tangsoo2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-    
-}
-
-#contacto2{
-    grid-area: contacto2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-    
-}
-
-#eventos2{
-    grid-area: eventos2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-    
-}
-
-#escuela2:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(184, 50, 50);
-    color: white;
-}
-
-#escuela2:active{
-    background-color: rgba(92, 0, 0, 0.795);
-}
-
-#tangSoo2:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(12, 12, 153);
-    color: white;
-}
-
-#tangSoo2:active{
-    background-color: rgba(1, 1, 48, 0.733);
-}
-#eventos2:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 15px yellow, 0 0 5px rgba(133, 133, 8, 0.616); 
-    color: white; 
-}
-
-#eventos2:active{
-    background-color: rgba(63, 63, 2, 0.582);
-}
-
-
-#contacto2:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 15px rgb(255, 253, 253), 0 0 5px rgba(255, 255, 255, 0.493);
-    color: white;
-}
-
-#contacto2:active{
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
-}
-
-
-/*Estilos para Nuestra Eventos*/
-
-.nav3{
-
-    width: 100%;
-    height: 150px;
-    animation: bajar .4s linear forwards;
-
-
-}
-
-
-.logo3{
-    grid-area: logo3;
-    width: 100%;
-    max-height: 57px;
-    overflow: visible;
-    background-color:rgba(0, 0, 0, 0.864) ;
-}
-
-#logo3__img{
+#logo__img{
     display: flex;
     cursor: pointer;
     position: relative;
     padding-left: 0px;
     width: 11%;
+    height: 57px;
     z-index: 1;
-    animation: izquierda 1.2s linear forwards;
+    background-color:rgba(0, 0, 0, 0.864)
 
     
 }
 
-#logo3__img img{
+#logo__img img{
+    position: absolute;
     transform: translateY(-10px);
     width: 100%;
+    top:-10px;
+    min-width: 67px;
+    height: auto;
+        animation: izquierda 1.2s linear forwards;
 }
 
-#escuela3{
-    grid-area: escuela3;
+#contacto, #eventos, #tangSoo, #escuela{
+    color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 57px;
-    line-height: 25px;
-
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 2px solid black;
-
-}
-
-
-
-
-
-#tangSoo3{
-    grid-area: tangsoo3;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 57px;
     line-height: 25px;
     border-left: solid rgba(255, 255, 255, 0.116) 1px;
     border-bottom: 2px solid black;
+    background-color:rgba(0, 0, 0, 0.864);
     
 }
 
-#contacto3{
-    grid-area: contacto3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 57px;
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 2px solid black;
-
-    
-}
-
-#eventos3{
-    grid-area: eventos3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 57px;
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 2px solid black;
-    
-}
-
-#escuela3:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
+#escuela:hover, #tangSoo:hover, #eventos:hover, #contacto:hover{
+    background-color:rgba(0, 0, 0, 0.959);
     cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(184, 50, 50);
     color: white;
 }
 
-#escuela3:active{
+#escuela:hover{
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(184, 50, 50);
+}
+
+#escuela:active{
     background-color: rgba(92, 0, 0, 0.795);
 }
 
-#tangSoo3:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
+#tangSoo:hover{
+
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(12, 12, 153);
-    color: white;
+
 }
 
-#tangSoo3:active{
+#tangSoo:active{
     background-color: rgba(1, 1, 48, 0.733);
 }
-#eventos3:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 15px yellow, 0 0 5px rgba(133, 133, 8, 0.616); 
-    color: white; 
-}
+#eventos:hover{
 
-#eventos3:active{
-    background-color: rgba(63, 63, 2, 0.582);
-}
-
-
-#contacto3:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 15px rgb(255, 253, 253), 0 0 5px rgba(255, 255, 255, 0.493);
-    color: white;
-}
-
-#contacto3:active{
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
-}
-
-
-
-.nav4{
-    display: grid;
-    width: 100%;
-    height: 150px;
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows: 1fr;
-
-    grid-template-areas: "logo4 ul";
-    animation: bajar .4s linear forwards;
-
-
-}
-
-
-.logo4{
-    grid-area: logo4;
-    width: 100%;
-    max-height: 57px;
-    overflow: visible;
-    background-color:rgba(0, 0, 0, 0.864) ;
-}
-
-#logo4__img{
-    display: flex;
-    cursor: pointer;
-    position: relative;
-    height: 150px;
-    transform: translateY(-15px);
-    z-index: 4;
-    animation: izquierda 1.2s linear forwards;
-
-    
-}
-
-#escuela4{
-    grid-area: escuela4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    line-height: 25px;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-
-}
-
-#tangSoo4{
-    grid-area: tangsoo4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-    
-}
-
-#contacto4{
-    grid-area: contacto4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-    
-}
-
-#eventos4{
-    grid-area: eventos4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 38%;
-    background-color: rgba(0, 0, 0, 0.664);
-    border-left: solid rgba(255, 255, 255, 0.116) 1px;
-    border-bottom: 3px solid black;
-    
-}
-
-#escuela4:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(184, 50, 50);
-    color: white;
-}
-
-#escuela4:active{
-    background-color: rgba(92, 0, 0, 0.795);
-}
-
-#tangSoo4:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(12, 12, 153);
-    color: white;
-}
-
-#tangSoo4:active{
-    background-color: rgba(1, 1, 48, 0.733);
-}
-#eventos4:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
     text-shadow: 1px 1px 2px black, 0 0 15px yellow, 0 0 5px rgba(133, 133, 8, 0.616);  
-    color: white;
+
 }
 
-#eventos4:active{
+#eventos:active{
     background-color: rgba(63, 63, 2, 0.582);
 }
 
-
-#contacto4:hover{
-    background-color:rgba(0, 0, 0, 0.864) ;
-    cursor: pointer;
+#contacto:hover{
     text-shadow: 1px 1px 2px black, 0 0 15px rgb(255, 253, 253), 0 0 5px rgba(255, 255, 255, 0.493);
 }
 
-#contacto4:active{
+#contacto:active{
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
     text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
@@ -1655,16 +1107,15 @@ to{transform: rotateZ(360deg);
     opacity: 0.7;
 }
 
-
+.body4{
+    background-image: url(../recursos/dragone.jpg);
+        background-size: 300px;
+}
 .main4{
     width: 100%;
     height: 100vh;
-    background-image: url(../recursos/dragone.jpg);
-    background-size: 300px;
-    margin-top: -150px;
+
 }
-
-
 
 .main4__contacto{
     width: 100%;
@@ -1811,11 +1262,11 @@ to{transform: rotateZ(360deg);
     to{ transform: translateX(0);}
 }
 
-@keyframes backgroundn2 {
+/* @keyframes backgroundn2 {
     from{ background-color: black;
     }
     to{ background-color: transparent;}
-}
+} */
 
 
 @keyframes aparecer{
@@ -1879,27 +1330,6 @@ to{transform: rotateZ(360deg);
 
     }
 
-    
-    .nav1,.nav2,.nav3,.nav4{
-        position:relative;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 120px;
-        
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "logo1 escuela1" 
-                             "logo1 tangsoo1" 
-                             "logo1 eventos1" 
-                             "logo1 contacto1";
-        z-index: 5;
-        background-color: rgba(0, 0, 0, 0.945);
-        
-
-
-}
 
 h1{
     font-size: 80%;
