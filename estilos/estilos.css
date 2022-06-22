@@ -41,6 +41,11 @@ body::-webkit-scrollbar-thumb{
                              
 }
 
+.inicio a{
+    font-size: 1.7em;
+
+}
+
 /*Estilos para los Container*/
 .container-fluid{
     padding: 0%;
@@ -1109,27 +1114,87 @@ to{transform: rotateZ(360deg);
 
 .body4{
     background-image: url(../recursos/dragone.jpg);
-        background-size: 300px;
-}
-.main4{
-    width: 100%;
+    background-size: 300px;
     height: 100vh;
+    display: grid;
+    grid-template-areas: "header"
+                         "main";
 
 }
 
-.main4__contacto{
-    width: 100%;
-    height: 100%;
+.header4{
+    grid: header;
+}
+
+.main4{
+    grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: flex-end;
     justify-items: center;
+}
+
+
+.contacto__fb{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 85px;
+    margin-left: 160px;
+
+
+
+}
+.contacto__ins, .contacto__wpp{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 85px;
 
 }
 
+/* .logo{
+    grid-area: logo;
+    width: 100%;
+    height: auto ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction:alternate;
+    animation-fill-mode:forwards; 
+    
+} */
+
+
+.contacto__ins a, .contacto__wpp a, .contacto__fb a{
+    width: 60%;
+}
+
+.contacto__fb img{
+    width: 75%;
+    height: auto;
+    margin-bottom: 120px;
+    animation: flotar 3s infinite;
+    animation-timing-function: linear;
+    transition: width 0.5s, animation 0.5s;
+}
+
+
 .contacto__ins img, .contacto__wpp img{
-    width: 290px;
+    width: 100%;
     height: 80%;
     margin-bottom: 70px;
     animation: flotar 3s infinite;
@@ -1157,41 +1222,6 @@ to{transform: rotateZ(360deg);
     
 }
 
-
-
-.contacto__fb{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 85px;
-    margin-left: 160px;
-
-
-
-}
-.contacto__ins, .contacto__wpp{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    padding-bottom: 85px;
-
-}
-
-
-
-.contacto__fb img{
-    width: 200px;
-    margin-bottom: 120px;
-    margin-left: -170px;
-    animation: flotar 3s infinite;
-    animation-timing-function: linear;
-    transition: width 0.5s, animation 0.5s;
-}
 
 .contacto__fb img:hover{
     width: 290px;
