@@ -571,7 +571,6 @@ margin-top: 5px;
     transform: translateY(-10px);
     width: 100%;
     top:-10px;
-    min-width: 67px;
     height: auto;
         animation: izquierda 1.2s linear forwards;
 }
@@ -1142,19 +1141,6 @@ to{transform: rotateZ(360deg);
     justify-items: center;
 }
 
-
-/* .contacto__fb{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 85px;
-    padding-left: 160px;
-
-
-
-} */
 .contacto__ins, .contacto__wpp, .contacto__fb{
     width: 100%;
     height: 90%;
@@ -1166,38 +1152,10 @@ to{transform: rotateZ(360deg);
 
 }
 
-/* .logo{
-    grid-area: logo;
-    width: 100%;
-    height: auto ;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-direction:alternate;
-    animation-fill-mode:forwards; 
-    
-} */
-
 
 .contacto__ins a, .contacto__wpp a, .contacto__fb a{
     width: 60%;
 }
-/* 
-.contacto__fb img{
-    width: 75%;
-    height: auto;
-    margin-bottom: 100px;
-    animation: flotar 3s infinite;
-    animation-timing-function: linear;
-    transition: width 0.5s, animation 0.5s;
-} */
 
 
 .contacto__ins img, .contacto__wpp img, .contacto__fb img{
@@ -1309,9 +1267,22 @@ to{transform: rotateZ(360deg);
 
 /*Estilos para media qwery*/
 
+.h1media{
+    color: rgb(243, 243, 243);
+}
 
+.container-fluid-pad{
+    padding-inline-end: 20px;
+    }
 
-
+    .navbar{
+        padding-right: 10px;
+    }
+    
+    .navbar-toggler {
+        align-self: flex-start;
+        margin-top: -3px;
+    }
 
 @media screen and (max-width: 768px) {
 	.inicio{
@@ -1331,9 +1302,6 @@ to{transform: rotateZ(360deg);
     }
 
 
-h1{
-    font-size: 80%;
-}
 
 .logo1,.logo2,.logo3,.logo4{
     height: 46px;
@@ -1469,10 +1437,12 @@ footer{
 
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    nav h1{
-        font-size: medium;
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    .navbar{
+        display: none;
     }
+    
     .tramadoOndas__texto{
     padding-right: 0%;
     }
@@ -1502,11 +1472,68 @@ footer{
 
 
 
-@media screen and (max-width: 425px) {
+
+
+@media screen and (max-width: 768px) {
     .main1__video{
     background-position: -250px;
 }
+
+    nav{
+        background-color: rgb(187, 37, 37);
+        border-bottom: 2px solid black;
+    }
+
+    .nav4, .nav3, .nav2, .nav1{
+        visibility: hidden;
+    }
+
+
+    .header4{
+        max-height: 50px;
+
+    }
+   #logo__img{
+    background-color:transparent;
+    height: auto;
+    transform: translateY(-20px);
+    }
+
+    #logo__img img{
+        min-height: 60px;
+        min-width: 60px;
+    }
+
+    .offcanvas{
+        bottom: auto;
+    }
+
+    #offcanvasNavbar{
+    background-color:rgba(0, 0, 0, 0.959) ;
+    color: white;
+    height: 100vh;
+    
+    }
+
+
+    .contacto__fb, .contacto__ins,.contacto__wpp{
+        justify-content: space-around;
+        padding-bottom: 0px;
+
+    }
+    #escuela:hover, #tangSoo:hover, #eventos:hover, #contacto:hover {
+        cursor: pointer;
+        color: white;
+    }
+    #contacto, #eventos, #tangSoo, #escuela {
+        border-bottom: 2px solid #ffffff12;
+        border-left: none;
+        background-color: transparent;
+
+    }
+
+    .btn-close {
+        background-color: white;
+        align-self: flex-start;
+    }
 }
-
-
-
