@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-
 body{
     font-family: 'Francois One', sans-serif;
     overflow: overlay;
+
 
 }
 
@@ -305,6 +305,9 @@ hr {
      animation: fontsize .5 linear forwards;
 }
 
+
+
+
 .imgseparador{
     flex-wrap: nowrap;
     overflow: hidden;
@@ -322,9 +325,6 @@ hr {
     animation: aparecer .6s linear forwards;
 }
 
-p{
-    font-size: 25px;
-}
 .tramado{
     display: flex;
     position: relative;
@@ -645,12 +645,11 @@ margin-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 520px;
-    background-image: url("../recursos/paredasociacion.jpg");
+    height: 80vh;
+    background-image: url(../recursos/paredasociacion.jpg);
     background-attachment: fixed;
-    background-position: center;
+    background-position-y: -150px;
     background-size: cover;
-    background-position-y: -130px;
     background-repeat: no-repeat;
    
     
@@ -664,6 +663,7 @@ margin-top: 5px;
     background-image: url(../recursos/separadorcasas.png);
     background-size: 30%;
     background-position: bottom;
+    background-repeat: repeat-x;
 }
 
 
@@ -697,14 +697,18 @@ margin-top: 5px;
     box-shadow: 7px 7px 15px #592A08;
     padding: 20px;
 
+
+}
+
+p{
+    font-size: 2vw;
 }
 
 .main2__historia--h1{
-font-size: 60px;
+font-size: 5vw;
 color: darkred;
 margin-bottom: 60px;
 }
-
 
 
 .main2__imagenmiembros--contenedor{
@@ -724,8 +728,8 @@ justify-content: space-around;
     width: 100%;
     height: auto;
     background-color: rgb(7, 7, 99);
-    border-top-left-radius: 450px;
-    border-top-right-radius: 450px;
+    border-top-left-radius: 28%;
+    border-top-right-radius: 28%;
     box-shadow: 0px 30px 20px inset rgb(1, 1, 15);
     background-image: url(../recursos/bonsai.png);
     background-repeat: no-repeat;
@@ -738,9 +742,17 @@ justify-content: space-around;
 .yinyang{
     align-self: flex-start;
     margin-top: 150px;
-    height: 200px;
+    margin-bottom: 150px;
+    height: 40vh;
+    width:  40vh;
+
+}
+
+.yinyang img{
     animation:rotacion 8s infinite;
     animation-timing-function: linear;
+    height: 100%;
+
 }
 
 
@@ -1284,6 +1296,15 @@ to{transform: rotateZ(360deg);
         margin-top: -3px;
     }
 
+    @media screen and (max-width: 1024px){
+        .main2__asociacionMundial{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    }
+
+
+
 @media screen and (max-width: 768px) {
 	.inicio{
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
@@ -1431,13 +1452,21 @@ footer{
 
 }
 
+/*estilos para tangsoo*/
+.main2__header{
+    background-position-y: 0px;
+    background-position:center
+}
+
 }
 
 
 
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (min-width: 769px){
+
+
 
     .navbar{
         display: none;
@@ -1466,7 +1495,10 @@ footer{
         margin-left: 5px;
 
     }
-
+    .main2__header{
+        background-position-y: 0px;
+        background-position:center;
+    }
 
 }
 
