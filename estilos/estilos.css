@@ -247,7 +247,6 @@ to{background-image: url(../recursos/logowtsd.png);
     grid-area: header1;
     width: 100%;
     max-height: 56px;
-    overflow: visible;
 
 }
 
@@ -263,6 +262,7 @@ to{background-image: url(../recursos/logowtsd.png);
     height: 90vh;
     z-index: -1;
 }
+
 
 hr {
     height: 5px;
@@ -356,6 +356,9 @@ h2{
 
 
 .carrouselDaniel__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0px;
 }
 .carrouselDaniel__inner img{
@@ -368,6 +371,10 @@ h2{
 .tramadoOndas{
     width: 50%;
     height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     grid-area: tramadoOndas;
     background-color: rgba(0, 4, 211, 0.719);
     z-index: 1;
@@ -453,6 +460,7 @@ border: .25em rgba(128, 128, 128, 0.801);
     margin-top: 50px;
     align-self: flex-start;
     text-align: center;
+    text-shadow: 3px 2px 5px rgb(58, 57, 57);
 }
 
 
@@ -471,7 +479,6 @@ border: .25em rgba(128, 128, 128, 0.801);
     background-color: inherit;
     border: 0px;
     transform: translateY(-120px);
-    z-index: -6;
 }
 
 
@@ -508,6 +515,7 @@ border: .25em rgba(128, 128, 128, 0.801);
 }
 
   #marian, #lucas{ 
+    display: flex;
     background-color:rgba(0, 0, 0, 0.966);
     color: #fff;
     position: absolute;
@@ -518,9 +526,11 @@ border: .25em rgba(128, 128, 128, 0.801);
     transition: all 1s;
     transition-timing-function:ease-in-out;
     z-index: 6;
+    
   
   }
   #rocio { 
+    display: flex;
     background-color:rgba(0, 0, 0, 0.966);
     color: #fff;
     position: absolute;
@@ -540,7 +550,7 @@ border: .25em rgba(128, 128, 128, 0.801);
     align-items:center;
     justify-content:center;
     left: -5.69vw;
-    z-index: 6;
+    transition: all 1s;
 
   }
 
@@ -561,8 +571,10 @@ border: .25em rgba(128, 128, 128, 0.801);
   }
   .abrirMarian, .abrirLucas,.abrirRocio{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 1s;
 
   }
 
@@ -570,7 +582,6 @@ border: .25em rgba(128, 128, 128, 0.801);
     font-size: 18px;
     width:70%;
     text-align:center;
-    margin-left: 20px;
   }
 
 
@@ -580,6 +591,86 @@ border: .25em rgba(128, 128, 128, 0.801);
     border: 3px solid rgb(224, 191, 3);
     border-radius: 300px/10px;
 }
+
+.separador__escuela{
+    border-top: 1px solid black;
+    position: relative;
+    width: 100%;
+    height: 150vh;
+}
+
+
+.separador__parallax{
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-color: #000;
+    background-image: url(../recursos/escuela.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50vh;
+    display: flex;
+    align-items: center;
+}
+
+.separador__parallax::before{
+    content: '';
+    background: url(../recursos/esquinarojapng.png) no-repeat bottom left;
+    background-size: contain;
+    opacity: .5;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.separador__historia{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+
+.separador__historia--h5{
+    color: white;
+
+
+    
+}
+.separador__historia--h5{
+    text-shadow: 3px 2px 2px rgb(126, 126, 126);
+    text-align: center;
+}
+
+
+.separador__historia--historia{
+    display: flex;
+    color: white;
+    overflow-y: scroll;
+    width: 80%;
+    height: 60%;
+    text-align: center;
+    box-shadow: 0px 2px 50px rgb(100, 100, 100);
+}
+
+.separador__historia--historia::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+    }
+    
+    .separador__historia--historia::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 5px;
+    border: .25em rgba(128, 128, 128, 0.801);
+    }
+    
+    .separador__historia--historia::-webkit-scrollbar-corner{
+        display: none;
+    }
+
 
 .hr1{   
     position: relative;
@@ -1405,6 +1496,23 @@ to{transform: rotateZ(360deg);
     }
 
 
+    @media screen and (max-width: 1100px) {
+    .carousel-inner{
+        height: 50vh;
+    }
+    .carousel-item img{
+        object-fit: contain;
+    }
+    }
+
+    @media screen and (max-width: 600px) {
+        .carousel-inner{
+            height: 30vh;
+        }
+        .carousel-item img{
+            object-fit: contain;
+        }
+        }
 
 @media screen and (max-width: 768px) {
 	.inicio{
@@ -1441,7 +1549,6 @@ to{transform: rotateZ(360deg);
     width: 100%;
  height: 100vh;
  background-color: red;
- transform: translateY(-120px);
 
 }
 
@@ -1476,10 +1583,10 @@ to{transform: rotateZ(360deg);
 display: none;
 }
 
-.tramado{
-transform: translateY(-120px);
-
+.tramadoOndas{
+    height: 60%;
 }
+
 .tramadoOndas__texto{
     width: 100%;
     height: 100%;
@@ -1495,14 +1602,23 @@ transform: translateY(-120px);
 
 }
 
-.gold{
-    transform: translateY(-120px);
+.separador__escuela{
+    background-color: #000;
+
+}
+.separador__parallax{
+background-attachment: inherit;
+background-position: center;
+    
 }
 
-.tramado1{
-    transform: translateY(-120px);
+.separador__historia{
+    background-color: rgba(0, 0, 0, 0.692);
 }
 
+.separador__historia--historia{
+    align-items: center;
+}
 
 
 
@@ -1541,32 +1657,23 @@ footer{
         display: none;
     }
     
-    .tramadoOndas__texto{
-    padding-right: 0%;
-    }
 
-    .main1__video video{
-        width: 100%;
-        height: 200%;
-        position: fixed;
-        top: 0;
-        margin-top: -150px;
-        transform: translateY(-50px);
-        z-index: -100;
-    }
-
-
-    .tramadoOndas1__texto{
-        padding-left: 50px;
-
-    }
-    .tramadoOndas1__foto{
-        margin-left: 5px;
-
-    }
     .main2__header{
         background-position-y: 0px;
         background-position:center;
+    }
+    .tramadoOndas{
+        height: 60%;
+    }
+    .tramadoOndas__texto{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0%;
+        
     }
 
 }
@@ -1576,9 +1683,6 @@ footer{
 
 
 @media screen and (max-width: 768px) {
-    .main1__video{
-    background-position: -250px;
-}
 
     nav{
         background-color: rgb(187, 37, 37);
@@ -1641,6 +1745,7 @@ footer{
     .btnbeaudoin, .btnjae, .btnstrong{
         padding: .5em .5em;
     }
+
 
 }
 
