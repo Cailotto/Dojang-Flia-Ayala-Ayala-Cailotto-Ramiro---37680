@@ -603,22 +603,23 @@ border: .25em rgba(128, 128, 128, 0.801);
 .separador__parallax{
     width: 100%;
     height: 100%;
-    background-attachment: fixed;
     background-color: #000;
     background-image: url(../recursos/escuela.jpeg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -50vh;
     display: flex;
     align-items: center;
+
 }
 
 .separador__parallax::before{
     content: '';
-    background: url(../recursos/esquinarojapng.png) no-repeat bottom left;
+    background: url(../recursos/esquinarojapng.png) no-repeat top left;
     background-size: contain;
-    opacity: .5;
-    width: 50%;
+    opacity: .3;
+    width: 20%;
     height: 100%;
     position: absolute;
 }
@@ -647,7 +648,6 @@ border: .25em rgba(128, 128, 128, 0.801);
 
 
 .separador__historia--historia{
-    display: flex;
     color: white;
     overflow-y: scroll;
     width: 80%;
@@ -893,6 +893,7 @@ h5{
 }
 
 .main2__historia--h1{
+    text-align: center;
 font-size: 5vw;
 color: darkred;
 margin-bottom: 60px;
@@ -903,31 +904,33 @@ margin-bottom: 60px;
 display: flex;
 padding-top: 20px;
 justify-content: space-around;
+
     
 }
 
 .main2__asociacionMundial{
     display: grid;
-
     justify-items: center;
     grid-template-rows: 1fr 2fr;
     justify-content: center;
     margin-top: 200px;
     width: 100%;
-    height: auto;
+    height: 250vh;
     background-color: rgb(7, 7, 99);
     border-top-left-radius: 28%;
     border-top-right-radius: 28%;
     box-shadow: 0px 30px 20px inset rgb(1, 1, 15);
     background-image: url(../recursos/bonsai.png);
     background-repeat: no-repeat;
+    background-position: bottom;
     background-position-y: 350px;
     background-position-x: -50px;
-    background-size: 2000px;
+    background-size: 130vw;
 
 }
 
 .yinyang{
+    text-align: center;
     align-self: flex-start;
     margin-top: 150px;
     margin-bottom: 150px;
@@ -937,9 +940,9 @@ justify-content: space-around;
 }
 
 .yinyang img{
+    width: 20vw;
     animation:rotacion 8s infinite;
     animation-timing-function: linear;
-    height: 100%;
 
 }
 
@@ -958,6 +961,7 @@ to{transform: rotateZ(360deg);
     align-self: end;
     display: grid;
     align-items:baseline;
+    
     align-content: space-between;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
@@ -993,7 +997,7 @@ to{transform: rotateZ(360deg);
     margin-bottom: 2px;
     justify-content: center;
     width: 100%;
-    height: 400px;
+    height: 60vh;
     background-image: url(../recursos/imgmaestros.PNG);
     background-size: contain;
     background-position:bottom;
@@ -1007,6 +1011,22 @@ to{transform: rotateZ(360deg);
 
 
 }
+
+.btnmaestros{
+    display: none;
+    font-size: 15px;
+    text-decoration:none;
+    color: #fff;
+    background-color: steelblue;
+    padding: .5em 1em;
+    border-bottom-color: rgb(30, 68, 99);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+
 .btnjae{
     font-size: 15px;
     text-decoration:none;
@@ -1065,13 +1085,14 @@ to{transform: rotateZ(360deg);
   }
 
   .abrirjae p{
-    font-size: 18px;
+    font-size: 1.3vw;
     width:70%;
     text-align:center;
     margin-left: 20px;
   }
 
   .abrirjae img{
+    width: 20vw;
     border: 1px solid gold;
   }
 
@@ -1132,13 +1153,14 @@ to{transform: rotateZ(360deg);
   }
 
   .abrirstrong p{
-    font-size: 18px;
+    font-size: 1.3vw;
     width:70%;
     text-align:center;
     margin-left: 20px;
   }
 
   .abrirstrong img{
+    width: 20vw;
     border: 1px solid gold;
   }
 
@@ -1200,11 +1222,12 @@ to{transform: rotateZ(360deg);
   }
 
   .abrirbeaudoin img{
+    width: 20vw;
     border: 1px solid gold;
   }
 
   .abrirbeaudoin p{
-    font-size: 18px;
+    font-size: 1.3vw;
     width:70%;
     text-align:center;
     margin-left: 20px;
@@ -1237,7 +1260,7 @@ to{transform: rotateZ(360deg);
 }
 
 
-.separador1{
+.separador1 {
 
     max-height: 100%;
     font-size: 7vw;
@@ -1257,10 +1280,10 @@ to{transform: rotateZ(360deg);
     width: 100%;
     height: 200vh;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     justify-content: center;
+
     padding: 50px;
     box-shadow: 0px 0px 5px 20px inset rgb(1, 1, 15);
 
@@ -1268,22 +1291,24 @@ to{transform: rotateZ(360deg);
 
 
 .historia1 p, .historia2 p{
-    font-size: 20px;
-    text-align: center;
+    font-size: 1.3vw;
+    width:70%;
+    text-align:center;
+    margin-left: 20px;
 }
 
 .historia1 h1, .historia2 h1{
-    font-size: 40px ;
+    font-size: 4vw ;
     text-align: center;
 
 }
 
 .historia1{
-    width: 80%;
-    height: 600px;
+    width: 100%;
+    height: 20vh;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
 
 }
 
@@ -1300,20 +1325,20 @@ to{transform: rotateZ(360deg);
 }
 
 .historia2{
-    width: 80%;
-    height: 600px;
+    width: 100%;
+    height: 20vh;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    margin-left: 100px;
+    align-items: center;
+    
 }
 
 .hitoria2__back{
     width: 90%;
-    height: 100%;
+    height: 50vw;
     background-image: url(../recursos/tangsoodo.png);
     background-position: right top;
-    background-size: 150px;
+    background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.7;
 }
@@ -1497,22 +1522,19 @@ to{transform: rotateZ(360deg);
 
 
     @media screen and (max-width: 1100px) {
-    .carousel-inner{
+    .header__carrousel{
         height: 50vh;
     }
-    .carousel-item img{
+    .header__carrousel .carousel-item img{
         object-fit: contain;
     }
     }
 
-    @media screen and (max-width: 600px) {
-        .carousel-inner{
-            height: 30vh;
-        }
-        .carousel-item img{
-            object-fit: contain;
-        }
-        }
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
 	.inicio{
@@ -1617,10 +1639,18 @@ background-position: center;
 }
 
 .separador__historia--historia{
+    display: flex;
     align-items: center;
 }
 
 
+.btnjae, .btnbeaudoin, .btnstrong{
+    display: none;
+}
+
+.btnmaestros{
+    display: block;
+}
 
 
 footer{
@@ -1662,20 +1692,24 @@ footer{
         background-position-y: 0px;
         background-position:center;
     }
-    .tramadoOndas{
-        height: 60%;
+
+    .separador__escuela{
+        background-color: #000;
+    
     }
-    .tramadoOndas__texto{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0%;
+    .separador__parallax{
+    background-attachment: inherit;
+    background-position: center;
         
     }
-
+    
+    .separador__historia{
+        background-color: rgba(0, 0, 0, 0.692);
+    }
+    
+    .separador__historia--historia{
+        align-items: center;
+    }
 }
 
 
@@ -1746,8 +1780,54 @@ footer{
         padding: .5em .5em;
     }
 
+    .tramadoOndas section{
+        height: 100%;
+    }
 
 }
+
+
+@media screen and (max-width: 600px) {
+    .header__carrousel{
+        height: 30vh;
+    }
+    .header__carrousel .carousel-item img{
+        object-fit: contain;
+
+    }
+
+    .abrirjae, .abrirbeaudoin, .abrirstrong{
+        top:-1000px ;
+    }
+    }
+
+
+    @media screen and (max-width: 576px) {
+        .yinyang{
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .yinyang img{
+            margin-top: 100px;
+        }
+
+        .main2__asociacionMundial{
+            height: 200vh;
+        }
+
+        .asociacionMundial__contenedor{
+            display: flex;
+            flex-direction:column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main2__maestros{
+            height: 40vh;
+        }
+    }
+    
+
 
 
 @media screen and (max-width: 425px) {
@@ -1769,5 +1849,9 @@ font-size: 3vw;
 #marian,#lucas,#rocio{
     transform: translate(-25px,-140px);
 
+}
+
+.main2__viejaHistoria {
+    height: 100vh;
 }
 }
