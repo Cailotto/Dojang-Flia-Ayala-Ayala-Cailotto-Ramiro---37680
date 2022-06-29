@@ -1,0 +1,26 @@
+body {
+    font-family: 'Francois One', sans-serif;
+    overflow: overlay;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: darkred;
+        border-radius: 5px;
+        border: .25em rgba(128, 128, 128, 0.801);
+    }
+
+
+}
+
+.body__contacto{
+    background-image: url(../recursos/dragone.jpg);
+    background-size: 22%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header"
+        "main";
+}

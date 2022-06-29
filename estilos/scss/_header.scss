@@ -1,0 +1,87 @@
+header{
+    width: 100%;
+    max-height: 56px;
+    nav{
+        max-height: 50px;
+        padding-left: 0px;
+        animation: bajar .4s linear forwards;
+
+        #logo__img {
+            display: flex;
+            cursor: pointer;
+            position: relative;
+            padding-left: 0px;
+            width: 11%;
+            height: 57px;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.864);
+
+            img {
+                z-index: 5;
+                position: absolute;
+                transform: translateY(-10px);
+                width: 100%;
+                top: -10px;
+                height: auto;
+                animation: izquierda 1.2s linear forwards;
+            }
+        }
+
+        .container-fluid{
+            padding: 0%;
+
+            .row{
+                margin: 0px;
+                padding: 0px;
+
+                .col{
+                    margin: 0px;
+                    padding: 0px;
+
+                    ul{
+                        li {
+                            list-style: none;
+                            font-size: 1.5em;
+
+                            a {
+                                text-align: center;
+                                letter-spacing: 2px;
+                                text-decoration: none;
+                                color: white;
+                                font-weight: bold;
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                li{
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+            }
+
+            .navbar-toggler {
+                align-self: flex-start;
+                margin-top: -3px;
+            }
+        }
+    }
+
+    .navbar {
+        padding-right: 10px;
+    }  
+}
+
+
+
+.header__nuestraEscuela {
+    grid-area: header1;
+    width: 100%;
+    max-height: 56px;
+
+}

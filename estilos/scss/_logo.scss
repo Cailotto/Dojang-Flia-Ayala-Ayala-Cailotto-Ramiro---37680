@@ -1,0 +1,22 @@
+.logo {
+    grid-area: logo;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+}

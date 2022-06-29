@@ -1,0 +1,206 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Francois One", sans-serif;
+  overflow: overlay;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: darkred;
+  border-radius: 5px;
+  border: 0.25em rgba(128, 128, 128, 0.801);
+}
+
+.body__contacto {
+  background-image: url(../recursos/dragone.jpg);
+  background-size: 22%;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header" "main";
+}
+
+.escuela, .tangSoo, .eventos, .contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+  border-left: solid rgba(255, 255, 255, 0.116) 1px;
+  border-radius: 25px;
+}
+
+.escuela:hover, .tangSoo:hover, .eventos:hover, .contacto:hover {
+  background-color: rgba(0, 0, 0, 0.864);
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+
+.contacto {
+  grid-area: contacto;
+  border-top: solid rgba(255, 255, 255, 0.116) 1px;
+  border-left: 0px;
+}
+.contacto:hover {
+  text-shadow: 1px 1px 2px black, 0 0 15px rgb(255, 253, 253), 0 0 5px rgba(255, 255, 255, 0.493);
+}
+.contacto:active {
+  color: black;
+  text-shadow: 1px 1px 2px black, 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
+  background-color: rgba(255, 255, 255, 0.527);
+}
+
+.escuela {
+  grid-area: escuela;
+}
+.escuela:hover {
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(184, 50, 50);
+}
+.escuela:active {
+  background-color: rgba(92, 0, 0, 0.795);
+}
+
+.tangSoo {
+  grid-area: tangsoo;
+}
+.tangSoo:hover {
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(12, 12, 153);
+}
+.tangSoo:active {
+  background-color: rgba(1, 1, 48, 0.733);
+}
+
+.eventos {
+  grid-area: eventos;
+}
+.eventos:hover {
+  text-shadow: 1px 1px 2px black, 0 0 15px yellow, 0 0 5px rgba(133, 133, 8, 0.616);
+}
+.eventos:active {
+  background-color: rgba(63, 63, 2, 0.582);
+}
+
+.logo {
+  grid-area: logo;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+#main__principal {
+  background-image: url(../recursos/pisoasociacion.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main__principal .inicio {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "logo     logo     escuela tangsoo eventos" "logo     logo     escuela tangsoo eventos" "contacto contacto contacto contacto contacto";
+}
+#main__principal .inicio a {
+  font-size: 1.7em;
+}
+
+header {
+  width: 100%;
+  max-height: 56px;
+}
+header nav {
+  max-height: 50px;
+  padding-left: 0px;
+  -webkit-animation: bajar 0.4s linear forwards;
+          animation: bajar 0.4s linear forwards;
+}
+header nav #logo__img {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  padding-left: 0px;
+  width: 11%;
+  height: 57px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.864);
+}
+header nav #logo__img img {
+  z-index: 5;
+  position: absolute;
+  transform: translateY(-10px);
+  width: 100%;
+  top: -10px;
+  height: auto;
+  -webkit-animation: izquierda 1.2s linear forwards;
+          animation: izquierda 1.2s linear forwards;
+}
+header nav .container-fluid {
+  padding: 0%;
+}
+header nav .container-fluid .row {
+  margin: 0px;
+  padding: 0px;
+}
+header nav .container-fluid .row .col {
+  margin: 0px;
+  padding: 0px;
+}
+header nav .container-fluid .row .col ul li {
+  list-style: none;
+  font-size: 1.5em;
+}
+header nav .container-fluid .row .col ul li a {
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+header nav .container-fluid .row .col ul li a:hover {
+  color: white;
+}
+header nav .container-fluid .row li {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+header nav .container-fluid .navbar-toggler {
+  align-self: flex-start;
+  margin-top: -3px;
+}
+header .navbar {
+  padding-right: 10px;
+}
+
+.header__nuestraEscuela {
+  grid-area: header1;
+  width: 100%;
+  max-height: 56px;
+}/*# sourceMappingURL=styles.css.map */

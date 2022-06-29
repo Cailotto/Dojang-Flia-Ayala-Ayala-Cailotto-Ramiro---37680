@@ -1,0 +1,74 @@
+.escuela, .tangSoo, .eventos,.contacto  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.664);
+    border-left: solid rgba(255, 255, 255, 0.116) 1px;
+    border-radius: 25px;
+
+}
+
+.escuela:hover, .tangSoo:hover, .eventos:hover, .contacto:hover{
+    background-color: rgba(0, 0, 0, 0.864);
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+
+}
+
+.contacto {
+    grid-area: contacto;
+    border-top: solid rgba(255, 255, 255, 0.116) 1px;
+    border-left: 0px;
+
+    &:hover {
+        text-shadow: 1px 1px 2px black, 0 0 15px rgb(255, 253, 253), 0 0 5px rgba(255, 255, 255, 0.493);
+    }
+
+    &:active {
+        color: black;
+        text-shadow: 1px 1px 2px black, 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
+        background-color: rgba(255, 255, 255, 0.527);
+    }
+
+}
+
+.escuela{
+    grid-area: escuela;
+
+    &:hover {
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(184, 50, 50);
+    }
+
+    &:active {
+        background-color: rgba(92, 0, 0, 0.795);
+    }
+}
+
+.tangSoo {
+    grid-area: tangsoo;
+
+    &:hover {
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(12, 12, 153);
+    }
+
+    &:active {
+        background-color: rgba(1, 1, 48, 0.733);
+    }
+
+}
+
+
+.eventos {
+    grid-area: eventos;
+
+    &:hover {
+        text-shadow: 1px 1px 2px black, 0 0 15px yellow, 0 0 5px rgba(133, 133, 8, 0.616);
+    }
+
+    &:active {
+        background-color: rgba(63, 63, 2, 0.582);
+    }
+}
+

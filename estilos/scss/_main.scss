@@ -1,0 +1,21 @@
+#main__principal {
+    background-image: url(../recursos/pisoasociacion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .inicio {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 0.2fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo     logo     escuela tangsoo eventos"
+                             "logo     logo     escuela tangsoo eventos"
+                             "contacto contacto contacto contacto contacto";
+        
+        a {
+        font-size: 1.7em;
+        }   
+
+    }
+}
