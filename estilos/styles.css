@@ -131,6 +131,54 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.7em;
 }
 
+footer {
+  padding-left: 50px;
+  padding-right: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  border-top: 3px solid black;
+  grid-area: footer;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  background-image: url(../recursos/dragonamarillomedio.jpg);
+  background-size: contain;
+  background-position-x: 60%;
+  background-position-y: 20px;
+}
+footer .footer__contenido {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+footer .footer__contenido h2 {
+  text-align: center;
+}
+footer .footer__contenido .footer__contenido--mapa {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+footer .footer__contenido .footer__contenido--mapa iframe {
+  margin-top: 5px;
+  width: 400px;
+  border: 5px solid black;
+}
+footer .footer__contenido .footer__contenido--qr {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+footer .footer__contenido .footer__contenido--qr img {
+  margin-top: 5px;
+  height: 200px;
+}
+
 header {
   width: 100%;
   max-height: 56px;
@@ -203,4 +251,571 @@ header .navbar {
   grid-area: header1;
   width: 100%;
   max-height: 56px;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    background-image: url(../recursos/logotipo.PNG);
+    transform: rotatey(180deg);
+  }
+  to {
+    background-image: url(../recursos/logowtsd.png);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+  }
+}
+
+@keyframes rotate {
+  from {
+    background-image: url(../recursos/logotipo.PNG);
+    transform: rotatey(180deg);
+  }
+  to {
+    background-image: url(../recursos/logowtsd.png);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+  }
+}
+@-webkit-keyframes yinyang {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes yinyang {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes nubes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+@keyframes nubes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+.header__carrousel {
+  height: 90vh;
+  z-index: -1;
+}
+
+.carrouselDaniel {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  z-index: 5;
+  width: 40vw;
+  height: 100%;
+}
+.carrouselDaniel .carrouselDaniel__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+}
+.carrouselDaniel .carrouselDaniel__inner img {
+  border: 2px black solid;
+  padding: 0px;
+}
+
+hr {
+  height: 5px;
+  margin: 0%;
+  opacity: 1;
+  position: relative;
+  border: 3px solid #000;
+  border-radius: 300px/10px;
+  background-color: gold;
+}
+hr .gold {
+  position: relative;
+  width: 100%;
+  border: 3px solid rgb(224, 191, 3);
+  border-radius: 300px/10px;
+}
+
+.separador {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.separador__frase {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background-color: black;
+}
+.separador__frase h2 {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  font-size: 10vh;
+  -webkit-animation: fontsize 0.5 linear forwards;
+          animation: fontsize 0.5 linear forwards;
+  color: white;
+}
+.separador__frase--back {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: red;
+}
+.separador__frase--img {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 210px;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  transform: translatey(-170px);
+  padding-top: 20px;
+}
+.separador__frase--img img {
+  -webkit-animation: aparecer 0.6s linear forwards;
+          animation: aparecer 0.6s linear forwards;
+}
+
+.tramado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 120vh;
+  background-image: url(../recursos/tramadoondas.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.tramado .tramadoOndas {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  grid-area: tramadoOndas;
+  background-color: rgba(0, 4, 211, 0.719);
+  z-index: 1;
+  border: 15px solid rgba(0, 4, 211, 0.212);
+  padding-right: 10px;
+  box-shadow: 7px 7px 15px rgb(1, 1, 97);
+}
+.tramado .tramadoOndas .tramadoOndas__texto {
+  width: 100%;
+  height: 500px;
+  grid-area: tramadoondas__texto;
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+  text-align: center;
+  justify-content: space-around;
+  overflow: scroll;
+}
+.tramado .tramadoOndas .tramadoOndas__texto::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+.tramado .tramadoOndas .tramadoOndas__texto::-webkit-scrollbar-thumb {
+  background-color: rgba(211, 7, 0, 0.719);
+  border-radius: 5px;
+  border: 0.25em rgba(128, 128, 128, 0.801);
+}
+.tramado .tramadoOndas .tramadoOndas__texto::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.tramadoNegro {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120vh;
+  background-color: black;
+}
+.tramadoNegro::before {
+  content: "";
+  background-image: url(../recursos/tramadoondas.jpg);
+  background-position-x: 0px;
+  background-position-y: -40px;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+  z-index: 1;
+}
+.tramadoNegro .tramadoOndas1 {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(211, 7, 0, 0.719);
+  z-index: 5;
+  border: 15px solid rgba(139, 4, 4, 0.589);
+  padding-right: 15px;
+  padding-left: 15px;
+  box-shadow: 7px 7px 15px rgb(66, 3, 3);
+}
+.tramadoNegro .tramadoOndas1 .danesTitulo {
+  width: 100%;
+  color: #000;
+  margin-top: 50px;
+  align-self: flex-start;
+  text-align: center;
+  text-shadow: 3px 2px 5px rgb(58, 57, 57);
+}
+.tramadoNegro .tramadoOndas1 .danesTitulo .danes {
+  width: 100%;
+  z-index: -6;
+  align-self: flex-start;
+}
+.tramadoNegro .tramadoOndas1 .danesTitulo .danes .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1;
+  height: 5vh;
+  background-color: inherit;
+  border: 0px;
+  transform: translateY(-120px);
+}
+.tramadoNegro .tramadoOndas1 .danesTitulo .danes .card img {
+  width: 25vw;
+}
+
+.nuestraEscuela {
+  border-top: 1px solid black;
+  position: relative;
+  width: 100%;
+  height: 150vh;
+}
+.nuestraEscuela .nuestraEscuela__parallax {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-image: url(../recursos/escuela.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -50vh;
+  display: flex;
+  align-items: center;
+}
+.nuestraEscuela .nuestraEscuela__parallax::before {
+  content: "";
+  background: url(../recursos/esquinarojapng.png) no-repeat top left;
+  background-size: contain;
+  opacity: 0.3;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+}
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia h5 {
+  text-shadow: 3px 2px 2px rgb(126, 126, 126);
+  text-align: center;
+}
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p {
+  color: white;
+  overflow-y: scroll;
+  width: 80%;
+  height: 60%;
+  text-align: center;
+  box-shadow: 0px 2px 50px rgb(100, 100, 100);
+}
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.719);
+  border-radius: 5px;
+  border: 0.25em rgba(128, 128, 128, 0.801);
+}
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.main2 {
+  background-color: rgb(223, 223, 25);
+}
+.main2 .main2__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80vh;
+  background-image: url(../recursos/paredasociacion.jpg);
+  background-attachment: fixed;
+  background-position-y: -150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main2 .main2__header .main2__header--separador {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-image: url(../recursos/separadorcasas.png);
+  background-size: 30%;
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+.main2__historia {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(223, 223, 25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../recursos/dragonrojo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 100px;
+}
+.main2__historia .main2__historia--contenedor {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.603);
+  border: 5px solid white;
+  box-shadow: 7px 7px 15px #592A08;
+  padding: 20px;
+}
+.main2__historia .main2__historia--contenedor h1 {
+  text-align: center;
+  font-size: 5vw;
+  color: darkred;
+  margin-bottom: 60px;
+}
+.main2__historia .main2__historia--contenedor p {
+  font-size: 2vw;
+}
+.main2__asociacionMundial {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 2fr;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100%;
+  height: 250vh;
+  background-color: rgb(7, 7, 99);
+  border-top-left-radius: 28%;
+  border-top-right-radius: 28%;
+  box-shadow: 0px 30px 20px inset rgb(1, 1, 15);
+  background-image: url(../recursos/bonsai.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-y: 350px;
+  background-position-x: -50px;
+  background-size: 130vw;
+}
+.main2__asociacionMundial .yinyang {
+  text-align: center;
+  align-self: flex-start;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  height: 40vh;
+  width: 40vh;
+}
+.main2__asociacionMundial .yinyang img {
+  width: 20vw;
+  -webkit-animation: yinyang 8s infinite;
+          animation: yinyang 8s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.main2__asociacionMundial .asociacionMundial__contenedor {
+  align-self: end;
+  display: grid;
+  align-items: baseline;
+  align-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "wtsd wtsd" "parrafo1 parrafo2" "maestros maestros";
+  height: 150vh;
+  width: 90%;
+}
+.main2__asociacionMundial .asociacionMundial__contenedor #wtsd {
+  text-align: center;
+  grid-area: wtsd;
+  color: rgb(214, 205, 205);
+  margin-bottom: 0%;
+}
+.main2__asociacionMundial .asociacionMundial__contenedor .parrafo1 {
+  grid-area: parrafo1;
+  text-align: center;
+  color: rgb(214, 205, 205);
+}
+.main2__asociacionMundial .asociacionMundial__contenedor .parrafo2 {
+  grid-area: parrafo2;
+  text-align: center;
+  color: rgb(214, 205, 205);
+}
+.main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros {
+  grid-area: maestros;
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 2px;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  background-image: url(../recursos/imgmaestros.PNG);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros p {
+  line-height: 100%;
+}
+.main2__separador--nubes {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  background-image: url(../recursos/nubesfondonegro.JPG);
+  background-size: contain;
+  -webkit-animation: nubes 100s infinite linear;
+          animation: nubes 100s infinite linear;
+  border-top: 1px solid gold;
+  border-bottom: 2px solid gold;
+}
+.main2__separador--nubes .nubes {
+  max-height: 100%;
+  font-size: 7vw;
+  color: rgb(211, 180, 5);
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 40px;
+  top: -7px;
+  text-shadow: 4px 4px 0px rgb(83, 72, 8);
+}
+.main2__viejaHistoria {
+  background-color: rgb(240, 236, 236);
+  width: 100%;
+  height: 200vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding: 50px;
+  box-shadow: 0px 0px 5px 20px inset rgb(1, 1, 15);
+}
+.main2__viejaHistoria .main2__viejaHistoria--contenedor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../recursos/patada.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  opacity: 0.7;
+}
+.main2__viejaHistoria .main2__viejaHistoria--contenedor .historia {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main2__viejaHistoria .main2__viejaHistoria--contenedor .historia p {
+  font-size: 1.3vw;
+  width: 70%;
+  text-align: center;
+  margin-left: 20px;
+}
+.main2__viejaHistoria .main2__viejaHistoria--contenedor .historia h1 {
+  font-size: 4vw;
+  text-align: center;
+}
+.main2__viejaHistoria .historiaModerna {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../recursos/tangsoodo.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+.main2__viejaHistoria .historiaModerna .historiaModerna--contenedor {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main2__viejaHistoria .historiaModerna .historiaModerna--contenedor p {
+  font-size: 1.3vw;
+  width: 70%;
+  text-align: center;
+  margin-left: 20px;
+}
+.main2__viejaHistoria .historiaModerna .historiaModerna--contenedor h1 {
+  font-size: 4vw;
+  text-align: center;
+}
+
+.main__contacto {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: flex-end;
+  justify-items: center;
 }/*# sourceMappingURL=styles.css.map */

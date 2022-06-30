@@ -1,0 +1,45 @@
+@keyframes rotate {
+    from {
+        background-image: url(../recursos/logotipo.PNG);
+        transform: rotatey(180deg);
+    }
+
+    to {
+        background-image: url(../recursos/logowtsd.png);
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 90%;
+    }
+
+}
+
+
+@keyframes yinyang {
+    from {
+        transform: rotateZ(0deg);
+
+    }
+
+    to {
+        transform: rotateZ(360deg);
+
+    }
+
+}
+
+
+@keyframes nubes {
+    from {
+        background-position: 0 0;
+
+    }
+
+    to {
+        background-position: 100% 0;
+
+    }
+
+}
