@@ -881,13 +881,13 @@ h5 {
 
     }
 
-    #logo__img {
+    .logo__img {
         background-color: transparent;
         height: auto;
         transform: translateY(-20px);
     }
 
-    #logo__img img {
+    .logo__img img {
         min-height: 60px;
         min-width: 60px;
     }

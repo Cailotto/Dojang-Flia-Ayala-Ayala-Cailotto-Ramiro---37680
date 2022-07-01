@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.row {
+  width: 100%;
+  height: 57px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Francois One", sans-serif;
   overflow: overlay;
@@ -24,6 +33,33 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   display: grid;
   grid-template-areas: "header" "main";
+}
+
+.logo {
+  grid-area: logo;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.logo:hover {
+  cursor: pointer;
 }
 
 .escuela, .tangSoo, .eventos, .contacto {
@@ -85,33 +121,6 @@ body::-webkit-scrollbar-thumb {
 }
 .eventos:active {
   background-color: rgba(63, 63, 2, 0.582);
-}
-
-.logo {
-  grid-area: logo;
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-animation-name: rotate;
-          animation-name: rotate;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-.logo:hover {
-  cursor: pointer;
 }
 
 #main__principal {
@@ -181,15 +190,20 @@ footer .footer__contenido .footer__contenido--qr img {
 
 header {
   width: 100%;
-  max-height: 56px;
+  max-height: 57px;
 }
 header nav {
-  max-height: 50px;
+  max-height: 57px;
   padding-left: 0px;
   -webkit-animation: bajar 0.4s linear forwards;
           animation: bajar 0.4s linear forwards;
+  padding: 0%;
 }
-header nav #logo__img {
+header nav .row {
+  margin: 0px;
+  padding: 0px;
+}
+header nav .row #logo__img {
   display: flex;
   cursor: pointer;
   position: relative;
@@ -199,32 +213,25 @@ header nav #logo__img {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.864);
 }
-header nav #logo__img img {
+header nav .row #logo__img img {
   z-index: 5;
   position: absolute;
   transform: translateY(-10px);
   width: 100%;
   top: -10px;
-  height: auto;
+  height: 57px;
   -webkit-animation: izquierda 1.2s linear forwards;
           animation: izquierda 1.2s linear forwards;
 }
-header nav .container-fluid {
-  padding: 0%;
-}
-header nav .container-fluid .row {
+header nav .row .col {
   margin: 0px;
   padding: 0px;
 }
-header nav .container-fluid .row .col {
-  margin: 0px;
-  padding: 0px;
-}
-header nav .container-fluid .row .col ul li {
+header nav .row .col .row .col li {
   list-style: none;
   font-size: 1.5em;
 }
-header nav .container-fluid .row .col ul li a {
+header nav .row .col .row .col li a {
   text-align: center;
   letter-spacing: 2px;
   text-decoration: none;
@@ -232,18 +239,19 @@ header nav .container-fluid .row .col ul li a {
   font-weight: bold;
   text-decoration: none;
 }
-header nav .container-fluid .row .col ul li a:hover {
+header nav .row .col .row .col li a:hover {
   color: white;
 }
-header nav .container-fluid .row li {
+header nav .row .col li {
   padding-left: 0px;
   padding-right: 0px;
 }
-header nav .container-fluid .navbar-toggler {
+header nav .row .navbar-toggler {
   align-self: flex-start;
   margin-top: -3px;
 }
-header .navbar {
+
+.navbar {
   padding-right: 10px;
 }
 
