@@ -20,3 +20,26 @@
     }
 
 }
+
+#logo__img{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    padding-left: 0px;
+    width: 11%;
+    height: 57px;
+    z-index: 1;
+    background-color:rgba(0, 0, 0, 0.864)
+
+    
+}
+
+#logo__img img{
+    z-index: 5;
+    position: relative;
+    transform: translateY(-10px);
+    width: 100%;
+    top:-10px;
+    height: auto;
+        animation: izquierda 1.2s linear forwards;
+}
