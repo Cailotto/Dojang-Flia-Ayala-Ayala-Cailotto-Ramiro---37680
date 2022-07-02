@@ -23,9 +23,16 @@ p {
   margin-bottom: 0;
 }
 
-.btnMarian, .btnLucas, .btnRocio {
-  width: 50%;
-  height: 20%;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+.btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 6vh;
   font-size: 1.2vw;
   border-bottom-color: rgb(47, 98, 139);
   border-bottom-width: 4px;
@@ -34,6 +41,58 @@ p {
   border-right-style: solid;
   border-right-color: rgb(30, 68, 99);
   transition: 0.3s;
+}
+
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar, .abrirMarian p::-webkit-scrollbar,
+.abrirLucas p::-webkit-scrollbar,
+.abrirRocio p::-webkit-scrollbar,
+.abrirjae p::-webkit-scrollbar,
+.abrirbeaudoin p::-webkit-scrollbar,
+.abrirstrong p::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar-thumb, .abrirMarian p::-webkit-scrollbar-thumb,
+.abrirLucas p::-webkit-scrollbar-thumb,
+.abrirRocio p::-webkit-scrollbar-thumb,
+.abrirjae p::-webkit-scrollbar-thumb,
+.abrirbeaudoin p::-webkit-scrollbar-thumb,
+.abrirstrong p::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.719);
+  border-radius: 5px;
+  border: 0.25em rgba(128, 128, 128, 0.801);
+}
+
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar-corner, .abrirMarian p::-webkit-scrollbar-corner,
+.abrirLucas p::-webkit-scrollbar-corner,
+.abrirRocio p::-webkit-scrollbar-corner,
+.abrirjae p::-webkit-scrollbar-corner,
+.abrirbeaudoin p::-webkit-scrollbar-corner,
+.abrirstrong p::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.navbar .navbar__row #logo__img, header nav .row #logo__img {
+  max-height: 57px;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  padding-left: 0px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.664);
+  overflow: visible;
+  border-bottom: 2px solid black;
+}
+
+header nav .row #logo__img img {
+  height: 11vw;
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-animation: izquierda 1.2s linear forwards;
+          animation: izquierda 1.2s linear forwards;
+  top: -10px;
 }
 
 body {
@@ -80,9 +139,6 @@ body::-webkit-scrollbar-thumb {
           animation-direction: alternate;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-}
-.logo:hover {
-  cursor: pointer;
 }
 
 .escuela, .tangSoo, .eventos, .contacto {
@@ -168,52 +224,199 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
-footer {
-  padding-left: 50px;
-  padding-right: 80px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.animate-border {
   position: relative;
-  border-top: 3px solid black;
-  grid-area: footer;
-  width: 100%;
-  height: 300px;
-  background-color: white;
-  background-image: url(../recursos/dragonamarillomedio.jpg);
-  background-size: contain;
-  background-position-x: 60%;
-  background-position-y: 20px;
+  display: block;
+  width: 115px;
+  height: 3px;
+  background: #007bff;
 }
-footer .footer__contenido {
-  width: 100%;
-  height: 100%;
+
+.animate-border:after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  border-left: 10px solid #fff;
+  -webkit-animation: animborder 2s linear infinite;
+          animation: animborder 2s linear infinite;
+  animation: animborder 2s linear infinite;
+}
+
+@-webkit-keyframes animborder {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(113px);
+  }
+}
+
+@keyframes animborder {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(113px);
+  }
+}
+.dk-footer {
+  padding: 75px 0 0;
+  background-color: #151414;
+  position: relative;
+  z-index: 1;
+}
+
+.dk-footer .contact-us {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 80px;
+}
+
+.dk-footer .contact-us .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-left: 50px;
+}
+
+.dk-footer--row {
+  flex-wrap: nowrap;
+}
+
+.dk-footer-box-info {
   display: flex;
   justify-content: space-between;
-  text-transform: uppercase;
+  align-items: center;
+  top: -122px;
+  background: #202020;
+  padding: 40px;
+  z-index: 2;
 }
-footer .footer__contenido h2 {
+
+.dk-footer-box-info .footer-social-link h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.dk-footer-box-info .footer-social-link li {
+  display: inline-block;
+}
+
+.dk-footer-box-info .footer-social-link a i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   text-align: center;
+  line-height: 40px;
+  background: #000;
+  margin-right: 5px;
+  color: #fff;
 }
-footer .footer__contenido .footer__contenido--mapa {
+
+.dk-footer-box-info .footer-social-link a i.fa-facebook {
+  background-color: #3B5998;
+}
+
+.dk-footer-box-info .footer-social-link a i.fa-twitter {
+  background-color: #55ACEE;
+}
+
+.dk-footer-box-info .footer-social-link a i.fa-google-plus {
+  background-color: #DD4B39;
+}
+
+.dk-footer-box-info .footer-social-link a i.fa-linkedin {
+  background-color: #0976B4;
+}
+
+.dk-footer-box-info .footer-social-link a i.fa-instagram {
+  background-color: #B7242A;
+}
+
+.footer-left-widget {
+  text-align: center;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-widget .section-heading {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
+  margin-bottom: 15px;
 }
-footer .footer__contenido .footer__contenido--mapa iframe {
-  margin-top: 5px;
-  width: 400px;
-  border: 5px solid black;
+
+.footer-widget ul {
+  width: 50%;
+  margin: 0;
+  padding: 0;
 }
-footer .footer__contenido .footer__contenido--qr {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+
+.footer-widget li {
+  list-style: none;
+  margin-bottom: 18px;
 }
-footer .footer__contenido .footer__contenido--qr img {
-  margin-top: 5px;
-  height: 200px;
+
+.footer-widget p {
+  margin-bottom: 27px;
+}
+
+.footer-widget a {
+  text-decoration: none;
+  color: #878787;
+  transition: all 0.3s;
+}
+
+.footer-widget a:hover {
+  color: darkred;
+}
+
+.contact-info {
+  color: #fff;
+}
+
+.copyright {
+  padding: 28px 0;
+  margin-top: 55px;
+  background-color: #202020;
+}
+
+.copyright span {
+  color: #878787;
+}
+
+.back-to-top {
+  z-index: 999;
+  position: relative;
+  z-index: 2;
+}
+
+.back-to-top .btn-dark {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: darkred;
+  border-color: #2e2e2e;
+  display: none;
+  z-index: 999;
+  transition: all 0.3s linear;
+}
+
+.back-to-top .btn-dark:hover {
+  cursor: pointer;
+  background: #FA6742;
+  border-color: #FA6742;
 }
 
 header {
@@ -221,8 +424,6 @@ header {
   max-height: 57px;
 }
 header nav {
-  -webkit-animation: bajar 0.4s linear forwards;
-          animation: bajar 0.4s linear forwards;
   padding: 0px;
 }
 header nav .row {
@@ -230,27 +431,6 @@ header nav .row {
   margin: 0px;
   padding: 0px;
   list-style: none;
-}
-header nav .row #logo__img {
-  max-height: 57px;
-  display: flex;
-  cursor: pointer;
-  position: relative;
-  padding-left: 0px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.664);
-  overflow: visible;
-  border-bottom: 2px solid black;
-}
-header nav .row #logo__img img {
-  height: 11vw;
-  z-index: 5;
-  position: relative;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-animation: izquierda 1.2s linear forwards;
-          animation: izquierda 1.2s linear forwards;
-  transform: translateY(-10px);
 }
 header nav .row .col {
   margin: 0px;
@@ -339,32 +519,26 @@ header nav .navbar-toggler {
 @-webkit-keyframes rotate {
   from {
     background-image: url(../recursos/logotipo.PNG);
-    transform: rotatey(180deg);
+    transform: rotatey(0deg);
   }
-  to {
-    background-image: url(../recursos/logowtsd.png);
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 90%;
+  100% {
+    background-image: url(../recursos/logowtsd1.png);
+    background-size: 90%;
+    background-position: center;
+    transform: rotatey(180deg);
   }
 }
 
 @keyframes rotate {
   from {
     background-image: url(../recursos/logotipo.PNG);
-    transform: rotatey(180deg);
+    transform: rotatey(0deg);
   }
-  to {
-    background-image: url(../recursos/logowtsd.png);
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 90%;
+  100% {
+    background-image: url(../recursos/logowtsd1.png);
+    background-size: 90%;
+    background-position: center;
+    transform: rotatey(180deg);
   }
 }
 @-webkit-keyframes yinyang {
@@ -399,9 +573,101 @@ header nav .navbar-toggler {
     background-position: 100% 0;
   }
 }
+@-webkit-keyframes flotar {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes flotar {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes sombra {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+@keyframes sombra {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+@-webkit-keyframes bajar {
+  from {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes bajar {
+  from {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes izquierda {
+  from {
+    transform: translateX(-190px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes izquierda {
+  from {
+    transform: translateX(-190px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes aparecer {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes aparecer {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .header__carrousel {
   height: 90vh;
   z-index: -1;
+}
+.header__carrousel .carousel-item img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .carrouselDaniel {
@@ -410,7 +676,7 @@ header nav .navbar-toggler {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  z-index: 5;
+  z-index: 1;
   width: 40vw;
   height: 80%;
 }
@@ -455,7 +721,7 @@ hr {
   position: absolute;
   width: 100%;
   z-index: 2;
-  font-size: 10vh;
+  font-size: 5vw;
   -webkit-animation: fontsize 0.5 linear forwards;
           animation: fontsize 0.5 linear forwards;
   color: white;
@@ -629,7 +895,10 @@ hr {
 
 #marian,
 #lucas,
-#rocio {
+#rocio,
+#jae,
+#beaudoin,
+#strong {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -640,23 +909,30 @@ hr {
   height: 100vh;
   left: 0;
   top: 0;
-  transition: all 0.3s;
+  transition: all 0.5s;
   transition-timing-function: ease-in-out;
   opacity: 0;
   transform: scale(0);
+  z-index: 10;
 }
 
 #marian:target,
 #lucas:target,
-#rocio:target {
+#rocio:target,
+#jae:target,
+#beaudoin:target,
+#strong:target {
   opacity: 1;
   transform: scale(1);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .cerrarMarian,
 .cerrarLucas,
-.cerrarRocio {
+.cerrarRocio,
+.cerrarjae,
+.cerrarbeaudoin,
+.cerrarstrong {
   display: flex;
   position: absolute;
   top: 10px;
@@ -672,19 +948,43 @@ hr {
 
 .abrirMarian,
 .abrirLucas,
-.abrirRocio {
+.abrirRocio,
+.abrirjae,
+.abrirbeaudoin,
+.abrirstrong {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .abrirMarian p,
 .abrirLucas p,
-.abrirRocio p {
-  font-size: 18px;
+.abrirRocio p,
+.abrirjae p,
+.abrirbeaudoin p,
+.abrirstrong p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2vw;
   width: 70%;
+  height: 80%;
   text-align: center;
+  line-height: 1.2;
+  overflow-y: scroll;
+}
+.abrirjae img,
+.abrirbeaudoin img,
+.abrirstrong img {
+  height: 60%;
+  width: 20%;
+  border-radius: 2%;
+  border: 1px solid gold;
+  padding: 2px;
+  background-color: rgb(87, 100, 13);
 }
 
 .nuestraEscuela {
@@ -701,7 +1001,7 @@ hr {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -50vh;
+  background-position: center;
   display: flex;
   align-items: center;
 }
@@ -739,19 +1039,6 @@ hr {
   padding: 10%;
   font-size: 1.5vw;
 }
-.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar {
-  background-color: transparent;
-  width: 10px;
-}
-.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.719);
-  border-radius: 5px;
-  border: 0.25em rgba(128, 128, 128, 0.801);
-}
-.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar-corner {
-  display: none;
-}
-
 .main2 {
   background-color: rgb(223, 223, 25);
 }
@@ -762,7 +1049,7 @@ hr {
   height: 80vh;
   background-image: url(../recursos/paredasociacion.jpg);
   background-attachment: fixed;
-  background-position-y: -150px;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -827,7 +1114,7 @@ hr {
   background-position: bottom;
   background-position-y: 350px;
   background-position-x: -50px;
-  background-size: 130vw;
+  background-size: cover;
 }
 .main2__asociacionMundial .yinyang {
   text-align: center;
@@ -845,18 +1132,19 @@ hr {
           animation-timing-function: linear;
 }
 .main2__asociacionMundial .asociacionMundial__contenedor {
+  height: 100%;
+  width: 90%;
   align-self: end;
   display: grid;
   align-items: baseline;
   align-content: space-between;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
   grid-template-areas: "wtsd wtsd" "parrafo1 parrafo2" "maestros maestros";
-  height: 150vh;
-  width: 90%;
 }
 .main2__asociacionMundial .asociacionMundial__contenedor #wtsd {
   text-align: center;
+  font-size: 4vw;
   grid-area: wtsd;
   color: rgb(214, 205, 205);
   margin-bottom: 0%;
@@ -865,11 +1153,16 @@ hr {
   grid-area: parrafo1;
   text-align: center;
   color: rgb(214, 205, 205);
+  font-size: 1.5vw;
+  width: 100%;
+  text-align: center;
 }
 .main2__asociacionMundial .asociacionMundial__contenedor .parrafo2 {
-  grid-area: parrafo2;
   text-align: center;
   color: rgb(214, 205, 205);
+  font-size: 1.5vw;
+  width: 100%;
+  text-align: center;
 }
 .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros {
   grid-area: maestros;
@@ -880,16 +1173,14 @@ hr {
   margin-bottom: 2px;
   justify-content: center;
   width: 100%;
-  height: 60vh;
+  height: 100%;
   background-image: url(../recursos/imgmaestros.PNG);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
 }
-.main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros p {
-  line-height: 100%;
-}
 .main2__separador--nubes {
+  position: relative;
   align-self: flex-end;
   display: flex;
   align-items: center;
@@ -912,14 +1203,31 @@ hr {
   word-spacing: 40px;
   top: -7px;
   text-shadow: 4px 4px 0px rgb(83, 72, 8);
+  -webkit-animation: scalenubes 3s infinite linear;
+          animation: scalenubes 3s infinite linear;
+}
+@-webkit-keyframes scalenubes {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+@keyframes scalenubes {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
 }
 .main2__viejaHistoria {
   background-color: rgb(240, 236, 236);
   width: 100%;
-  height: 200vh;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   padding: 50px;
   box-shadow: 0px 0px 5px 20px inset rgb(1, 1, 15);
@@ -928,7 +1236,12 @@ hr {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+}
+.main2__viejaHistoria .main2__viejaHistoria--contenedor .historia__background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   background-image: url(../recursos/patada.png);
   background-position: left;
@@ -939,14 +1252,15 @@ hr {
 }
 .main2__viejaHistoria .main2__viejaHistoria--contenedor .historia {
   width: 100%;
-  height: 20vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .main2__viejaHistoria .main2__viejaHistoria--contenedor .historia p {
   font-size: 1.3vw;
-  width: 70%;
+  width: 85%;
+  height: 80%;
   text-align: center;
   margin-left: 20px;
 }
@@ -954,38 +1268,46 @@ hr {
   font-size: 4vw;
   text-align: center;
 }
-.main2__viejaHistoria .historiaModerna {
+.main2__viejaHistoria .main2__historiaModerna--contenedor {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../recursos/tangsoodo.png);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.7;
 }
-.main2__viejaHistoria .historiaModerna .historiaModerna--contenedor {
+.main2__viejaHistoria .main2__historiaModerna--contenedor .historiaModerna__background {
   width: 100%;
-  height: 20vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(../recursos/tangsoodo.png);
+  background-position: right;
+  background-position-x: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  opacity: 0.7;
 }
-.main2__viejaHistoria .historiaModerna .historiaModerna--contenedor p {
+.main2__viejaHistoria .main2__historiaModerna--contenedor .historiaModerna {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.main2__viejaHistoria .main2__historiaModerna--contenedor .historiaModerna p {
   font-size: 1.3vw;
-  width: 70%;
+  width: 85%;
+  height: 80%;
   text-align: center;
   margin-left: 20px;
 }
-.main2__viejaHistoria .historiaModerna .historiaModerna--contenedor h1 {
+.main2__viejaHistoria .main2__historiaModerna--contenedor .historiaModerna h1 {
   font-size: 4vw;
   text-align: center;
 }
 
 .main__contacto {
-  grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -1011,7 +1333,10 @@ hr {
 
 #marian,
 #lucas,
-#rocio {
+#rocio,
+#jae,
+#beaudoin,
+#strong {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1022,23 +1347,30 @@ hr {
   height: 100vh;
   left: 0;
   top: 0;
-  transition: all 0.3s;
+  transition: all 0.5s;
   transition-timing-function: ease-in-out;
   opacity: 0;
   transform: scale(0);
+  z-index: 10;
 }
 
 #marian:target,
 #lucas:target,
-#rocio:target {
+#rocio:target,
+#jae:target,
+#beaudoin:target,
+#strong:target {
   opacity: 1;
   transform: scale(1);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .cerrarMarian,
 .cerrarLucas,
-.cerrarRocio {
+.cerrarRocio,
+.cerrarjae,
+.cerrarbeaudoin,
+.cerrarstrong {
   display: flex;
   position: absolute;
   top: 10px;
@@ -1054,17 +1386,117 @@ hr {
 
 .abrirMarian,
 .abrirLucas,
-.abrirRocio {
+.abrirRocio,
+.abrirjae,
+.abrirbeaudoin,
+.abrirstrong {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .abrirMarian p,
 .abrirLucas p,
-.abrirRocio p {
-  font-size: 18px;
+.abrirRocio p,
+.abrirjae p,
+.abrirbeaudoin p,
+.abrirstrong p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2vw;
   width: 70%;
+  height: 80%;
   text-align: center;
+  line-height: 1.2;
+  overflow-y: scroll;
+}
+.abrirjae img,
+.abrirbeaudoin img,
+.abrirstrong img {
+  height: 60%;
+  width: 20%;
+  border-radius: 2%;
+  border: 1px solid gold;
+  padding: 2px;
+  background-color: rgb(87, 100, 13);
+}
+
+.contacto__ins,
+.contacto__wpp,
+.contacto__fb {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.contacto__ins a,
+.contacto__wpp a,
+.contacto__fb a {
+  width: 60%;
+}
+
+.contacto__ins img,
+.contacto__wpp img,
+.contacto__fb img {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 70px;
+  -webkit-animation: flotar 3s infinite;
+          animation: flotar 3s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  transition: width 0.5s, -webkit-animation 0.5s;
+  transition: width 0.5s, animation 0.5s;
+  transition: width 0.5s, animation 0.5s, -webkit-animation 0.5s;
+}
+
+.contacto__ins img:hover,
+.contacto__wpp img:hover,
+.contacto__fb img:hover {
+  width: 130%;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.contacto__ins a:hover + .sombra,
+.contacto__wpp a:hover + .sombra,
+.contacto__fb a:hover + .sombra {
+  display: none;
+}
+
+.sombra {
+  margin-left: 10px;
+  max-width: 100px;
+  width: 30%;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  -webkit-animation: sombra 1.5s alternate infinite linear;
+          animation: sombra 1.5s alternate infinite linear;
+  transition: background-color 0.5s;
+}
+
+.navbar .navbar__row {
+  display: flex;
+  align-items: center;
+  background-color: rgb(185, 40, 40);
+}
+.navbar .navbar__row #logo__img {
+  background-color: transparent;
+  border: 0px;
+}
+.navbar .navbar__row #logo__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.navbar .navbar__row .navbar-toggler {
+  align-self: center;
 }/*# sourceMappingURL=styles.css.map */

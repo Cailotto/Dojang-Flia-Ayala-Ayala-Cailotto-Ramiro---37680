@@ -1,0 +1,26 @@
+.navbar {
+
+    .navbar__row {
+
+        display: flex;
+        align-items: center;
+        background-color: rgb(185, 40, 40);
+
+        #logo__img {
+            @extend %logo;
+            background-color: transparent;
+            border: 0px;
+
+
+
+            img {
+                object-fit: contain;
+
+            }
+        }
+
+        .navbar-toggler {
+            align-self: center;
+    }
+}
+}

@@ -1,6 +1,9 @@
 %btn {
-    width: 50%;
-    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 6vh;
     font-size: 1.2vw;
     border-bottom-color: rgb(47, 98, 139);
     border-bottom-width: 4px;
@@ -9,6 +12,41 @@
     border-right-style: solid;
     border-right-color: rgb(30, 68, 99);
     transition: 0.3s;
+    
+}
 
 
+%whitescrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+%whitescrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 5px;
+    border: .25em rgba(128, 128, 128, 0.801);
+}
+
+%whitescrollbar-corner {
+    display: none;
+}
+
+%logo{
+    max-height: 57px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    padding-left: 0px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.664);
+    overflow: visible;
+    border-bottom: 2px solid black;
+}
+
+%logoImg{
+    height: 11vw;
+    position: relative;
+    object-fit: contain;
+    animation: izquierda 1.2s linear forwards;
+    top: -10px;
 }

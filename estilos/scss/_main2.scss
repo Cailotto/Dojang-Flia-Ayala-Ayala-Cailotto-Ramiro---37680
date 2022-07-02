@@ -8,10 +8,10 @@
         height: 80vh;
         background-image: url(../recursos/paredasociacion.jpg);
         background-attachment: fixed;
-        background-position-y: -150px;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-    
+
         .main2__header--separador {
             width: 100%;
             height: 100px;
@@ -20,7 +20,7 @@
             background-size: 30%;
             background-position: bottom;
             background-repeat: repeat-x;
-        }   
+        }
     }
 
     &__historia {
@@ -37,7 +37,7 @@
         background-repeat: no-repeat;
         background-position: center;
         margin-top: 100px;
-    
+
         .main2__historia--contenedor {
             width: 60%;
             display: flex;
@@ -49,7 +49,7 @@
             border: 5px solid white;
             box-shadow: 7px 7px 15px #592A08;
             padding: 20px;
-        
+
             h1 {
                 text-align: center;
                 font-size: 5vw;
@@ -61,7 +61,7 @@
                 font-size: 2vw;
             }
         }
-    
+
     }
 
     &__asociacionMundial {
@@ -81,7 +81,7 @@
         background-position: bottom;
         background-position-y: 350px;
         background-position-x: -50px;
-        background-size: 130vw;
+        background-size: cover;
 
         .yinyang {
             text-align: center;
@@ -95,43 +95,48 @@
                 width: 20vw;
                 animation: yinyang 8s infinite;
                 animation-timing-function: linear;
-            
+
             }
-        
+
         }
 
         .asociacionMundial__contenedor {
+            height: 100%;
+            width: 90%;
             align-self: end;
             display: grid;
             align-items: baseline;
-        
             align-content: space-between;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 2fr 2fr;
             grid-template-areas: "wtsd wtsd"
-                                 "parrafo1 parrafo2"
-                                 "maestros maestros"
+                "parrafo1 parrafo2"
+                "maestros maestros"
             ;
-            height: 150vh;
-            width: 90%;
 
             #wtsd {
                 text-align: center;
+                font-size: 4vw;
                 grid-area: wtsd;
                 color: rgb(214, 205, 205);
                 margin-bottom: 0%;
             }
 
-            .parrafo1{
+            .parrafo1 {
                 grid-area: parrafo1;
                 text-align: center;
                 color: rgb(214, 205, 205);
+                font-size: 1.5vw;
+                width: 100%;
+                text-align: center;
             }
 
             .parrafo2 {
-                grid-area: parrafo2;
                 text-align: center;
                 color: rgb(214, 205, 205);
+                font-size: 1.5vw;
+                width: 100%;
+                text-align: center;
             }
 
             .main2__maestros {
@@ -143,21 +148,19 @@
                 margin-bottom: 2px;
                 justify-content: center;
                 width: 100%;
-                height: 60vh;
+                height: 100%;
                 background-image: url(../recursos/imgmaestros.PNG);
                 background-size: contain;
                 background-position: bottom;
                 background-repeat: no-repeat;
-            
-                p {
-                    line-height: 100%;
-                }
+
             }
         }
-    
+
     }
 
     &__separador--nubes {
+        position: relative;
         align-self: flex-end;
         display: flex;
         align-items: center;
@@ -180,80 +183,107 @@
             word-spacing: 40px;
             top: -7px;
             text-shadow: 4px 4px 0px rgb(83, 72, 8);
+            animation: scalenubes 3s infinite linear;
+        }
+
+        @keyframes scalenubes {
+            from{ transform: scale(1);}
+            50%{ transform: scale(1.02);}
+            
         }
     }
 
     &__viejaHistoria {
         background-color: rgb(240, 236, 236);
         width: 100%;
-        height: 200vh;
         display: grid;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         justify-content: center;
         padding: 50px;
         box-shadow: 0px 0px 5px 20px inset rgb(1, 1, 15);
 
-        .main2__viejaHistoria--contenedor{
+        .main2__viejaHistoria--contenedor {
             width: 100%;
             height: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url(../recursos/patada.png);
-            background-position: left;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin-left: 30px;
-            opacity: 0.7;
+            
+
+
+            .historia__background {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-image: url(../recursos/patada.png);
+                background-position: left;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-left: 30px;
+                opacity: 0.7;
+            }
 
             .historia {
+                
                 width: 100%;
-                height: 20vh;
+                height: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
                 p {
+                    
                     font-size: 1.3vw;
-                    width: 70%;
+                    width: 85%;
+                    height: 80%;
                     text-align: center;
                     margin-left: 20px;
+  
                 }
 
                 h1 {
                     font-size: 4vw;
                     text-align: center;
-                
+
                 }
-            
+
             }
-        
+
         }
 
-        .historiaModerna{
+        .main2__historiaModerna--contenedor {
             width: 100%;
             height: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url(../recursos/tangsoodo.png);
-            background-position: right;
-            background-size: contain;
-            background-repeat: no-repeat;
-            opacity: 0.7;
 
-
-            .historiaModerna--contenedor{
+            .historiaModerna__background {
                 width: 100%;
-                height: 20vh;
+                height: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                background-image: url(../recursos/tangsoodo.png);
+                background-position: right;
+                background-position-x: 80%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-left: 30px;
+                opacity: 0.7;
+            }
+
+            .historiaModerna {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
 
                 p {
                     font-size: 1.3vw;
-                    width: 70%;
+                    width: 85%;
+                    height: 80%;
                     text-align: center;
                     margin-left: 20px;
                 }
@@ -261,11 +291,14 @@
                 h1 {
                     font-size: 4vw;
                     text-align: center;
-                
+
                 }
-            
+
             }
+
+
+
         }
-    
     }
+
 }

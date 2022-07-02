@@ -23,14 +23,18 @@
     @extend %card
 }
 
-.btnMarian, .btnLucas, .btnRocio {
+.btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
     @extend %btn;
+    
 
 }
 
 #marian,
 #lucas,
-#rocio {
+#rocio,
+#jae,
+#beaudoin,
+#strong {
     display: flex;
     align-items: center;
     justify-content: center ;
@@ -41,10 +45,11 @@
     height: 100vh;
     left: 0;
     top: 0;
-    transition: all .3s;
+    transition: all .5s;
     transition-timing-function: ease-in-out;
     opacity: 0;
     transform: scale(0);
+    z-index: 10;
 
 }
 
@@ -52,16 +57,22 @@
 
 #marian:target,
 #lucas:target,
-#rocio:target {
+#rocio:target,
+#jae:target,
+#beaudoin:target,
+#strong:target {
     opacity: 1;
     transform: scale(1);
-    transition: all .3s;
+    transition: all .5s;
 }
 
 
 .cerrarMarian,
 .cerrarLucas,
-.cerrarRocio {
+.cerrarRocio,
+.cerrarjae,
+.cerrarbeaudoin,
+.cerrarstrong {
     display: flex;
     position: absolute;
     top: 10px;
@@ -78,11 +89,17 @@
 
 .abrirMarian,
 .abrirLucas,
-.abrirRocio {
+.abrirRocio,
+.abrirjae,
+.abrirbeaudoin,
+.abrirstrong {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 
 
@@ -90,8 +107,39 @@
 
 .abrirMarian p,
 .abrirLucas p,
-.abrirRocio p {
-    font-size: 18px;
+.abrirRocio p,
+.abrirjae p,
+.abrirbeaudoin p,
+.abrirstrong p {
+    display: flex;
+    align-items: center;
+    font-size: 1.2vw;
     width: 70%;
+    height: 80%;
     text-align: center;
+    line-height: 1.2;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        @extend %whitescrollbar
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @extend %whitescrollbar-thumb
+    }
+
+    &::-webkit-scrollbar-corner {
+        @extend %whitescrollbar-corner
+    }
+}
+
+.abrirjae img,
+.abrirbeaudoin img,
+.abrirstrong img{
+    height: 60%;
+    width: 20%;
+    border-radius: 2%;
+    border: 1px solid gold;
+    padding: 2px;
+    background-color: rgb(87, 100, 13);
 }
