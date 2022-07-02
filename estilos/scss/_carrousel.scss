@@ -5,22 +5,19 @@
 
 
 .carrouselDaniel {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
     z-index: 5;
     width: 40vw;
-    height: 100%;
+    height: 80%;
+  
 
     .carrouselDaniel__inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        position: relative;
         padding: 0px;
 
-        img {
-            border: 2px black solid;
-            padding: 0px;
-        }
     }
 }

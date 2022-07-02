@@ -7,12 +7,14 @@ hr {
     border-radius: 300px/10px;
     background-color: gold;
 
-    .gold {
-        position: relative;
-        width: 100%;
-        border: 3px solid rgb(224, 191, 3);
-        border-radius: 300px/10px;
-    }
+
+}
+
+.gold {
+    position: relative;
+    width: 100%;
+    border: 3px solid rgb(224, 191, 3);
+    border-radius: 300px/10px;
 }
 
 
@@ -37,7 +39,8 @@ hr {
             z-index: 2;
             font-size: 10vh;
             animation: fontsize .5 linear forwards;
-            color: white;}
+            color: white;
+            margin-bottom: 0;}
 
         &--back{
             position: relative;

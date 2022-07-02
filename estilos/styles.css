@@ -4,11 +4,36 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  font-size: bold;
-  text-align: center;
+.row > * {
+  flex-shrink: 0;
+  width: auto;
+  max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.container-fluid {
+  margin: 0%;
+  padding: 0%;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.btnMarian, .btnLucas, .btnRocio {
+  width: 50%;
+  height: 20%;
+  font-size: 1.2vw;
+  border-bottom-color: rgb(47, 98, 139);
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-right-color: rgb(30, 68, 99);
+  transition: 0.3s;
 }
 
 body {
@@ -58,28 +83,6 @@ body::-webkit-scrollbar-thumb {
 }
 .logo:hover {
   cursor: pointer;
-}
-
-#logo__img {
-  display: flex;
-  cursor: pointer;
-  position: relative;
-  padding-left: 0px;
-  width: 11%;
-  height: 57px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.864);
-}
-
-#logo__img img {
-  z-index: 5;
-  position: relative;
-  transform: translateY(-10px);
-  width: 100%;
-  top: -10px;
-  height: auto;
-  -webkit-animation: izquierda 1.2s linear forwards;
-          animation: izquierda 1.2s linear forwards;
 }
 
 .escuela, .tangSoo, .eventos, .contacto {
@@ -158,7 +161,11 @@ body::-webkit-scrollbar-thumb {
   grid-template-areas: "logo     logo     escuela tangsoo eventos" "logo     logo     escuela tangsoo eventos" "contacto contacto contacto contacto contacto";
 }
 #main__principal .inicio a {
-  font-size: 1.7em;
+  text-decoration: none;
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
 }
 
 footer {
@@ -214,39 +221,42 @@ header {
   max-height: 57px;
 }
 header nav {
-  max-height: 57px;
-  padding-left: 0px;
   -webkit-animation: bajar 0.4s linear forwards;
           animation: bajar 0.4s linear forwards;
-  padding: 0%;
+  padding: 0px;
 }
 header nav .row {
   display: flex;
-  max-height: 57px;
   margin: 0px;
   padding: 0px;
+  list-style: none;
 }
 header nav .row #logo__img {
+  max-height: 57px;
   display: flex;
   cursor: pointer;
   position: relative;
   padding-left: 0px;
-  width: 11%;
-  max-height: 57px;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.864);
+  background-color: rgba(0, 0, 0, 0.664);
+  overflow: visible;
+  border-bottom: 2px solid black;
 }
 header nav .row #logo__img img {
+  height: 11vw;
   z-index: 5;
   position: relative;
-  transform: translateY(-10px);
-  width: 100%;
-  top: -10px;
-  max-height: 57px;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-animation: izquierda 1.2s linear forwards;
           animation: izquierda 1.2s linear forwards;
+  transform: translateY(-10px);
 }
 header nav .row .col {
+  margin: 0px;
+  padding: 0px;
+}
+header nav .row .col .row .col {
   margin: 0px;
   padding: 0px;
 }
@@ -256,18 +266,7 @@ header nav .row .col .row .col li {
   padding-left: 0px;
   padding-right: 0px;
 }
-header nav .row .col .row .col li a {
-  text-align: center;
-  letter-spacing: 2px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-header nav .row .col .row .col li a:hover {
-  color: white;
-}
-header nav .row .navbar-toggler {
+header nav .navbar-toggler {
   align-self: flex-start;
   margin-top: -3px;
 }
@@ -280,6 +279,61 @@ header nav .row .navbar-toggler {
   grid-area: header1;
   width: 100%;
   max-height: 56px;
+}
+
+#contacto, #eventos, #tangSoo, #escuela {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  line-height: 25px;
+  border-left: solid rgba(255, 255, 255, 0.116) 1px;
+  border-bottom: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.664);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5vw;
+  letter-spacing: 1px;
+}
+#contacto:hover, #eventos:hover, #tangSoo:hover, #escuela:hover {
+  background-color: rgba(0, 0, 0, 0.959);
+  cursor: pointer;
+  color: white;
+}
+
+#escuela:hover {
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(184, 50, 50);
+}
+
+#escuela:active {
+  background-color: rgba(92, 0, 0, 0.795);
+}
+
+#tangSoo:hover {
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(12, 12, 153);
+}
+
+#tangSoo:active {
+  background-color: rgba(1, 1, 48, 0.733);
+}
+
+#eventos:hover {
+  text-shadow: 1px 1px 2px black, 0 0 15px yellow, 0 0 5px rgba(133, 133, 8, 0.616);
+}
+
+#eventos:active {
+  background-color: rgba(63, 63, 2, 0.582);
+}
+
+#contacto:hover {
+  text-shadow: 1px 1px 2px black, 0 0 15px rgb(255, 253, 253), 0 0 5px rgba(255, 255, 255, 0.493);
+}
+
+#contacto:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
 }
 
 @-webkit-keyframes rotate {
@@ -351,21 +405,17 @@ header nav .row .navbar-toggler {
 }
 
 .carrouselDaniel {
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  justify-content: center;
   z-index: 5;
   width: 40vw;
-  height: 100%;
+  height: 80%;
 }
 .carrouselDaniel .carrouselDaniel__inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0px;
-}
-.carrouselDaniel .carrouselDaniel__inner img {
-  border: 2px black solid;
+  position: relative;
   padding: 0px;
 }
 
@@ -378,7 +428,8 @@ hr {
   border-radius: 300px/10px;
   background-color: gold;
 }
-hr .gold {
+
+.gold {
   position: relative;
   width: 100%;
   border: 3px solid rgb(224, 191, 3);
@@ -408,6 +459,7 @@ hr .gold {
   -webkit-animation: fontsize 0.5 linear forwards;
           animation: fontsize 0.5 linear forwards;
   color: white;
+  margin-bottom: 0;
 }
 .separador__frase--back {
   position: relative;
@@ -456,7 +508,6 @@ hr .gold {
   text-align: center;
   grid-area: tramadoOndas;
   background-color: rgba(0, 4, 211, 0.719);
-  z-index: 1;
   border: 15px solid rgba(0, 4, 211, 0.212);
   padding-right: 10px;
   box-shadow: 7px 7px 15px rgb(1, 1, 97);
@@ -467,21 +518,32 @@ hr .gold {
   grid-area: tramadoondas__texto;
   display: flex;
   flex-direction: column;
-  padding-right: 100px;
   text-align: center;
-  justify-content: space-around;
-  overflow: scroll;
+  overflow: hidden;
 }
-.tramado .tramadoOndas .tramadoOndas__texto::-webkit-scrollbar {
+.tramado .tramadoOndas .tramadoOndas__texto h5 {
+  position: relative;
+  font-size: 2vw;
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.tramado .tramadoOndas .tramadoOndas__texto p {
+  font-size: 1.5vw;
+  overflow: scroll;
+  padding: 10%;
+  color: black;
+}
+.tramado .tramadoOndas .tramadoOndas__texto p::-webkit-scrollbar {
   background-color: transparent;
   width: 10px;
 }
-.tramado .tramadoOndas .tramadoOndas__texto::-webkit-scrollbar-thumb {
+.tramado .tramadoOndas .tramadoOndas__texto p::-webkit-scrollbar-thumb {
   background-color: rgba(211, 7, 0, 0.719);
   border-radius: 5px;
   border: 0.25em rgba(128, 128, 128, 0.801);
 }
-.tramado .tramadoOndas .tramadoOndas__texto::-webkit-scrollbar-corner {
+.tramado .tramadoOndas .tramadoOndas__texto p::-webkit-scrollbar-corner {
   display: none;
 }
 
@@ -512,8 +574,7 @@ hr .gold {
   width: 90%;
   height: 90%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   background-color: rgba(211, 7, 0, 0.719);
   z-index: 5;
   border: 15px solid rgba(139, 4, 4, 0.589);
@@ -525,16 +586,18 @@ hr .gold {
   width: 100%;
   color: #000;
   margin-top: 50px;
-  align-self: flex-start;
   text-align: center;
   text-shadow: 3px 2px 5px rgb(58, 57, 57);
+  font-weight: bold;
+  font-size: 5vw;
+  z-index: -10;
 }
-.tramadoNegro .tramadoOndas1 .danesTitulo .danes {
+.tramadoNegro .tramadoOndas1 .danes {
   width: 100%;
   z-index: -6;
   align-self: flex-start;
 }
-.tramadoNegro .tramadoOndas1 .danesTitulo .danes .card {
+.tramadoNegro .tramadoOndas1 .danes .card {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -544,8 +607,84 @@ hr .gold {
   border: 0px;
   transform: translateY(-120px);
 }
-.tramadoNegro .tramadoOndas1 .danesTitulo .danes .card img {
+.tramadoNegro .tramadoOndas1 .danes .card img {
   width: 25vw;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.cardMarian img, .cardLucas img, .cardRocio img {
+  width: 25vw;
+  height: 35vh;
+  border: 1px solid black;
+  padding: 0.6px;
+  background-color: white;
+}
+
+#marian,
+#lucas,
+#rocio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.966);
+  color: #fff;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+  transform: scale(0);
+}
+
+#marian:target,
+#lucas:target,
+#rocio:target {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.cerrarMarian,
+.cerrarLucas,
+.cerrarRocio {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.6em;
+  background-color: tomato;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+.abrirMarian,
+.abrirLucas,
+.abrirRocio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.abrirMarian p,
+.abrirLucas p,
+.abrirRocio p {
+  font-size: 18px;
+  width: 70%;
+  text-align: center;
 }
 
 .nuestraEscuela {
@@ -586,6 +725,9 @@ hr .gold {
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia h5 {
   text-shadow: 3px 2px 2px rgb(126, 126, 126);
   text-align: center;
+  font-weight: bold;
+  font-size: 5vw;
+  color: white;
 }
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p {
   color: white;
@@ -594,6 +736,8 @@ hr .gold {
   height: 60%;
   text-align: center;
   box-shadow: 0px 2px 50px rgb(100, 100, 100);
+  padding: 10%;
+  font-size: 1.5vw;
 }
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar {
   background-color: transparent;
@@ -847,4 +991,80 @@ hr .gold {
   grid-template-rows: 1fr;
   align-items: flex-end;
   justify-items: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.cardMarian img, .cardLucas img, .cardRocio img {
+  width: 25vw;
+  height: 35vh;
+  border: 1px solid black;
+  padding: 0.6px;
+  background-color: white;
+}
+
+#marian,
+#lucas,
+#rocio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.966);
+  color: #fff;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+  transform: scale(0);
+}
+
+#marian:target,
+#lucas:target,
+#rocio:target {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.cerrarMarian,
+.cerrarLucas,
+.cerrarRocio {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.6em;
+  background-color: tomato;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+.abrirMarian,
+.abrirLucas,
+.abrirRocio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.abrirMarian p,
+.abrirLucas p,
+.abrirRocio p {
+  font-size: 18px;
+  width: 70%;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
