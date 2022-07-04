@@ -12,7 +12,7 @@
     .tramadoOndas {
         width: 50%;
         height: 80%;
-        @include centrar(flex,center,center);
+        @include display();
         flex-direction: column;
         grid-area: tramadoOndas;
         background-color: rgba(0, 4, 211, 0.719);
@@ -63,7 +63,7 @@
 
 
 .tramadoNegro {
-    @include centrar(flex,center,center);
+    @include display();
     position: relative;
     width: 100%;
     height: 120vh;

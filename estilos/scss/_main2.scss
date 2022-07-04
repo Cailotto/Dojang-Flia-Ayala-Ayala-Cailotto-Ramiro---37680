@@ -28,7 +28,7 @@
         width: 100%;
         height: 100vh;
         background-color: rgb(223, 223, 25);
-        @include centrar(flex,center,center);
+        @include display();
         flex-direction: column;
         background-image: url(../recursos/dragonrojo.png);
         background-size: contain;
@@ -38,7 +38,7 @@
 
         .main2__historia--contenedor {
             width: 60%;
-            @include centrar(flex,center,center);
+            @include display();
             flex-direction: column;
             text-align: center;
             background-color: rgba(255, 255, 255, 0.603);
@@ -163,7 +163,9 @@
     &__separador--nubes {
         position: relative;
         align-self: flex-end;
-        @include centrar(flex,center,center);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: 120px;
         background-image: url(../recursos/nubesfondonegro.JPG);
@@ -209,7 +211,7 @@
             .historia__background {
                 width: 100%;
                 height: 100%;
-                @include centrar(flex,center,center);
+                @include display();
                 background-image: url(../recursos/patada.png);
                 background-position: left;
                 background-size: contain;

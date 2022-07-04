@@ -1,17 +1,4 @@
-%btn {
-    @include centrar(flex,center,center);
-    width: 15vw;
-    height: 6vh;
-    font-size: 1.2vw;
-    border-bottom-color: rgb(47, 98, 139);
-    border-bottom-width: 4px;
-    border-right-width: 4px;
-    border-bottom-style: solid;
-    border-right-style: solid;
-    border-right-color: rgb(30, 68, 99);
-    transition: 0.3s;
-    
-}
+
 
 
 %whitescrollbar {
@@ -51,14 +38,37 @@
     top: -10px;
 }
 
-@mixin centrar ($f, $x, $y) {
-    display: $f;
-    justify-content: $x;
-    align-items: $y;
+@mixin display {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
     
 }
-
 @mixin mp0($m0,$p0) {
     margin: $m0;
     padding: $p0;
+}
+
+$paginas: (
+    escuela: #5c0000cb,
+    tangSoo: #010132bb,
+    eventos: #8585089d,
+    contacto: #ffffff86
+);
+
+
+
+%btn {
+    @include display();
+    width: 15vw;
+    height: 6vh;
+    font-size: 1.2vw;
+    border-bottom-color: rgb(47, 98, 139);
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-right-color: rgb(30, 68, 99);
+    transition: 0.3s;
+    
 }

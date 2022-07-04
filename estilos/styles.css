@@ -28,28 +28,6 @@ p {
   line-height: auto;
 }
 
-.rowmapa {
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15vw;
-  height: 6vh;
-  font-size: 1.2vw;
-  border-bottom-color: rgb(47, 98, 139);
-  border-bottom-width: 4px;
-  border-right-width: 4px;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-right-color: rgb(30, 68, 99);
-  transition: 0.3s;
-}
-
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar, .abrirMarian p::-webkit-scrollbar,
 .abrirLucas p::-webkit-scrollbar,
 .abrirRocio p::-webkit-scrollbar,
@@ -103,6 +81,22 @@ header nav .row #logo__img img {
   top: -10px;
 }
 
+.btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 6vh;
+  font-size: 1.2vw;
+  border-bottom-color: rgb(47, 98, 139);
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-right-color: rgb(30, 68, 99);
+  transition: 0.3s;
+}
+
 body {
   font-family: "Francois One", sans-serif;
   overflow: overlay;
@@ -127,14 +121,10 @@ body::-webkit-scrollbar-thumb {
 
 .logo {
   grid-area: logo;
-  width: 100%;
-  height: auto;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
-  background-size: contain;
   -webkit-animation-name: rotate;
           animation-name: rotate;
   -webkit-animation-duration: 5s;
@@ -145,11 +135,10 @@ body::-webkit-scrollbar-thumb {
           animation-play-state: running;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .escuela, .tangSoo, .eventos, .contacto {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,9 +149,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .escuela:hover, .tangSoo:hover, .eventos:hover, .contacto:hover {
+  color: white;
   background-color: rgba(0, 0, 0, 0.864);
   cursor: pointer;
-  color: white;
   transition: 0.2s;
 }
 
@@ -178,7 +167,7 @@ body::-webkit-scrollbar-thumb {
 .contacto:active {
   color: black;
   text-shadow: 1px 1px 2px black, 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgba(255, 255, 255, 0.5254901961);
 }
 
 .escuela {
@@ -188,17 +177,17 @@ body::-webkit-scrollbar-thumb {
   text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(184, 50, 50);
 }
 .escuela:active {
-  background-color: rgba(92, 0, 0, 0.795);
+  background-color: rgba(92, 0, 0, 0.7960784314);
 }
 
 .tangSoo {
   grid-area: tangsoo;
 }
 .tangSoo:hover {
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(12, 12, 153);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #0c0c99;
 }
 .tangSoo:active {
-  background-color: rgba(1, 1, 48, 0.733);
+  background-color: rgba(1, 1, 50, 0.7333333333);
 }
 
 .eventos {
@@ -208,17 +197,15 @@ body::-webkit-scrollbar-thumb {
   text-shadow: 1px 1px 2px black, 0 0 15px yellow, 0 0 5px rgba(133, 133, 8, 0.616);
 }
 .eventos:active {
-  background-color: rgba(63, 63, 2, 0.582);
+  background-color: rgba(133, 133, 8, 0.6156862745);
 }
 
 #main__principal {
   background-image: url(../recursos/pisoasociacion.png);
-  background-repeat: no-repeat;
   background-size: cover;
 }
 #main__principal .inicio {
   height: 100vh;
-  width: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr 0.2fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -226,7 +213,6 @@ body::-webkit-scrollbar-thumb {
 }
 #main__principal .inicio a {
   text-decoration: none;
-  color: white;
   font-size: 2vw;
   font-weight: bold;
   text-align: center;
@@ -234,7 +220,6 @@ body::-webkit-scrollbar-thumb {
 
 .animate-border {
   position: relative;
-  display: block;
   width: 115px;
   height: 3px;
   background: #007bff;
@@ -243,7 +228,6 @@ body::-webkit-scrollbar-thumb {
 .animate-border:after {
   position: absolute;
   content: "";
-  width: 35px;
   height: 3px;
   left: 0;
   bottom: 0;
@@ -273,18 +257,14 @@ body::-webkit-scrollbar-thumb {
 .dk-footer {
   padding: 75px 0 0;
   background-color: #151414;
-  position: relative;
-  z-index: 1;
+  z-index: 6;
 }
 
 .dk-footer .contact-us {
-  margin-top: 0;
-  margin-bottom: 30px;
   padding-left: 80px;
 }
 
 .dk-footer .contact-us .contact-info {
-  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,18 +272,13 @@ body::-webkit-scrollbar-thumb {
   margin-left: 50px;
 }
 
-.dk-footer--row {
-  flex-wrap: nowrap;
-}
-
 .dk-footer-box-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: -122px;
   background: #202020;
   padding: 40px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .dk-footer-box-info .footer-social-link h3 {
@@ -348,43 +323,11 @@ body::-webkit-scrollbar-thumb {
   background-color: #B7242A;
 }
 
-.footer-left-widget {
-  text-align: center;
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-}
-
 .footer-widget .section-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;
-}
-
-.footer-widget ul {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-widget li {
-  list-style: none;
-  margin-bottom: 18px;
-}
-
-.footer-widget p {
-  margin-bottom: 27px;
-}
-
-.footer-widget a {
-  text-decoration: none;
-  color: #878787;
-  transition: all 0.3s;
-}
-
-.footer-widget a:hover {
-  color: darkred;
 }
 
 .footer-widget iframe {
@@ -406,7 +349,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .back-to-top {
-  z-index: 999;
+  z-index: 9;
   position: relative;
   z-index: 2;
 }
@@ -415,14 +358,11 @@ body::-webkit-scrollbar-thumb {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  padding: 0;
   position: fixed;
   bottom: 20px;
   right: 20px;
   background: darkred;
   border-color: #2e2e2e;
-  display: none;
-  z-index: 999;
   transition: all 0.3s linear;
 }
 
@@ -432,56 +372,22 @@ body::-webkit-scrollbar-thumb {
   border-color: #FA6742;
 }
 
-.rowmapa {
-  flex-wrap: wrap;
-}
-
-header {
-  width: 100%;
-  max-height: 57px;
-}
-header nav {
-  margin: 0px;
-  padding: 0px;
-}
 header nav .row {
-  display: flex;
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-header nav .row .col {
-  margin: 0px;
-  padding: 0px;
-}
-header nav .row .col .row .col {
-  margin: 0px;
-  padding: 0px;
-}
-header nav .row .col .row .col li {
-  list-style: none;
-  font-size: 1.5em;
-  padding-left: 0px;
-  padding-right: 0px;
+header nav .row a {
+  color: white;
 }
 header nav .navbar-toggler {
   border: none;
-  align-self: flex-start;
-  margin-top: -3px;
 }
 
-.navbar {
-  padding-right: 10px;
-}
-
-.header__nuestraEscuela {
-  grid-area: header1;
-  width: 100%;
-  max-height: 56px;
-}
-
-#contacto, #eventos, #tangSoo, #escuela {
-  color: white;
+#contacto,
+#eventos,
+#tangSoo,
+#escuela {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,10 +401,12 @@ header nav .navbar-toggler {
   font-size: 1.5vw;
   letter-spacing: 1px;
 }
-#contacto:hover, #eventos:hover, #tangSoo:hover, #escuela:hover {
+#contacto:hover,
+#eventos:hover,
+#tangSoo:hover,
+#escuela:hover {
   background-color: rgba(0, 0, 0, 0.959);
   cursor: pointer;
-  color: white;
 }
 
 #escuela:hover {
@@ -549,7 +457,10 @@ header nav .navbar-toggler {
   padding: 0px;
 }
 
-.nav-item #contacto, .nav-item #escuela, .nav-item #tangSoo, .nav-item #eventos {
+.nav-item #contacto,
+.nav-item #escuela,
+.nav-item #tangSoo,
+.nav-item #eventos {
   font-size: 4vw;
   border-bottom: 1px solid rgba(255, 255, 255, 0.096);
 }
@@ -724,7 +635,6 @@ header nav .navbar-toggler {
   }
 }
 .header__carrousel {
-  height: 90vh;
   z-index: -1;
 }
 .header__carrousel .carousel-item img {
@@ -733,18 +643,11 @@ header nav .navbar-toggler {
 }
 
 .carrouselDaniel {
-  position: relative;
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
+  z-index: 0;
   width: 40vw;
   height: 80%;
-}
-.carrouselDaniel .carrouselDaniel__inner {
-  position: relative;
-  padding: 0px;
 }
 
 hr {
@@ -923,9 +826,8 @@ hr {
 
 .card-body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-top: -25px;
 }
 
@@ -974,7 +876,6 @@ hr {
 .cerrarjae,
 .cerrarbeaudoin,
 .cerrarstrong {
-  display: flex;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -983,7 +884,6 @@ hr {
   color: #fff;
   text-decoration: none;
   font-size: 0.9em;
-  box-sizing: border-box;
   border-radius: 100%;
 }
 
@@ -1227,8 +1127,8 @@ hr {
   position: relative;
   align-self: flex-end;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 120px;
   background-image: url(../recursos/nubesfondonegro.JPG);
@@ -1338,16 +1238,13 @@ hr {
 .main__contacto {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   align-items: flex-end;
-  justify-items: center;
 }
 
 .card-body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-top: -25px;
 }
 
@@ -1396,7 +1293,6 @@ hr {
 .cerrarjae,
 .cerrarbeaudoin,
 .cerrarstrong {
-  display: flex;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1405,7 +1301,6 @@ hr {
   color: #fff;
   text-decoration: none;
   font-size: 0.9em;
-  box-sizing: border-box;
   border-radius: 100%;
 }
 
@@ -1592,9 +1487,9 @@ hr {
   }
   .separador .separador__frase h2 {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     text-align: center;
     width: 100%;
     height: 100vh;

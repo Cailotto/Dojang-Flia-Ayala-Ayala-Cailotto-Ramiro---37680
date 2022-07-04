@@ -4,7 +4,6 @@
 
 .animate-border {
     position: relative;
-    display: block;
     width: 115px;
     height: 3px;
     background: #007bff;
@@ -13,7 +12,6 @@
 .animate-border:after {
     position: absolute;
     content: "";
-    width: 35px;
     height: 3px;
     left: 0;
     bottom: 0;
@@ -26,31 +24,22 @@
     0% {
         transform: translateX(0px);
     }
-
     100% {
         transform: translateX(113px);
     }
 }
 
-
 .dk-footer {
-
     padding: 75px 0 0;
     background-color: #151414;
-    position: relative;
-    z-index: 1;
-
-
+    z-index: 6;
 }
 
 .dk-footer .contact-us {
-    margin-top: 0;
-    margin-bottom: 30px;
     padding-left: 80px;
 }
 
 .dk-footer .contact-us .contact-info {
-    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,18 +47,13 @@
     margin-left: 50px;
 }
 
-.dk-footer--row {
-    flex-wrap: nowrap;
-}
-
 .dk-footer-box-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: -122px;
     background: #202020;
     padding: 40px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .dk-footer-box-info .footer-social-link h3 {
@@ -115,13 +99,6 @@
     background-color: #B7242A;
 }
 
-.footer-left-widget {
-    text-align: center;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-}
-
 .footer-widget .section-heading {
     display: flex;
     flex-direction: column;
@@ -129,30 +106,9 @@
     margin-bottom: 15px;
 }
 
-.footer-widget ul {
-    width: 50%;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-widget li {
-    list-style: none;
-    margin-bottom: 18px;
-}
-
-.footer-widget p {
-    margin-bottom: 27px;
-}
-
-.footer-widget a {
-    text-decoration: none;
-    color: #878787;
-    transition: all 0.3s;
-}
-
-.footer-widget a:hover {
-    color: darkred;
-}
+// .footer-widget a:hover {
+//     color: darkred;
+// }
 
 .footer-widget{
     iframe{
@@ -176,7 +132,7 @@
 }
 
 .back-to-top {
-    z-index: 999;
+    z-index: 9;
     position: relative;
     z-index: 2;
 }
@@ -185,14 +141,11 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    padding: 0;
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: darkred;
     border-color: #2e2e2e;
-    display: none;
-    z-index: 999;
     transition: all 0.3s linear;
 }
 
@@ -200,8 +153,4 @@
     cursor: pointer;
     background: #FA6742;
     border-color: #FA6742;
-}
-
-.rowmapa{
-    flex-wrap: wrap;
 }

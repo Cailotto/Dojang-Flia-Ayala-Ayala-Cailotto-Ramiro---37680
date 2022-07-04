@@ -1,5 +1,6 @@
 .escuela, .tangSoo, .eventos,.contacto  {
-    @include centrar(flex,center,center);
+    color: white;
+    @include display();
     height: 100%;
     background-color: rgba(0, 0, 0, 0.664);
     border-left: solid rgba(255, 255, 255, 0.116) 1px;
@@ -8,9 +9,9 @@
 }
 
 .escuela:hover, .tangSoo:hover, .eventos:hover, .contacto:hover{
+    color: white;
     background-color: rgba(0, 0, 0, 0.864);
     cursor: pointer;
-    color: white;
     transition: 0.2s;
 
 }
@@ -28,7 +29,7 @@
     &:active {
         color: black;
         text-shadow: 1px 1px 2px black, 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
-        background-color: rgba(255, 255, 255, 0.527);
+        background-color: map-get($paginas, contacto);;
     }
 
 }
@@ -41,7 +42,7 @@
     }
 
     &:active {
-        background-color: rgba(92, 0, 0, 0.795);
+        background-color: map-get($paginas, escuela);
     }
 }
 
@@ -49,11 +50,11 @@
     grid-area: tangsoo;
 
     &:hover {
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(12, 12, 153);
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #0c0c99;
     }
 
     &:active {
-        background-color: rgba(1, 1, 48, 0.733);
+        background-color: map-get($paginas, tangSoo);
     }
 
 }
@@ -67,7 +68,7 @@
     }
 
     &:active {
-        background-color: rgba(63, 63, 2, 0.582);
+        background-color: map-get($paginas, eventos);
     }
 }
 
