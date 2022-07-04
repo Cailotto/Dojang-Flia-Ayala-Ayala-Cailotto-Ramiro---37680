@@ -39,6 +39,8 @@
     background-color: #151414;
     position: relative;
     z-index: 1;
+
+
 }
 
 .dk-footer .contact-us {
@@ -48,6 +50,7 @@
 }
 
 .dk-footer .contact-us .contact-info {
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,6 +154,12 @@
     color: darkred;
 }
 
+.footer-widget{
+    iframe{
+        width: 100%;
+    }
+}
+
 
 .contact-info {
     color: #fff;
@@ -191,4 +200,8 @@
     cursor: pointer;
     background: #FA6742;
     border-color: #FA6742;
+}
+
+.rowmapa{
+    flex-wrap: wrap;
 }

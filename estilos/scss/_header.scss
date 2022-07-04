@@ -46,6 +46,7 @@ header {
                 }
 
                 .navbar-toggler {
+                    border: none;
                     align-self: flex-start;
                     margin-top: -3px;
                 }
@@ -133,3 +134,37 @@ header {
     text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
 }
 
+.h1media{
+    text-align: center;
+}
+
+
+#offcanvasNavbar {
+    background-color: rgba(0, 0, 0, 0.959);
+    color: white;
+    height: 80vh;
+    width: 60%;
+
+    .offcanvas-body {
+        padding: 0px;
+
+    }
+
+
+}
+
+.nav-item{
+    #contacto,#escuela, #tangSoo, #eventos{
+        font-size: 4vw;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+    }
+
+}
+
+.offcanvas-header  {
+    .btn-close{
+        background-color: white;
+        height: 2vh;
+        width: 3vw;
+    }
+}

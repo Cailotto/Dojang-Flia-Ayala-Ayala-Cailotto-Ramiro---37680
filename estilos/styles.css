@@ -6,7 +6,6 @@
 
 .row > * {
   flex-shrink: 0;
-  width: auto;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -25,6 +24,14 @@ p {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin: 0px;
+  font-weight: 0;
+  line-height: auto;
+}
+
+.rowmapa {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
@@ -73,9 +80,10 @@ p {
   display: none;
 }
 
-.navbar .navbar__row #logo__img, header nav .row #logo__img {
+header nav .row #logo__img {
   max-height: 57px;
   display: flex;
+  justify-content: center;
   cursor: pointer;
   position: relative;
   padding-left: 0px;
@@ -276,6 +284,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dk-footer .contact-us .contact-info {
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -378,6 +387,10 @@ body::-webkit-scrollbar-thumb {
   color: darkred;
 }
 
+.footer-widget iframe {
+  width: 100%;
+}
+
 .contact-info {
   color: #fff;
 }
@@ -419,6 +432,10 @@ body::-webkit-scrollbar-thumb {
   border-color: #FA6742;
 }
 
+.rowmapa {
+  flex-wrap: wrap;
+}
+
 header {
   width: 100%;
   max-height: 57px;
@@ -447,6 +464,7 @@ header nav .row .col .row .col li {
   padding-right: 0px;
 }
 header nav .navbar-toggler {
+  border: none;
   align-self: flex-start;
   margin-top: -3px;
 }
@@ -516,9 +534,36 @@ header nav .navbar-toggler {
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
 }
 
+.h1media {
+  text-align: center;
+}
+
+#offcanvasNavbar {
+  background-color: rgba(0, 0, 0, 0.959);
+  color: white;
+  height: 80vh;
+  width: 60%;
+}
+#offcanvasNavbar .offcanvas-body {
+  padding: 0px;
+}
+
+.nav-item #contacto, .nav-item #escuela, .nav-item #tangSoo, .nav-item #eventos {
+  font-size: 4vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+}
+
+.offcanvas-header .btn-close {
+  background-color: white;
+  height: 2vh;
+  width: 3vw;
+}
+
 @-webkit-keyframes rotate {
   from {
     background-image: url(../recursos/logotipo.PNG);
+    background-position: center;
+    background-size: 90%;
     transform: rotatey(0deg);
   }
   100% {
@@ -532,6 +577,8 @@ header nav .navbar-toggler {
 @keyframes rotate {
   from {
     background-image: url(../recursos/logotipo.PNG);
+    background-position: center;
+    background-size: 90%;
     transform: rotatey(0deg);
   }
   100% {
@@ -559,18 +606,34 @@ header nav .navbar-toggler {
 }
 @-webkit-keyframes nubes {
   from {
-    background-position: 0 0;
+    background-position-x: 0;
   }
   to {
-    background-position: 100% 0;
+    background-position-x: 100vw;
   }
 }
 @keyframes nubes {
   from {
-    background-position: 0 0;
+    background-position-x: 0;
   }
   to {
-    background-position: 100% 0;
+    background-position-x: 100vw;
+  }
+}
+@-webkit-keyframes scalenubes {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+@keyframes scalenubes {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
   }
 }
 @-webkit-keyframes flotar {
@@ -666,8 +729,6 @@ header nav .navbar-toggler {
 .header__carrousel .carousel-item img {
   width: 100%;
   height: 100vh;
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
 .carrouselDaniel {
@@ -780,8 +841,7 @@ hr {
 }
 .tramado .tramadoOndas .tramadoOndas__texto {
   width: 100%;
-  height: 500px;
-  grid-area: tramadoondas__texto;
+  height: 70%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -857,24 +917,6 @@ hr {
   font-weight: bold;
   font-size: 5vw;
   z-index: -10;
-}
-.tramadoNegro .tramadoOndas1 .danes {
-  width: 100%;
-  z-index: -6;
-  align-self: flex-start;
-}
-.tramadoNegro .tramadoOndas1 .danes .card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex: 1;
-  height: 5vh;
-  background-color: inherit;
-  border: 0px;
-  transform: translateY(-120px);
-}
-.tramadoNegro .tramadoOndas1 .danes .card img {
-  width: 25vw;
 }
 
 .card-body {
@@ -1179,6 +1221,9 @@ hr {
   background-position: bottom;
   background-repeat: no-repeat;
 }
+.main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .btnmaestros {
+  display: none;
+}
 .main2__separador--nubes {
   position: relative;
   align-self: flex-end;
@@ -1205,22 +1250,6 @@ hr {
   text-shadow: 4px 4px 0px rgb(83, 72, 8);
   -webkit-animation: scalenubes 3s infinite linear;
           animation: scalenubes 3s infinite linear;
-}
-@-webkit-keyframes scalenubes {
-  from {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-}
-@keyframes scalenubes {
-  from {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
 }
 .main2__viejaHistoria {
   background-color: rgb(240, 236, 236);
@@ -1484,19 +1513,428 @@ hr {
   transition: background-color 0.5s;
 }
 
+.navbar {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid black;
+}
 .navbar .navbar__row {
   display: flex;
   align-items: center;
-  background-color: rgb(185, 40, 40);
+  justify-content: space-between;
+  background-color: rgb(187, 37, 37);
+  padding-inline: 15px;
+}
+.navbar .navbar__row .h1media {
+  color: white;
 }
 .navbar .navbar__row #logo__img {
   background-color: transparent;
   border: 0px;
 }
 .navbar .navbar__row #logo__img img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  position: static;
+  -webkit-animation: none;
+          animation: none;
 }
 .navbar .navbar__row .navbar-toggler {
   align-self: center;
+}
+
+@media screen and (max-width: 425px) {
+  #main__principal .inicio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #main__principal .inicio a {
+    font-size: 5vw;
+  }
+
+  .logo {
+    grid-area: logo;
+    width: 25%;
+    height: 100%;
+    align-self: center;
+  }
+
+  .escuela,
+.tangSoo,
+.eventos,
+.contacto {
+    border-left: 0px;
+    border-radius: 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.116);
+  }
+
+  .header__carrousel {
+    height: 80vh;
+  }
+  .header__carrousel .carousel-item img {
+    height: 80vh;
+  }
+
+  .separador {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+  }
+  .separador .separador__frase--img {
+    display: none;
+  }
+  .separador .separador__frase {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background-color: red;
+  }
+  .separador .separador__frase h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    border-top: #000 5px solid;
+    border-bottom: #000 5px solid;
+    background-image: url(../recursos/img_logo.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 150px;
+    font-size: 10vw;
+  }
+
+  .tramado {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .tramado .tramadoOndas {
+    width: 100%;
+    height: 50%;
+  }
+  .tramado .tramadoOndas .tramadoOndas__texto {
+    width: 100%;
+    height: 70%;
+  }
+  .tramado .tramadoOndas .tramadoOndas__texto h5 {
+    font-size: 4vw;
+  }
+  .tramado .tramadoOndas .tramadoOndas__texto p {
+    font-size: 3vw;
+  }
+
+  .tramadoNegro {
+    height: 100vh;
+  }
+  .tramadoNegro .tramadoOndas1 {
+    height: 80%;
+  }
+  .tramadoNegro .tramadoOndas1 .danes {
+    height: 70%;
+    flex-direction: column;
+  }
+
+  .carrouselDaniel {
+    z-index: 1;
+    width: 90vw;
+    height: 45%;
+  }
+  .carrouselDaniel .carrouselDaniel__inner .carousel-item .strong {
+    transform: translateY(-50px);
+  }
+
+  .cardMarian img, .cardLucas img, .cardRocio img {
+    height: 15vh;
+  }
+
+  .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
+    height: 3vh;
+  }
+
+  .nuestraEscuela {
+    height: 100vh;
+  }
+
+  .main2 .main2__header .main2__header--separador {
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: repeat-x;
+  }
+  .main2 .main2__historia {
+    height: 100vh;
+    margin-top: 10px;
+  }
+  .main2 .main2__historia .main2__historia--contenedor {
+    width: 90%;
+    height: 80%;
+    justify-content: space-evenly;
+  }
+  .main2 .main2__historia .main2__historia--contenedor .col {
+    flex: 0;
+  }
+  .main2 .main2__historia .main2__historia--contenedor h1 {
+    height: 20%;
+    font-size: 10vw;
+    color: darkred;
+    margin-bottom: 0px;
+  }
+  .main2 .main2__historia .main2__historia--contenedor p {
+    align-self: flex-start;
+    font-size: 3.5vw;
+  }
+  .main2__asociacionMundial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0px;
+    width: 100%;
+    height: 220vh;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    background-position-y: 20px;
+    background-position-x: 0px;
+  }
+  .main2__asociacionMundial .yinyang {
+    align-self: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .main2__asociacionMundial .yinyang img {
+    width: 30vw;
+  }
+  .main2 .asociacionMundial__contenedor {
+    height: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main2 .asociacionMundial__contenedor #wtsd {
+    text-align: center;
+    font-size: 10vw;
+    grid-area: wtsd;
+    color: rgb(214, 205, 205);
+    margin-bottom: 30%;
+  }
+  .main2 .asociacionMundial__contenedor .parrafo1 {
+    grid-area: parrafo1;
+    text-align: center;
+    color: rgb(214, 205, 205);
+    font-size: 4vw;
+    width: 100%;
+    text-align: center;
+  }
+  .main2 .asociacionMundial__contenedor .parrafo2 {
+    text-align: center;
+    color: rgb(214, 205, 205);
+    font-size: 4vw;
+    width: 100%;
+    text-align: center;
+  }
+  .main2 .asociacionMundial__contenedor .main2__maestros .btnmaestros {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    width: auto;
+    height: 15%;
+    font-size: 100%;
+  }
+  .main2 .asociacionMundial__contenedor .main2__maestros a {
+    display: none;
+  }
+  .main2__separador--nubes {
+    position: relative;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../recursos/nubesfondonegro.JPG);
+    background-size: contain;
+    -webkit-animation: nubes1 10s infinite linear;
+            animation: nubes1 10s infinite linear;
+    border-top: 1px solid gold;
+    border-bottom: 2px solid gold;
+  }
+  @-webkit-keyframes nubes1 {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: 100vw;
+    }
+  }
+  @keyframes nubes1 {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: 100vw;
+    }
+  }
+  .main2__separador--nubes .nubes {
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    background-color: #000;
+    font-size: 15vw;
+  }
+  .main2__viejaHistoria {
+    height: auto;
+  }
+  .main2__viejaHistoria .main2__viejaHistoria--contenedor .historia__background {
+    display: none;
+  }
+  .main2__viejaHistoria .main2__viejaHistoria--contenedor .historia p {
+    font-size: 3vw;
+  }
+  .main2__viejaHistoria .main2__viejaHistoria--contenedor .historia h1 {
+    font-size: 8vw;
+    text-align: center;
+  }
+  .main2__viejaHistoria .main2__historiaModerna--contenedor .historiaModerna__background {
+    display: none;
+  }
+  .main2__viejaHistoria .main2__historiaModerna--contenedor .historiaModerna p {
+    font-size: 3vw;
+  }
+  .main2__viejaHistoria .main2__historiaModerna--contenedor .historiaModerna h1 {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .main__contacto {
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacto__ins,
+.contacto__wpp,
+.contacto__fb {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+
+  .contacto__ins a,
+.contacto__wpp a,
+.contacto__fb a {
+    width: 60%;
+  }
+
+  .contacto__ins img,
+.contacto__wpp img,
+.contacto__fb img {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 70px;
+    -webkit-animation: flotar 3s infinite;
+            animation: flotar 3s infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    transition: width 0.5s, -webkit-animation 0.5s;
+    transition: width 0.5s, animation 0.5s;
+    transition: width 0.5s, animation 0.5s, -webkit-animation 0.5s;
+  }
+
+  .contacto__ins img:hover,
+.contacto__wpp img:hover,
+.contacto__fb img:hover {
+    width: 130%;
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .contacto__ins a:hover + .sombra,
+.contacto__wpp a:hover + .sombra,
+.contacto__fb a:hover + .sombra {
+    display: none;
+  }
+
+  .sombra {
+    margin-left: 10px;
+    max-width: 100px;
+    width: 30%;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    -webkit-animation: sombra 1.5s alternate infinite linear;
+            animation: sombra 1.5s alternate infinite linear;
+    transition: background-color 0.5s;
+  }
+
+  .navxl {
+    display: none;
+  }
+
+  .dk-footer--row {
+    display: flex;
+    flex-direction: column;
+  }
+  .dk-footer--row .col-6 {
+    width: 100%;
+  }
+  .dk-footer--row .col-6 .row {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .copy {
+    text-align: center;
+  }
+
+  .dk-footer .contact-us {
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+  .dk-footer .contact-us .contact-info {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0px;
+  }
+}
+.footer-left-widget {
+  display: none;
+}
+
+@media screen and (min-width: 426px) {
+  .navbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .contacto__ins,
+.contacto__wpp,
+.contacto__fb {
+    gap: 50px;
+  }
+
+  .contacto__ins img,
+.contacto__wpp img,
+.contacto__fb img {
+    margin-left: 10px;
+  }
 }/*# sourceMappingURL=styles.css.map */

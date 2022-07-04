@@ -1,6 +1,8 @@
 @keyframes rotate {
     from {
         background-image: url(../recursos/logotipo.PNG);
+        background-position: center;
+        background-size: 90%;
         transform: rotatey(0deg);
     }
 
@@ -24,11 +26,17 @@
 
 @keyframes nubes {
     from {
-        background-position: 0 0;
+        background-position-x: 0;
     }
     to {
-        background-position: 100% 0;
+        background-position-x: 100vw;
     }
+}
+
+@keyframes scalenubes {
+    from{ transform: scale(1);}
+    50%{ transform: scale(1.02);}
+    
 }
 
 

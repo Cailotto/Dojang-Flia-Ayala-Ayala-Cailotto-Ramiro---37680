@@ -154,6 +154,11 @@
                 background-position: bottom;
                 background-repeat: no-repeat;
 
+                .btnmaestros{
+                    display: none;
+                }
+                
+
             }
         }
 
@@ -172,6 +177,7 @@
         animation: nubes 100s infinite linear;
         border-top: 1px solid gold;
         border-bottom: 2px solid gold;
+        
 
         .nubes {
 
@@ -186,11 +192,7 @@
             animation: scalenubes 3s infinite linear;
         }
 
-        @keyframes scalenubes {
-            from{ transform: scale(1);}
-            50%{ transform: scale(1.02);}
-            
-        }
+
     }
 
     &__viejaHistoria {
