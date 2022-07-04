@@ -28,10 +28,8 @@
         width: 100%;
         height: 100vh;
         background-color: rgb(223, 223, 25);
-        display: flex;
+        @include centrar(flex,center,center);
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         background-image: url(../recursos/dragonrojo.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -40,10 +38,8 @@
 
         .main2__historia--contenedor {
             width: 60%;
-            display: flex;
+            @include centrar(flex,center,center);
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             text-align: center;
             background-color: rgba(255, 255, 255, 0.603);
             border: 5px solid white;
@@ -167,9 +163,7 @@
     &__separador--nubes {
         position: relative;
         align-self: flex-end;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include centrar(flex,center,center);
         width: 100%;
         height: 120px;
         background-image: url(../recursos/nubesfondonegro.JPG);
@@ -215,9 +209,7 @@
             .historia__background {
                 width: 100%;
                 height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include centrar(flex,center,center);
                 background-image: url(../recursos/patada.png);
                 background-position: left;
                 background-size: contain;

@@ -24,8 +24,7 @@ hr {
     z-index: 1;
 
     &__frase {
-        display: flex;
-        align-items: center;
+        @include centrar(flex,center,center);
         height: 100px;
         width: 100%;
         text-align: center;

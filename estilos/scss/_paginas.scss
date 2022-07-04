@@ -1,7 +1,5 @@
 .escuela, .tangSoo, .eventos,.contacto  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centrar(flex,center,center);
     height: 100%;
     background-color: rgba(0, 0, 0, 0.664);
     border-left: solid rgba(255, 255, 255, 0.116) 1px;

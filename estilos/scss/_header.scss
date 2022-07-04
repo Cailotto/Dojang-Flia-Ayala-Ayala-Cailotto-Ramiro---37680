@@ -4,14 +4,13 @@ header {
 
     nav {
 
-        padding: 0px;
+            @include mp0(0px,0px);
         
 
         .row {
 
             display: flex;
-            margin: 0px;
-            padding: 0px;
+            @include mp0(0px,0px);
             list-style: none;
 
 
@@ -27,13 +26,11 @@ header {
             }
 
             .col {
-                margin: 0px;
-                padding: 0px;
+            @include mp0(0px,0px);
                 .row {
                     
                     .col {
-                        margin: 0px;
-                        padding: 0px;
+            @include mp0(0px,0px);
                             li {
                                 list-style: none;
                                 font-size: 1.5em;
@@ -72,9 +69,7 @@ header {
 
 %nav{
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centrar(flex,center,center);
     height: 57px;
     line-height: 25px;
     border-left: solid rgba(255, 255, 255, 0.116) 1px;

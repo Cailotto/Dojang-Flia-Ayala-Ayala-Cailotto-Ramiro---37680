@@ -1,7 +1,5 @@
 %btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centrar(flex,center,center);
     width: 15vw;
     height: 6vh;
     font-size: 1.2vw;
@@ -51,4 +49,16 @@
     object-fit: contain;
     animation: izquierda 1.2s linear forwards;
     top: -10px;
+}
+
+@mixin centrar ($f, $x, $y) {
+    display: $f;
+    justify-content: $x;
+    align-items: $y;
+    
+}
+
+@mixin mp0($m0,$p0) {
+    margin: $m0;
+    padding: $p0;
 }
