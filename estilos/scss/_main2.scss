@@ -6,7 +6,7 @@
         flex-direction: column;
         justify-content: flex-end;
         height: 80vh;
-        background-image: url(../recursos/paredasociacion.jpg);
+        background-image: url(../);
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
@@ -16,7 +16,7 @@
             width: 100%;
             height: 100px;
             position: relative;
-            background-image: url(../recursos/separadorcasas.png);
+            background-image: url(https://i.ibb.co/qM7Z5tp/separadorcasas.png);
             background-size: 30%;
             background-position: bottom;
             background-repeat: repeat-x;
@@ -30,7 +30,7 @@
         background-color: rgb(223, 223, 25);
         @include display();
         flex-direction: column;
-        background-image: url(../recursos/dragonrojo.png);
+        background-image: url(https://i.ibb.co/H22G9Pd/dragonrojo.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -72,7 +72,7 @@
         border-top-left-radius: 28%;
         border-top-right-radius: 28%;
         box-shadow: 0px 30px 20px inset rgb(1, 1, 15);
-        background-image: url(../recursos/bonsai.png);
+        background-image: url(https://i.ibb.co/tDNJyN6/bonsai.png);
         background-repeat: no-repeat;
         background-position: bottom;
         background-position-y: 350px;
@@ -145,7 +145,7 @@
                 justify-content: center;
                 width: 100%;
                 height: 100%;
-                background-image: url(../recursos/imgmaestros.PNG);
+                background-image: url(https://i.ibb.co/Dw5qjNq/imgmaestros.png);
                 background-size: contain;
                 background-position: bottom;
                 background-repeat: no-repeat;
@@ -168,7 +168,7 @@
         justify-content: center;
         width: 100%;
         height: 120px;
-        background-image: url(../recursos/nubesfondonegro.JPG);
+        background-image: url(https://i.ibb.co/bN81t31/nubesfondonegro.jpg);
         background-size: contain;
         animation: nubes 100s infinite linear;
         border-top: 1px solid gold;
@@ -212,7 +212,7 @@
                 width: 100%;
                 height: 100%;
                 @include display();
-                background-image: url(../recursos/patada.png);
+                background-image: url(https://i.ibb.co/mB281nD/patada.png);
                 background-position: left;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -259,7 +259,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                background-image: url(../recursos/tangsoodo.png);
+                background-image: url(https://i.ibb.co/FW4yzfX/tangsoodo.png);
                 background-position: right;
                 background-position-x: 80%;
                 background-size: contain;

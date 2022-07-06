@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .body__contacto {
-  background-image: url(../recursos/dragone.jpg);
+  background-image: url(https://i.ibb.co/5FFp8JW/dragone.jpg);
   background-size: 22%;
   height: 100vh;
   display: grid;
@@ -201,7 +201,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #main__principal {
-  background-image: url(../recursos/pisoasociacion.png);
+  background-image: url(https://i.ibb.co/jfYxt5z/pisoasociacion.png);
   background-size: cover;
 }
 #main__principal .inicio {
@@ -473,13 +473,13 @@ header nav .navbar-toggler {
 
 @-webkit-keyframes rotate {
   from {
-    background-image: url(../recursos/logotipo.PNG);
+    background-image: url(https://i.ibb.co/VVsCC42/logotipo.png);
     background-position: center;
     background-size: 90%;
     transform: rotatey(0deg);
   }
   100% {
-    background-image: url(../recursos/logowtsd1.png);
+    background-image: url(https://i.ibb.co/rb8w5Sk/logowtsd1.png);
     background-size: 90%;
     background-position: center;
     transform: rotatey(180deg);
@@ -488,13 +488,13 @@ header nav .navbar-toggler {
 
 @keyframes rotate {
   from {
-    background-image: url(../recursos/logotipo.PNG);
+    background-image: url(https://i.ibb.co/VVsCC42/logotipo.png);
     background-position: center;
     background-size: 90%;
     transform: rotatey(0deg);
   }
   100% {
-    background-image: url(../recursos/logowtsd1.png);
+    background-image: url(https://i.ibb.co/rb8w5Sk/logowtsd1.png);
     background-size: 90%;
     background-position: center;
     transform: rotatey(180deg);
@@ -938,7 +938,7 @@ hr {
   width: 100%;
   height: 100%;
   background-color: #000;
-  background-image: url(../recursos/escuela.jpeg);
+  background-image: url(https://i.ibb.co/Mfr9h5D/escuela.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -948,7 +948,7 @@ hr {
 }
 .nuestraEscuela .nuestraEscuela__parallax::before {
   content: "";
-  background: url(../recursos/esquinarojapng.png) no-repeat top left;
+  background: url(https://i.ibb.co/HC60PCK/esquinarojapng.png) no-repeat top left;
   background-size: contain;
   opacity: 0.3;
   width: 20%;
@@ -988,7 +988,7 @@ hr {
   flex-direction: column;
   justify-content: flex-end;
   height: 80vh;
-  background-image: url(../recursos/paredasociacion.jpg);
+  background-image: url(../);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -998,7 +998,7 @@ hr {
   width: 100%;
   height: 100px;
   position: relative;
-  background-image: url(../recursos/separadorcasas.png);
+  background-image: url(https://i.ibb.co/qM7Z5tp/separadorcasas.png);
   background-size: 30%;
   background-position: bottom;
   background-repeat: repeat-x;
@@ -1011,7 +1011,7 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(../recursos/dragonrojo.png);
+  background-image: url(https://i.ibb.co/H22G9Pd/dragonrojo.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1050,7 +1050,7 @@ hr {
   border-top-left-radius: 28%;
   border-top-right-radius: 28%;
   box-shadow: 0px 30px 20px inset rgb(1, 1, 15);
-  background-image: url(../recursos/bonsai.png);
+  background-image: url(https://i.ibb.co/tDNJyN6/bonsai.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-y: 350px;
@@ -1115,7 +1115,7 @@ hr {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-image: url(../recursos/imgmaestros.PNG);
+  background-image: url(https://i.ibb.co/Dw5qjNq/imgmaestros.png);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -1131,7 +1131,7 @@ hr {
   justify-content: center;
   width: 100%;
   height: 120px;
-  background-image: url(../recursos/nubesfondonegro.JPG);
+  background-image: url(https://i.ibb.co/bN81t31/nubesfondonegro.jpg);
   background-size: contain;
   -webkit-animation: nubes 100s infinite linear;
           animation: nubes 100s infinite linear;
@@ -1171,7 +1171,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../recursos/patada.png);
+  background-image: url(https://i.ibb.co/mB281nD/patada.png);
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1207,7 +1207,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../recursos/tangsoodo.png);
+  background-image: url(https://i.ibb.co/FW4yzfX/tangsoodo.png);
   background-position: right;
   background-position-x: 80%;
   background-size: contain;
