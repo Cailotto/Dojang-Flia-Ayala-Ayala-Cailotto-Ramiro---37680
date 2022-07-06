@@ -1467,7 +1467,10 @@ hr {
     height: 80vw;
   }
   .header__carrousel .carousel-item img {
-    height: 80vh;
+    height: 80vw;
+    -o-object-fit: fill;
+       object-fit: fill;
+    transform: translateY(50px);
   }
 
   .separador {

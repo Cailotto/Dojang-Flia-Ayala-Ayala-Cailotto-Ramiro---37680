@@ -75,7 +75,9 @@
 
         .carousel-item {
             img {
-                height: 80vh;
+                height: 80vw;
+                object-fit:fill;
+                transform: translateY(50px);
             }
         }
     }
