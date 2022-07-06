@@ -1572,7 +1572,13 @@ hr {
   .nuestraEscuela {
     height: 100vh;
   }
+  .nuestraEscuela .nuestraEscuela__parallax {
+    background-attachment: local;
+  }
 
+  .main2 .main2__header {
+    background-attachment: local;
+  }
   .main2 .main2__header .main2__header--separador {
     background-size: 100%;
     background-position: bottom;
