@@ -1461,7 +1461,7 @@ hr {
   }
 
   .header__carrousel {
-    height: 60vh;
+    height: 50vh;
   }
   .header__carrousel .carousel-item img {
     height: 80vh;
@@ -1530,6 +1530,21 @@ hr {
   .tramadoNegro .tramadoOndas1 .danes {
     height: 70%;
     flex-direction: column;
+  }
+
+  .abrirMarian,
+.abrirLucas,
+.abrirRocio,
+.abrirjae,
+.abrirbeaudoin,
+.abrirstrong {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .carrouselDaniel {
