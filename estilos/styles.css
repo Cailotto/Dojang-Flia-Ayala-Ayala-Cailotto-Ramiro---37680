@@ -1711,10 +1711,10 @@ hr {
   .main2__separador--nubes .nubes {
     display: flex;
     align-items: center;
-    height: 40%;
+    height: 65%;
     width: 100%;
-    text-shadow: 2px 2px;
-    font-weight: 600;
+    text-shadow: 0px 0px 0px;
+    font-weight: 800;
     background-color: #000;
     font-size: 12vw;
   }
