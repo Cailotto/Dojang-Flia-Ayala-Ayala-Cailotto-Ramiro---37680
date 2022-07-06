@@ -158,20 +158,25 @@
         }
     }
 
-.abrirMarian,
-.abrirLucas,
-.abrirRocio,
-.abrirjae,
-.abrirbeaudoin,
-.abrirstrong {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+    #marian:target,
+    #lucas:target,
+    #rocio:target,
+    #jae:target,
+    #beaudoin:target,
+    #strong:target {
+        margin-top: 57px;
+    }
+
+    .abrirMarian,
+    .abrirLucas,
+    .abrirRocio{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .abrirjae, .abrirbeaudoin, .abrirstrong{
+        display: none ;
+    }
 
     .carrouselDaniel {
         z-index: 1;
@@ -238,7 +243,7 @@
                 p {
                     align-self: flex-start;
                     font-size: 3vw;
-                    
+
                 }
             }
 
@@ -301,7 +306,7 @@
             }
 
             .main2__maestros {
-                .btnmaestros{
+                .btnmaestros {
                     padding-top: 0px;
                     padding-bottom: 0px;
                     display: flex;
@@ -309,11 +314,13 @@
                     height: 15%;
                     font-size: 100%;
                 }
-                a{
+
+                a {
                     display: none;
                 }
             }
         }
+
         &__separador--nubes {
             position: relative;
             align-self: flex-end;
@@ -322,7 +329,6 @@
             justify-content: center;
             width: 100%;
             height: 100vh;
-            background-image: url(../recursos/nubesfondonegro.JPG);
             background-size: contain;
             animation: nubes1 10s infinite linear;
             border-top: 1px solid gold;
@@ -332,11 +338,12 @@
                 from {
                     background-position-x: 0;
                 }
+
                 to {
                     background-position-x: 100vw;
                 }
             }
-    
+
             .nubes {
                 display: flex;
                 align-items: center;
@@ -345,42 +352,48 @@
                 text-shadow: 2px 2px;
                 font-weight: 600;
                 background-color: #000;
-                font-size: 12vw;          
+                font-size: 12vw;
             }
         }
-    
 
-          &__viejaHistoria {
-      height: auto;
-      .main2__viejaHistoria--contenedor {
-          .historia__background {
-         display: none;
-          }
-          .historia {
-              p {
-                  font-size: 3vw;
-              }
-              h1 {
-                  font-size: 8vw;
-                  text-align: center;
-              }
-          }
-      }
-      .main2__historiaModerna--contenedor {
-          .historiaModerna__background {
-           display: none;
-          }
-          .historiaModerna {
-              p {
-                  font-size: 3vw;
-              }
-              h1 {
-                  font-size: 8vw;
-                  text-align: center;
-              }
-          }
-      }
-  }
+
+        &__viejaHistoria {
+            height: auto;
+
+            .main2__viejaHistoria--contenedor {
+                .historia__background {
+                    display: none;
+                }
+
+                .historia {
+                    p {
+                        font-size: 3vw;
+                    }
+
+                    h1 {
+                        font-size: 8vw;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .main2__historiaModerna--contenedor {
+                .historiaModerna__background {
+                    display: none;
+                }
+
+                .historiaModerna {
+                    p {
+                        font-size: 3vw;
+                    }
+
+                    h1 {
+                        font-size: 8vw;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 
     .main__contacto {
@@ -389,110 +402,111 @@
         display: flex;
         flex-direction: column;
     }
-.contacto__ins,
-.contacto__wpp,
-.contacto__fb {
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    padding-bottom: 100px;
 
-}
-
-
-.contacto__ins a,
-.contacto__wpp a,
-.contacto__fb a {
-    width: 60%;
-}
-
-
-.contacto__ins img,
-.contacto__wpp img,
-.contacto__fb img {
-    width: 100%;
-    height: 80%;
-    margin-bottom: 70px;
-    animation: flotar 3s infinite;
-    animation-timing-function: linear;
-    transition: width 0.5s, animation 0.5s;
-}
-
-
-
-.contacto__ins img:hover,
-.contacto__wpp img:hover,
-.contacto__fb img:hover {
-    width: 130%;
-    animation: none;
-
-}
-
-
-.contacto__ins a:hover+.sombra,
-.contacto__wpp a:hover+.sombra,
-.contacto__fb a:hover+.sombra {
-    display: none;
-
-}
-
-
-
-.sombra {
-    margin-left: 10px;
-    max-width: 100px;
-    width: 30%;
-    height: 5px;
-    background-color: #000;
-    border-radius: 50%;
-    animation: sombra 1.5s alternate infinite linear;
-    transition: background-color 0.5s;
-
-}
-
-
-.navxl {
-    display: none;
-}
-
-.dk-footer--row {
-    display: flex;
-    flex-direction: column;
-
-    .col-6 {
+    .contacto__ins,
+    .contacto__wpp,
+    .contacto__fb {
         width: 100%;
-
-        .row {
-            width: 100%;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-            padding-top: 10px;
-        }
-    }
-}
-
-.copy {
-    text-align: center;
-}
-
-.dk-footer .contact-us {
-    margin-top: 0;
-    margin-bottom: 0px;
-    padding-left: 0px;
-
-    .contact-info {
-        width: auto;
+        height: 90%;
         display: flex;
         flex-direction: column;
+        justify-content: end;
         align-items: center;
-        gap: 10px;
-        margin-left: 0px;
+        padding-bottom: 100px;
+
     }
-}
+
+
+    .contacto__ins a,
+    .contacto__wpp a,
+    .contacto__fb a {
+        width: 60%;
+    }
+
+
+    .contacto__ins img,
+    .contacto__wpp img,
+    .contacto__fb img {
+        width: 100%;
+        height: 80%;
+        margin-bottom: 70px;
+        animation: flotar 3s infinite;
+        animation-timing-function: linear;
+        transition: width 0.5s, animation 0.5s;
+    }
+
+
+
+    .contacto__ins img:hover,
+    .contacto__wpp img:hover,
+    .contacto__fb img:hover {
+        width: 130%;
+        animation: none;
+
+    }
+
+
+    .contacto__ins a:hover+.sombra,
+    .contacto__wpp a:hover+.sombra,
+    .contacto__fb a:hover+.sombra {
+        display: none;
+
+    }
+
+
+
+    .sombra {
+        margin-left: 10px;
+        max-width: 100px;
+        width: 30%;
+        height: 5px;
+        background-color: #000;
+        border-radius: 50%;
+        animation: sombra 1.5s alternate infinite linear;
+        transition: background-color 0.5s;
+
+    }
+
+
+    .navxl {
+        display: none;
+    }
+
+    .dk-footer--row {
+        display: flex;
+        flex-direction: column;
+
+        .col-6 {
+            width: 100%;
+
+            .row {
+                width: 100%;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .copy {
+        text-align: center;
+    }
+
+    .dk-footer .contact-us {
+        margin-top: 0;
+        margin-bottom: 0px;
+        padding-left: 0px;
+
+        .contact-info {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-left: 0px;
+        }
+    }
 
 
 }
@@ -510,15 +524,17 @@
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
+
     .contacto__ins,
     .contacto__wpp,
     .contacto__fb {
-       gap: 50px;
+        gap: 50px;
     }
+
     .contacto__ins img,
     .contacto__wpp img,
     .contacto__fb img {
-       margin-left: 10px
+        margin-left: 10px
     }
 
 }

@@ -1532,19 +1532,24 @@ hr {
     flex-direction: column;
   }
 
+  #marian:target,
+#lucas:target,
+#rocio:target,
+#jae:target,
+#beaudoin:target,
+#strong:target {
+    margin-top: 57px;
+  }
+
   .abrirMarian,
 .abrirLucas,
-.abrirRocio,
-.abrirjae,
-.abrirbeaudoin,
-.abrirstrong {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.abrirRocio {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .abrirjae, .abrirbeaudoin, .abrirstrong {
+    display: none;
   }
 
   .carrouselDaniel {
@@ -1665,7 +1670,6 @@ hr {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url(../recursos/nubesfondonegro.JPG);
     background-size: contain;
     -webkit-animation: nubes1 10s infinite linear;
             animation: nubes1 10s infinite linear;
