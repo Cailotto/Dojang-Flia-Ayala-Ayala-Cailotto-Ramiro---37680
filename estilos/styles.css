@@ -1464,7 +1464,7 @@ hr {
   }
 
   .header__carrousel {
-    height: 50vh;
+    height: 80vw;
   }
   .header__carrousel .carousel-item img {
     height: 80vh;
@@ -1577,9 +1577,6 @@ hr {
 
   .nuestraEscuela {
     height: 100vh;
-  }
-  .nuestraEscuela .nuestraEscuela__parallax {
-    background-attachment: "";
   }
 
   .main2 .main2__header {
