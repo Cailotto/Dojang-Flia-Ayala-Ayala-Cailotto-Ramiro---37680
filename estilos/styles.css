@@ -1573,7 +1573,7 @@ hr {
     height: 100vh;
   }
   .nuestraEscuela .nuestraEscuela__parallax {
-    background-attachment: local;
+    background-attachment: unset;
   }
 
   .main2 .main2__header {
