@@ -1522,7 +1522,7 @@ hr {
   }
 
   .tramadoNegro {
-    height: 100vh;
+    height: 150vh;
   }
   .tramadoNegro .tramadoOndas1 {
     height: 80%;
@@ -1562,11 +1562,14 @@ hr {
   }
 
   .cardMarian img, .cardLucas img, .cardRocio img {
-    height: 15vh;
+    width: 45vw;
+    height: 20vh;
   }
 
   .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
-    height: 3vh;
+    width: 25vw;
+    height: 6vh;
+    font-size: 3vw;
   }
 
   .nuestraEscuela {

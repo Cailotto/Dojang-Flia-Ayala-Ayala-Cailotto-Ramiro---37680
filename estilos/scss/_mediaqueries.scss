@@ -145,7 +145,7 @@
 
 
     .tramadoNegro {
-        height: 100vh;
+        height: 150vh;
 
         .tramadoOndas1 {
             height: 80%;
@@ -196,12 +196,17 @@
     }
 
     %card {
-        height: 15vh;
+        width: 45vw;
+        height: 20vh;
     }
 
     %btn {
-        height: 3vh;
+        width: 25vw;
+        height: 6vh;
+        font-size: 3vw;
     }
+
+    
 
     .nuestraEscuela {
         height: 100vh;
