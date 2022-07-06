@@ -9,4 +9,8 @@
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-direction: alternate;
+
+    .spinner-grow{
+        z-index: 1;
+    }
 }

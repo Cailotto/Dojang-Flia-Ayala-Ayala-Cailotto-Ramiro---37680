@@ -18,12 +18,15 @@
 
         &::before {
             content: '';
-            background: url(https://i.ibb.co/HC60PCK/esquinarojapng.png) no-repeat top left;
+            background-image: url(https://i.ibb.co/VVsCC42/logotipo.png);  /*url(https:i.ibb.co/HC60PCK/esquinarojapng.png)*/
+            background-repeat: no-repeat;
             background-size: contain;
-            opacity: .3;
+            opacity: 0.7;
             width: 20%;
             height: 100%;
             position: absolute;
+            left: 0px;
+            top: 3%;
         }
 
         .nuestraEscuela__historia {
