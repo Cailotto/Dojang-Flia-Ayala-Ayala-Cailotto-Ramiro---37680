@@ -114,6 +114,7 @@ body::-webkit-scrollbar-thumb {
 .body__contacto {
   background-image: url(https://i.ibb.co/smff8vk/librotangsoodark.jpg);
   background-size: cover;
+  background-position-y: -220px;
   height: 100vh;
   display: grid;
   grid-template-areas: "header" "main";
