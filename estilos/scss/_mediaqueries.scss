@@ -38,6 +38,17 @@
 
 
 @media screen and (max-width: 425px) {
+
+    .body__contacto{
+        background-image: url(https://i.ibb.co/tBqL0C1/librotangsoodarkalto.jpg);
+        background-size: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+    }
+    
+
     #main__principal {
         background-position: center;
         .inicio {
@@ -135,7 +146,7 @@
                 height: 70%;
 
                 h5 {
-                    font-size: 4vw;
+                    font-size: 6vw;
                 }
 
                 p {
@@ -149,9 +160,14 @@
 
     .tramadoNegro {
         height: 150vh;
+        z-index: 1;
 
         .tramadoOndas1 {
             height: 80%;
+
+            .danesTitulo{
+                font-size: 8vw;
+            }
 
             .danes {
                 height: 70%;
@@ -218,10 +234,20 @@
 
     
 
+
     .nuestraEscuela {
         height: 100vh;
         .nuestraEscuela__parallax {
             background-attachment:scroll;
+
+            .nuestraEscuela__historia{
+                p{
+                    font-size: 3vw;
+                }
+                h5{
+                    font-size: 5vw;
+                }
+            }
         }
 
 }
@@ -238,6 +264,7 @@
                 background-size: 100%;
                 background-position: bottom;
                 background-repeat: repeat-x;
+
             }
         }
 
@@ -252,7 +279,6 @@
 
                 .col {
                     flex: 0;
-                    flex-wrap: nowrap;
                 }
 
                 h1 {
@@ -423,6 +449,7 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
+
     }
 
     .contacto__ins,
@@ -538,14 +565,24 @@
     display: none;
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 768px) {
     .navbar {
         display: none;
     }
 
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 767px) {
+
+    .body__contacto{
+        background-image: url(https://i.ibb.co/tBqL0C1/librotangsoodarkalto.jpg);
+        background-size: 50%;
+        background-position-x: 40%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+    }
 
     .contacto__ins,
     .contacto__wpp,
@@ -556,7 +593,538 @@
     .contacto__ins img,
     .contacto__wpp img,
     .contacto__fb img {
-        margin-left: 10px
+        margin-left: 10px;
+    }
+
+    #main__principal {
+        background-position: center;
+        .inicio {
+            width: 100%;
+            height: 100vh;
+            grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas: "logo"
+                                 "escuela"
+                                 "tangsoo"
+                                 "eventos"
+                                 "contacto";
+            .logo{
+                display: flex;
+                width: 100%;
+            }
+
+            a {
+                font-size: 5vw;
+            }
+        }
+    }
+
+@keyframes rotate {
+    from {
+        background-image: url(https://i.ibb.co/VVsCC42/logotipo.png);
+        background-position: center;
+        background-size: 20%;
+        transform: rotatey(0deg);
+    }
+
+    100% {
+        background-image: url(https://i.ibb.co/Symszvt/logowtsd1.png);
+        background-size: 20%;
+        background-position: center;
+        transform: rotatey(180deg);
+    }
+}
+
+    .escuela,
+    .tangSoo,
+    .eventos,
+    .contacto {
+        border-left: 0px;
+        border-radius: 0px;
+        border-top: 1px solid rgba(255, 255, 255, 0.116);
+
+    }
+
+    .header__carrousel {
+        height: 80vw;
+
+        .carousel-item {
+            img {
+                height: 80vw;
+                object-fit:fill;
+                transform: translateY(50px);
+            }
+        }
+    }
+
+
+
+    .separador {
+        width: 100%;
+        height: 100vh;
+        background-color: red;
+
+        .separador__frase--img {
+            display: none;
+        }
+
+        .separador__frase {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            background-color: red;
+        }
+
+        .separador__frase h2 {
+            @include display();
+            flex-wrap: wrap;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            border-top: #000 5px solid;
+            border-bottom: #000 5px solid;
+            background-image: url(https://i.ibb.co/Mkf5pWx/img-logo.png);
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: 150px;
+            font-size: 10vw;
+        }
+
+    }
+
+
+    .tramado {
+        flex-direction: column;
+        padding: 10px;
+        height: 180vh;
+
+        .tramadoOndas {
+            width: 100%;
+            height: 50%;
+
+            .tramadoOndas__texto {
+                width: 100%;
+                height: 70%;
+
+                h5 {
+                    font-size: 6vw;
+                }
+
+                p {
+                    font-size: 3vw;
+                }
+            }
+        }
+
+    }
+
+
+    .tramadoNegro {
+        height: 220vh;
+        z-index: 1;
+
+        .tramadoOndas1 {
+            height: 80%;
+
+            .danesTitulo{
+                font-size: 8vw;
+            }
+
+            .danes {
+                height: 70%;
+                flex-direction: column;
+            }
+
+        }
+    }
+
+    #marian:target,
+    #lucas:target,
+    #rocio:target,
+    #jae:target,
+    #beaudoin:target,
+    #strong:target {
+        margin-top: 57px;
+    }
+
+    .abrirMarian,
+    .abrirLucas,
+    .abrirRocio{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .abrirMarian p,
+.abrirLucas p,
+.abrirRocio p{
+    font-size: 3vw;
+    line-height: 25px;
+}
+
+    .abrirjae, .abrirbeaudoin, .abrirstrong{
+        display: none ;
+    }
+
+    .carrouselDaniel {
+        z-index: 1;
+        width: 90vw;
+        height: 45%;
+
+        .carrouselDaniel__inner {
+            .carousel-item {
+                .strong {
+                    transform: translateY(-50px);
+                }
+
+            }
+
+        }
+
+    }
+
+    %card {
+        width: 45vw;
+        height: 35vh;
+    }
+
+    %btn {
+        width: 25vw;
+        height: 6vh;
+        font-size: 3vw;
+    }
+
+    
+
+    .nuestraEscuela {
+        height: 100vh;
+        .nuestraEscuela__parallax {
+            background-attachment:scroll;
+
+            .nuestraEscuela__historia{
+                p{
+                    font-size: 3vw;
+                }
+                h5{
+                    font-size: 5vw;
+                }
+            }
+        }
+
+}
+
+
+
+    .main2 {
+        .main2__header {
+                background-attachment:scroll;
+                filter: brightness(1.8);
+
+            .main2__header--separador {
+
+                background-size: 100%;
+                background-position: bottom;
+                background-repeat: repeat-x;
+                
+            }
+        }
+
+        .main2__historia {
+            height: 100vh;
+            margin-top: 10px;
+
+            .main2__historia--contenedor {
+                width: 90%;
+                height: 80%;
+                justify-content: space-evenly;
+                overflow: scroll;
+                flex-wrap: nowrap;
+                
+
+                .col {  
+                    flex: 0;
+
+                }
+
+                h1 {
+                    height: 20%;
+                    font-size: 10vw;
+                    color: darkred;
+                    margin-bottom: 0px;
+                }
+
+                p {
+                    align-self: flex-start;
+                    font-size: 3vw;
+                    transform: translateY(50px);
+                    
+
+                }
+            }
+
+        }
+
+        &__asociacionMundial {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 0px;
+            width: 100%;
+            height: 300vh;
+            border-top-left-radius: 0%;
+            border-top-right-radius: 0%;
+            background-position-y: 20px;
+            background-position-x: 0px;
+
+            .yinyang {
+                align-self: center;
+                margin-top: 50px;
+                margin-bottom: 0px;
+
+                img {
+                    width: 20vw;
+                }
+            }
+        }
+
+        .asociacionMundial__contenedor {
+            height: 100%;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            #wtsd {
+                text-align: center;
+                font-size: 10vw;
+                grid-area: wtsd;
+                color: rgb(214, 205, 205);
+                margin-bottom: 30%;
+            }
+
+            .parrafo1 {
+                grid-area: parrafo1;
+                text-align: center;
+                color: rgb(214, 205, 205);
+                font-size: 3vw;
+                width: 100%;
+                text-align: center;
+            }
+
+            .parrafo2 {
+                text-align: center;
+                color: rgb(214, 205, 205);
+                font-size: 3vw;
+                width: 100%;
+                text-align: center;
+            }
+
+            .main2__maestros {
+                .btnmaestros {
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    display: flex;
+                    width: auto;
+                    height: 8vw;
+                    font-size: 100%;
+                }
+
+                a {
+                    display: none;
+                }
+            }
+        }
+
+        &__separador--nubes {
+            position: relative;
+            align-self: flex-end;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            background-size: contain;
+            animation: nubes1 10s infinite linear;
+            border-top: 1px solid gold;
+            border-bottom: 2px solid gold;
+
+            @keyframes nubes1 {
+                from {
+                    background-position-x: 0;
+                }
+
+                to {
+                    background-position-x: 100vw;
+                }
+            }
+
+            .nubes {
+                display: flex;
+                align-items: center;
+                height: 65%;
+                width: 100%;
+                text-shadow: 0px 0px 0px;
+                font-weight: 800;
+                background-color: #000;
+                font-size: 12vw;
+            }
+        }
+
+
+        &__viejaHistoria {
+            height: auto;
+
+            .main2__viejaHistoria--contenedor {
+                .historia__background {
+                    display: none;
+                }
+
+                .historia {
+                    p {
+                        font-size: 3vw;
+                    }
+
+                    h1 {
+                        font-size: 8vw;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .main2__historiaModerna--contenedor {
+                .historiaModerna__background {
+                    display: none;
+                }
+
+                .historiaModerna {
+                    p {
+                        font-size: 3vw;
+                    }
+
+                    h1 {
+                        font-size: 8vw;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .main__contacto {
+        padding: 50px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto__ins,
+    .contacto__wpp,
+    .contacto__fb {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding-bottom: 20px;
+
+    }
+
+
+    .contacto__ins a,
+    .contacto__wpp a,
+    .contacto__fb a {
+        width: 60%;
+    }
+
+
+    .contacto__ins img,
+    .contacto__wpp img,
+    .contacto__fb img {
+        width: 70%;
+        height: 75%;
+        margin-bottom: 20px;
+        animation: flotar 3s infinite;
+        animation-timing-function: linear;
+        transition: width 0.5s, animation 0.5s;
+    }
+
+
+
+    .contacto__ins img:hover,
+    .contacto__wpp img:hover,
+    .contacto__fb img:hover {
+        width: 100%;
+        animation: none;
+
+    }
+
+
+    .contacto__ins a:hover+.sombra,
+    .contacto__wpp a:hover+.sombra,
+    .contacto__fb a:hover+.sombra {
+        display: none;
+
+    }
+
+
+
+    .sombra {
+        margin-left: -12%;
+        max-width: 80px;
+        width: 30%;
+        height: 5px;
+        background-color: #000;
+        border-radius: 50%;
+        animation: sombra 1.5s alternate infinite linear;
+        transition: background-color 0.5s;
+
+    }
+
+
+    .navxl {
+        display: none;
+    }
+
+    .dk-footer--row {
+        display: flex;
+        flex-direction: column;
+
+        .col-6 {
+            width: 100%;
+
+            .row {
+                width: 100%;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .copy {
+        text-align: center;
+    }
+
+    .dk-footer .contact-us {
+        margin-top: 0;
+        margin-bottom: 0px;
+        padding-left: 0px;
+
+        .contact-info {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-left: 0px;
+        }
     }
 
 }
+
