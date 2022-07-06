@@ -2,31 +2,31 @@ Sume en el archivo index.html las siguientes carateristicas:
 
 - Descripción:Escuela de carate llamado Tang Soo DO, basado en las enseñanzas y metodos de defenza personal.
 - Palabras Clave: karate, boxeo, kick-boxing, muaythai, tae, taekwondo, tae kwon do, carate, tangsoodo, tang soo do, tang so do, tangsodo, denfenza, defensa, defenza personal, defenzapersonal, autodefenza, pelea, pelea callejera, calma, paz, proteccion, aprender, aprender karate, argentina, tangsoodo argentina, tang soo do argentina, wtsd, combate, torneo, selfdefence, delf-defence, world tang soo do, calm, peace, fight, street fight
--Encabezado : Dojang Flia Ayala
+-Encabezado : Dojang Flia Ayala | Tang Soo Do
 
 -----------------------------------------
 
 Sume en el archivo nuestraescuela.html las siguientes carateristicas:
 - Descripción:Escuela con mas de 30 alumnos y reconocida mundialmente por sus metodos de enseñanza.
 - Palabras Clave:idem index.html
--Encabezado : Nuestra Escuela
+-Encabezado : Nuestra Escuela | Dojang Flia Ayala
 
 -----------------------------------------
 
 Sume en el archivo tangsoodo.html las siguientes carateristicas:
 - Descripción:Arte marcial coreano con sedes en todo el globo, aprende las técnicas de defenza personal, la disciplina y el caracter un gran guerrero.
 - Palabras Clave:idem index.html
--Encabezado :World Tang Soo Do
+-Encabezado :World Tang Soo Do | Dojang Flia Ayala
 
 -----------------------------------------
 
 Sume en el archivo eventos.html las siguientes carateristicas:
 - Descripción:Acompañanos y forma parte de esta gran familia en los próximos eventos.
 - Palabras Clave:idem index.html
--Encabezado :Próximos eventos
+-Encabezado :Próximos eventos | Dojang Flia Ayala
 -----------------------------------------
 
 Sume en el archivo contacto.html las siguientes carateristicas:
 - Descripción:Escuela de arte marcial coreano Tang Soo Do, Seguinos en nuestras redes y envianos un mensaje.
 - Palabras Clave:idem index.html
--Encabezado : Contacto
+-Encabezado : Contacto | Dojang Flia Ayala
