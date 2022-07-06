@@ -207,7 +207,7 @@
         height: 100vh;
 
         .nuestraEscuela__parallax {
-            background-attachment:unset;
+            background-attachment:"";
     }
 }
 
@@ -215,7 +215,7 @@
 
     .main2 {
         .main2__header {
-                background-attachment:local;
+                background-attachment:"";
 
             .main2__header--separador {
 

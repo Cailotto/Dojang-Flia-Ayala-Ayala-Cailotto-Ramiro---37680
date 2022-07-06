@@ -1573,11 +1573,11 @@ hr {
     height: 100vh;
   }
   .nuestraEscuela .nuestraEscuela__parallax {
-    background-attachment: unset;
+    background-attachment: "";
   }
 
   .main2 .main2__header {
-    background-attachment: local;
+    background-attachment: "";
   }
   .main2 .main2__header .main2__header--separador {
     background-size: 100%;
