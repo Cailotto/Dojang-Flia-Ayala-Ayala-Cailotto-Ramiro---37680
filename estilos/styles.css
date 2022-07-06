@@ -1554,6 +1554,13 @@ hr {
     justify-content: center;
   }
 
+  .abrirMarian p,
+.abrirLucas p,
+.abrirRocio p {
+    font-size: 3vw;
+    line-height: 25px;
+  }
+
   .abrirjae, .abrirbeaudoin, .abrirstrong {
     display: none;
   }
