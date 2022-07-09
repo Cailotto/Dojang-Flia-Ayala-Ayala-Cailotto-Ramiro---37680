@@ -1755,7 +1755,7 @@ hr {
     text-align: center;
     position: relative;
     z-index: 2;
-    background-color: #e60905;
+    background-color: #bb0704;
   }
   .separador .separador__frase h2 {
     display: flex;
@@ -1888,7 +1888,7 @@ hr {
 
   .main2 .main2__header {
     background-attachment: scroll;
-    background-image: url(https://i.ibb.co/X3Q9N2G/paredasociacioncla.jpg);
+    background-image: url(../recursos/paredasociacioncla.jpg);
   }
   .main2 .main2__header .main2__header--separador {
     background-size: 100%;
