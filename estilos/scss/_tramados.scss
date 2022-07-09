@@ -27,35 +27,64 @@
             flex-direction: column;
             text-align: center;
             overflow: hidden;
-            
-            h5{
-                position: relative;
-                font-size: 2vw;
-                color: black;
+            align-items: center;
+
+
+            .maestroTitulo {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                font-size: 2.5vw;
                 font-weight: 600;
-                text-decoration:underline;
+                color: black;
+                text-transform: uppercase;
+                animation: margin .1s forwards ease-in;
+                margin-bottom: 5%;
+
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    white-space: nowrap;
+                }
+
+                .maestro {
+                    width: 40%;
+                    animation: showup 7s infinite;
+                }
+
+                .ayalaDaniel {
+                    animation: reveal 7s infinite;
+                }
+
+                .ayalaDaniel span {
+                    animation: slidein 7s infinite;
+                }
+
             }
 
-            p{
+
+
+            p {
                 font-size: 1.5vw;
                 overflow: scroll;
-                padding: 10%;
+                padding: 8%;
                 color: black;
 
                 &::-webkit-scrollbar {
                     background-color: transparent;
                     width: 10px;
                 }
-    
+
                 &::-webkit-scrollbar-thumb {
                     background-color: rgba(211, 7, 0, 0.719);
                     border-radius: 5px;
                     border: .25em rgba(128, 128, 128, 0.801);
                 }
-    
+
                 &::-webkit-scrollbar-corner {
                     display: none;
-                }   
+                }
             }
         }
     }
@@ -96,17 +125,19 @@
         padding-left: 15px;
         box-shadow: 7px 7px 15px rgb(66, 3, 3);
 
-        
-  
+
+
         .danesTitulo {
             width: 100%;
             color: #000;
             margin-top: 50px;
             text-align: center;
-            text-shadow: 3px 2px 5px rgb(58, 57, 57);
+            text-shadow: 0px 0px 5px white;
             font-weight: bold;
             font-size: 5vw;
             z-index: -10;
-        }      
+            animation: showup 7s infinite;
+            text-transform: uppercase;
+        }
     }
 }

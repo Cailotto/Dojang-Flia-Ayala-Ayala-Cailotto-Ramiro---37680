@@ -81,20 +81,23 @@ header nav .row #logo__img img {
   top: -10px;
 }
 
-.btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
+.btnMarian:hover, .btnLucas:hover, .btnRocio:hover, .btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover, .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 15vw;
   height: 6vh;
   font-size: 1.2vw;
-  border-bottom-color: rgb(47, 98, 139);
+  border-bottom-color: rgb(73, 73, 73);
   border-bottom-width: 4px;
   border-right-width: 4px;
   border-bottom-style: solid;
   border-right-style: solid;
-  border-right-color: rgb(30, 68, 99);
+  border-right-color: rgb(73, 73, 73);
+  border-top-color: rgb(73, 73, 73);
+  border-left: 10px solid rgba(255, 255, 255, 0.733);
   transition: 0.3s;
+  background-color: rgb(102, 101, 101);
 }
 
 body {
@@ -340,6 +343,18 @@ body::-webkit-scrollbar-thumb {
 
 .contact-info {
   color: #fff;
+}
+.contact-info ul {
+  list-style: none;
+  line-height: 30px;
+  text-align: center;
+  padding-left: 0px;
+}
+.contact-info ul a {
+  color: white;
+}
+.contact-info ul a:hover {
+  color: darkred;
 }
 
 .copyright {
@@ -639,6 +654,190 @@ header nav .navbar-toggler {
     transform: scale(1);
   }
 }
+@-webkit-keyframes start {
+  0% {
+    justify-content: center;
+  }
+  100% {
+    justify-content: flex-start;
+  }
+}
+@keyframes start {
+  0% {
+    justify-content: center;
+  }
+  100% {
+    justify-content: flex-start;
+  }
+}
+@-webkit-keyframes margin {
+  0% {
+    margin-right: 0vw;
+  }
+  100% {
+    margin-right: 4vw;
+  }
+}
+@keyframes margin {
+  0% {
+    margin-right: 0vw;
+  }
+  100% {
+    margin-right: 4vw;
+  }
+}
+@-webkit-keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slidein {
+  0% {
+    margin-left: -200vw;
+  }
+  20% {
+    margin-left: -200vw;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-left: -200vw;
+  }
+  20% {
+    margin-left: -200vw;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+@-webkit-keyframes slideinE {
+  0% {
+    margin-left: -150vw;
+  }
+  20% {
+    margin-left: -150vw;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes slideinE {
+  0% {
+    margin-left: -150vw;
+  }
+  20% {
+    margin-left: -150vw;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@-webkit-keyframes slideinF {
+  0% {
+    margin-right: -150vw;
+  }
+  20% {
+    margin-right: -150vw;
+  }
+  35% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+@keyframes slideinF {
+  0% {
+    margin-right: -150vw;
+  }
+  20% {
+    margin-right: -150vw;
+  }
+  35% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
 .header__carrousel {
   z-index: -1;
 }
@@ -653,6 +852,7 @@ header nav .navbar-toggler {
   z-index: 0;
   width: 40vw;
   height: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.726);
 }
 
 hr {
@@ -756,18 +956,42 @@ hr {
   flex-direction: column;
   text-align: center;
   overflow: hidden;
+  align-items: center;
 }
-.tramado .tramadoOndas .tramadoOndas__texto h5 {
-  position: relative;
-  font-size: 2vw;
-  color: black;
+.tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5vw;
   font-weight: 600;
-  text-decoration: underline;
+  color: black;
+  text-transform: uppercase;
+  -webkit-animation: margin 0.1s forwards ease-in;
+          animation: margin 0.1s forwards ease-in;
+  margin-bottom: 5%;
+}
+.tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo div {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+.tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo .maestro {
+  width: 40%;
+  -webkit-animation: showup 7s infinite;
+          animation: showup 7s infinite;
+}
+.tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo .ayalaDaniel {
+  -webkit-animation: reveal 7s infinite;
+          animation: reveal 7s infinite;
+}
+.tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo .ayalaDaniel span {
+  -webkit-animation: slidein 7s infinite;
+          animation: slidein 7s infinite;
 }
 .tramado .tramadoOndas .tramadoOndas__texto p {
   font-size: 1.5vw;
   overflow: scroll;
-  padding: 10%;
+  padding: 8%;
   color: black;
 }
 .tramado .tramadoOndas .tramadoOndas__texto p::-webkit-scrollbar {
@@ -823,10 +1047,13 @@ hr {
   color: #000;
   margin-top: 50px;
   text-align: center;
-  text-shadow: 3px 2px 5px rgb(58, 57, 57);
+  text-shadow: 0px 0px 5px white;
   font-weight: bold;
   font-size: 5vw;
   z-index: -10;
+  -webkit-animation: showup 7s infinite;
+          animation: showup 7s infinite;
+  text-transform: uppercase;
 }
 
 .card-body {
@@ -842,6 +1069,11 @@ hr {
   border: 1px solid black;
   padding: 0.6px;
   background-color: white;
+}
+
+.btnMarian:hover, .btnLucas:hover, .btnRocio:hover, .btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover {
+  border-left: 20px solid darkred;
+  color: black;
 }
 
 #marian,
@@ -943,7 +1175,7 @@ hr {
   width: 100%;
   height: 100%;
   background-color: #000;
-  background-image: url(https://i.ibb.co/Mfr9h5D/escuela.jpg);
+  background-image: url();
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -954,7 +1186,6 @@ hr {
 .nuestraEscuela .nuestraEscuela__parallax::before {
   content: "";
   background-image: url(https://i.ibb.co/VVsCC42/logotipo.png);
-  /*url(https:i.ibb.co/HC60PCK/esquinarojapng.png)*/
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.7;
@@ -971,6 +1202,7 @@ hr {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
 }
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia h5 {
   text-shadow: 3px 2px 2px rgb(126, 126, 126);
@@ -981,14 +1213,25 @@ hr {
 }
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p {
   color: white;
+  background-color: rgba(0, 0, 0, 0.514);
   overflow-y: scroll;
   width: 80%;
   height: 60%;
   text-align: center;
   box-shadow: 0px 2px 50px rgb(100, 100, 100);
-  padding: 10%;
+  padding: 5%;
   font-size: 1.5vw;
 }
+.nuestraE {
+  -webkit-animation: slideinE 7s infinite;
+          animation: slideinE 7s infinite;
+}
+
+.nuestraF {
+  -webkit-animation: slideinF 7s infinite;
+          animation: slideinF 7s infinite;
+}
+
 .main2 {
   background-color: rgb(223, 223, 25);
 }
@@ -1265,6 +1508,11 @@ hr {
   background-color: white;
 }
 
+.btnMarian:hover, .btnLucas:hover, .btnRocio:hover, .btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover {
+  border-left: 20px solid darkred;
+  color: black;
+}
+
 #marian,
 #lucas,
 #rocio,
@@ -1507,7 +1755,7 @@ hr {
     text-align: center;
     position: relative;
     z-index: 2;
-    background-color: red;
+    background-color: #e60905;
   }
   .separador .separador__frase h2 {
     display: flex;
@@ -1521,28 +1769,37 @@ hr {
     border-bottom: #000 5px solid;
     background-image: url(https://i.ibb.co/Mkf5pWx/img-logo.png);
     background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 150px;
-    font-size: 10vw;
+    background-position: center;
+    background-size: 40%;
+    font-size: 15vw;
+    line-height: 400%;
+  }
+  .separador .separador__frase--back {
+    background-color: black;
+    height: 3%;
   }
 
   .tramado {
+    height: 200vh;
     flex-direction: column;
     padding: 10px;
   }
   .tramado .tramadoOndas {
     width: 100%;
     height: 50%;
+    padding: 10px;
   }
   .tramado .tramadoOndas .tramadoOndas__texto {
     width: 100%;
-    height: 70%;
+    height: 100%;
+    justify-content: space-around;
   }
-  .tramado .tramadoOndas .tramadoOndas__texto h5 {
-    font-size: 6vw;
+  .tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo div {
+    font-size: 5vw;
   }
   .tramado .tramadoOndas .tramadoOndas__texto p {
-    font-size: 3vw;
+    font-size: 4vw;
+    padding: 5%;
   }
 
   .tramadoNegro {
@@ -1550,13 +1807,18 @@ hr {
     z-index: 1;
   }
   .tramadoNegro .tramadoOndas1 {
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
   }
   .tramadoNegro .tramadoOndas1 .danesTitulo {
-    font-size: 8vw;
+    font-size: 12vw;
   }
   .tramadoNegro .tramadoOndas1 .danes {
     height: 70%;
+    width: 100%;
     flex-direction: column;
   }
 
@@ -1583,7 +1845,9 @@ hr {
     line-height: 25px;
   }
 
-  .abrirjae, .abrirbeaudoin, .abrirstrong {
+  .abrirjae,
+.abrirbeaudoin,
+.abrirstrong {
     display: none;
   }
 
@@ -1597,14 +1861,16 @@ hr {
   }
 
   .cardMarian img, .cardLucas img, .cardRocio img {
-    width: 45vw;
-    height: 20vh;
+    width: 70vw;
+    height: 30vh;
+    box-shadow: 0px 0px 8px white;
   }
 
-  .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
+  .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros, .btnMarian:hover, .btnLucas:hover, .btnRocio:hover, .btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover {
     width: 25vw;
     height: 6vh;
     font-size: 3vw;
+    border-left: 0.5px solid white;
   }
 
   .nuestraEscuela {
@@ -1622,7 +1888,7 @@ hr {
 
   .main2 .main2__header {
     background-attachment: scroll;
-    filter: brightness(1.8);
+    background-image: url(https://i.ibb.co/X3Q9N2G/paredasociacioncla.jpg);
   }
   .main2 .main2__header .main2__header--separador {
     background-size: 100%;
@@ -1878,11 +2144,11 @@ hr {
     gap: 10px;
     margin-left: 0px;
   }
-}
-.footer-left-widget {
-  display: none;
-}
 
+  .footer-left-widget {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .navbar {
     display: none;
@@ -2070,7 +2336,9 @@ hr {
     line-height: 25px;
   }
 
-  .abrirjae, .abrirbeaudoin, .abrirstrong {
+  .abrirjae,
+.abrirbeaudoin,
+.abrirstrong {
     display: none;
   }
 
@@ -2088,7 +2356,7 @@ hr {
     height: 35vh;
   }
 
-  .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
+  .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros, .btnMarian:hover, .btnLucas:hover, .btnRocio:hover, .btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover {
     width: 25vw;
     height: 6vh;
     font-size: 3vw;

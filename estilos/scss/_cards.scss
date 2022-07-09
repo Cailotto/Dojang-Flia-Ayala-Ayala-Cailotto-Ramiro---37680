@@ -24,6 +24,14 @@
     
 
 }
+.btnMarian:hover, .btnLucas:hover, .btnRocio:hover, .btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover {
+    @extend %btn;
+    
+    border-left: 20px solid darkred;
+    color: black;
+    
+
+}
 
 #marian,
 #lucas,

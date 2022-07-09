@@ -63,12 +63,15 @@ $paginas: (
     width: 15vw;
     height: 6vh;
     font-size: 1.2vw;
-    border-bottom-color: rgb(47, 98, 139);
+    border-bottom-color: rgb(73, 73, 73);
     border-bottom-width: 4px;
     border-right-width: 4px;
     border-bottom-style: solid;
     border-right-style: solid;
-    border-right-color: rgb(30, 68, 99);
+    border-right-color: rgb(73, 73, 73);
+    border-top-color: rgb(73, 73, 73);
+    border-left: 10px solid rgba(255, 255, 255, 0.733);
     transition: 0.3s;
+    background-color: rgb(102, 101, 101);
     
 }

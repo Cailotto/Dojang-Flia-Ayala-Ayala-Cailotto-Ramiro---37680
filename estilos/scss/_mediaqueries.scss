@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 425px) {
 
-    .body__contacto{
+    .body__contacto {
         background-image: url(https://i.ibb.co/tBqL0C1/librotangsoodarkalto.jpg);
         background-size: 100%;
         background-position-y: 0px;
@@ -48,10 +48,11 @@
         grid-template-areas: "header"
             "main";
     }
-    
+
 
     #main__principal {
         background-position: center;
+
         .inicio {
             width: 100%;
             height: 100vh;
@@ -88,7 +89,7 @@
         .carousel-item {
             img {
                 height: 80vw;
-                object-fit:fill;
+                object-fit: fill;
                 transform: translateY(50px);
             }
         }
@@ -113,7 +114,7 @@
             text-align: center;
             position: relative;
             z-index: 2;
-            background-color: red;
+            background-color: #e60905;
         }
 
         .separador__frase h2 {
@@ -126,446 +127,470 @@
             border-bottom: #000 5px solid;
             background-image: url(https://i.ibb.co/Mkf5pWx/img-logo.png);
             background-repeat: no-repeat;
-            background-position: top left;
-            background-size: 150px;
-            font-size: 10vw;
+            background-position: center;
+            background-size: 40%;
+            font-size: 15vw;
+            line-height: 400%;
+        }
+
+        .separador__frase--back {
+            background-color: black;
+            height: 3%;
         }
 
     }
 
 
     .tramado {
+        height: 200vh;
         flex-direction: column;
         padding: 10px;
 
         .tramadoOndas {
             width: 100%;
             height: 50%;
+            padding: 10px;
 
             .tramadoOndas__texto {
                 width: 100%;
-                height: 70%;
+                height: 100%;
+                justify-content: space-around;
 
-                h5 {
-                    font-size: 6vw;
+                .maestroTitulo {
+                    div{
+                        font-size: 5vw;
+                    }
+
                 }
 
                 p {
-                    font-size: 3vw;
+                    font-size: 4vw;
+                    padding: 5%;
                 }
             }
         }
-
     }
 
 
-    .tramadoNegro {
-        height: 150vh;
-        z-index: 1;
 
-        .tramadoOndas1 {
-            height: 80%;
+.tramadoNegro {
+    height: 150vh;
+    z-index: 1;
 
-            .danesTitulo{
-                font-size: 8vw;
-            }
+    .tramadoOndas1 {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
 
-            .danes {
-                height: 70%;
-                flex-direction: column;
-            }
-
+        .danesTitulo {
+            font-size: 12vw;
         }
-    }
 
-    #marian:target,
-    #lucas:target,
-    #rocio:target,
-    #jae:target,
-    #beaudoin:target,
-    #strong:target {
-        margin-top: 57px;
-    }
+        .danes {
+            height: 70%;
+            width: 100%;
+            flex-direction: column;
+        }
 
-    .abrirMarian,
-    .abrirLucas,
-    .abrirRocio{
-        flex-direction: column;
-        justify-content: center;
     }
+}
 
-    .abrirMarian p,
+#marian:target,
+#lucas:target,
+#rocio:target,
+#jae:target,
+#beaudoin:target,
+#strong:target {
+    margin-top: 57px;
+}
+
+.abrirMarian,
+.abrirLucas,
+.abrirRocio {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.abrirMarian p,
 .abrirLucas p,
-.abrirRocio p{
+.abrirRocio p {
     font-size: 3vw;
     line-height: 25px;
 }
 
-    .abrirjae, .abrirbeaudoin, .abrirstrong{
-        display: none ;
-    }
+.abrirjae,
+.abrirbeaudoin,
+.abrirstrong {
+    display: none;
+}
 
-    .carrouselDaniel {
-        z-index: 1;
-        width: 90vw;
-        height: 45%;
+.carrouselDaniel {
+    z-index: 1;
+    width: 90vw;
+    height: 45%;
 
-        .carrouselDaniel__inner {
-            .carousel-item {
-                .strong {
-                    transform: translateY(-50px);
-                }
-
+    .carrouselDaniel__inner {
+        .carousel-item {
+            .strong {
+                transform: translateY(-50px);
             }
 
         }
 
     }
 
-    %card {
-        width: 45vw;
-        height: 20vh;
-    }
+}
 
-    %btn {
-        width: 25vw;
-        height: 6vh;
-        font-size: 3vw;
-    }
+%card {
+    width: 70vw;
+    height: 30vh;
+    box-shadow: 0px 0px 8px white;
+}
 
-    
+%btn {
+    width: 25vw;
+    height: 6vh;
+    font-size: 3vw;
+    border-left: .5px solid white;
+}
 
 
-    .nuestraEscuela {
-        height: 100vh;
-        .nuestraEscuela__parallax {
-            background-attachment:scroll;
 
-            .nuestraEscuela__historia{
-                p{
-                    font-size: 3vw;
-                }
-                h5{
-                    font-size: 5vw;
-                }
+
+.nuestraEscuela {
+    height: 100vh;
+
+    .nuestraEscuela__parallax {
+        background-attachment: scroll;
+
+        .nuestraEscuela__historia {
+            p {
+                font-size: 3vw;
+            }
+
+            h5 {
+                font-size: 5vw;
             }
         }
+    }
 
 }
 
 
 
-    .main2 {
-        .main2__header {
-                background-attachment:scroll;
-                filter: brightness(1.8);
+.main2 {
+    .main2__header {
+        background-attachment: scroll;
+        background-image: url(https://i.ibb.co/X3Q9N2G/paredasociacioncla.jpg);
 
-            .main2__header--separador {
+        .main2__header--separador {
 
-                background-size: 100%;
-                background-position: bottom;
-                background-repeat: repeat-x;
+            background-size: 100%;
+            background-position: bottom;
+            background-repeat: repeat-x;
+
+        }
+    }
+
+    .main2__historia {
+        height: 100vh;
+        margin-top: 10px;
+
+        .main2__historia--contenedor {
+            width: 90%;
+            height: 80%;
+            justify-content: space-evenly;
+
+            .col {
+                flex: 0;
+            }
+
+            h1 {
+                height: 20%;
+                font-size: 10vw;
+                color: darkred;
+                margin-bottom: 0px;
+            }
+
+            p {
+                align-self: flex-start;
+                font-size: 3vw;
 
             }
         }
 
-        .main2__historia {
-            height: 100vh;
-            margin-top: 10px;
+    }
 
-            .main2__historia--contenedor {
-                width: 90%;
-                height: 80%;
-                justify-content: space-evenly;
+    &__asociacionMundial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 0px;
+        width: 100%;
+        height: 220vh;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        background-position-y: 20px;
+        background-position-x: 0px;
 
-                .col {
-                    flex: 0;
+        .yinyang {
+            align-self: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+
+            img {
+                width: 30vw;
+            }
+        }
+    }
+
+    .asociacionMundial__contenedor {
+        height: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        #wtsd {
+            text-align: center;
+            font-size: 10vw;
+            grid-area: wtsd;
+            color: rgb(214, 205, 205);
+            margin-bottom: 30%;
+        }
+
+        .parrafo1 {
+            grid-area: parrafo1;
+            text-align: center;
+            color: rgb(214, 205, 205);
+            font-size: 4vw;
+            width: 100%;
+            text-align: center;
+        }
+
+        .parrafo2 {
+            text-align: center;
+            color: rgb(214, 205, 205);
+            font-size: 4vw;
+            width: 100%;
+            text-align: center;
+        }
+
+        .main2__maestros {
+            .btnmaestros {
+                padding-top: 0px;
+                padding-bottom: 0px;
+                display: flex;
+                width: auto;
+                height: 8vw;
+                font-size: 100%;
+            }
+
+            a {
+                display: none;
+            }
+        }
+    }
+
+    &__separador--nubes {
+        position: relative;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-size: contain;
+        animation: nubes1 10s infinite linear;
+        border-top: 1px solid gold;
+        border-bottom: 2px solid gold;
+
+        @keyframes nubes1 {
+            from {
+                background-position-x: 0;
+            }
+
+            to {
+                background-position-x: 100vw;
+            }
+        }
+
+        .nubes {
+            display: flex;
+            align-items: center;
+            height: 65%;
+            width: 100%;
+            text-shadow: 0px 0px 0px;
+            font-weight: 800;
+            background-color: #000;
+            font-size: 12vw;
+        }
+    }
+
+
+    &__viejaHistoria {
+        height: auto;
+
+        .main2__viejaHistoria--contenedor {
+            .historia__background {
+                display: none;
+            }
+
+            .historia {
+                p {
+                    font-size: 3vw;
                 }
 
                 h1 {
-                    height: 20%;
-                    font-size: 10vw;
-                    color: darkred;
-                    margin-bottom: 0px;
+                    font-size: 8vw;
+                    text-align: center;
                 }
+            }
+        }
 
+        .main2__historiaModerna--contenedor {
+            .historiaModerna__background {
+                display: none;
+            }
+
+            .historiaModerna {
                 p {
-                    align-self: flex-start;
                     font-size: 3vw;
-
-                }
-            }
-
-        }
-
-        &__asociacionMundial {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            margin-top: 0px;
-            width: 100%;
-            height: 220vh;
-            border-top-left-radius: 0%;
-            border-top-right-radius: 0%;
-            background-position-y: 20px;
-            background-position-x: 0px;
-
-            .yinyang {
-                align-self: center;
-                margin-top: 50px;
-                margin-bottom: 0px;
-
-                img {
-                    width: 30vw;
-                }
-            }
-        }
-
-        .asociacionMundial__contenedor {
-            height: 100%;
-            align-self: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            #wtsd {
-                text-align: center;
-                font-size: 10vw;
-                grid-area: wtsd;
-                color: rgb(214, 205, 205);
-                margin-bottom: 30%;
-            }
-
-            .parrafo1 {
-                grid-area: parrafo1;
-                text-align: center;
-                color: rgb(214, 205, 205);
-                font-size: 4vw;
-                width: 100%;
-                text-align: center;
-            }
-
-            .parrafo2 {
-                text-align: center;
-                color: rgb(214, 205, 205);
-                font-size: 4vw;
-                width: 100%;
-                text-align: center;
-            }
-
-            .main2__maestros {
-                .btnmaestros {
-                    padding-top: 0px;
-                    padding-bottom: 0px;
-                    display: flex;
-                    width: auto;
-                    height: 8vw;
-                    font-size: 100%;
                 }
 
-                a {
-                    display: none;
-                }
-            }
-        }
-
-        &__separador--nubes {
-            position: relative;
-            align-self: flex-end;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100vh;
-            background-size: contain;
-            animation: nubes1 10s infinite linear;
-            border-top: 1px solid gold;
-            border-bottom: 2px solid gold;
-
-            @keyframes nubes1 {
-                from {
-                    background-position-x: 0;
-                }
-
-                to {
-                    background-position-x: 100vw;
-                }
-            }
-
-            .nubes {
-                display: flex;
-                align-items: center;
-                height: 65%;
-                width: 100%;
-                text-shadow: 0px 0px 0px;
-                font-weight: 800;
-                background-color: #000;
-                font-size: 12vw;
-            }
-        }
-
-
-        &__viejaHistoria {
-            height: auto;
-
-            .main2__viejaHistoria--contenedor {
-                .historia__background {
-                    display: none;
-                }
-
-                .historia {
-                    p {
-                        font-size: 3vw;
-                    }
-
-                    h1 {
-                        font-size: 8vw;
-                        text-align: center;
-                    }
-                }
-            }
-
-            .main2__historiaModerna--contenedor {
-                .historiaModerna__background {
-                    display: none;
-                }
-
-                .historiaModerna {
-                    p {
-                        font-size: 3vw;
-                    }
-
-                    h1 {
-                        font-size: 8vw;
-                        text-align: center;
-                    }
+                h1 {
+                    font-size: 8vw;
+                    text-align: center;
                 }
             }
         }
     }
+}
 
-    .main__contacto {
-        padding: 50px;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .contacto__ins,
-    .contacto__wpp,
-    .contacto__fb {
-        width: 100%;
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-        padding-bottom: 100px;
-
-    }
-
-
-    .contacto__ins a,
-    .contacto__wpp a,
-    .contacto__fb a {
-        width: 60%;
-    }
-
-
-    .contacto__ins img,
-    .contacto__wpp img,
-    .contacto__fb img {
-        width: 100%;
-        height: 80%;
-        margin-bottom: 70px;
-        animation: flotar 3s infinite;
-        animation-timing-function: linear;
-        transition: width 0.5s, animation 0.5s;
-    }
-
-
-
-    .contacto__ins img:hover,
-    .contacto__wpp img:hover,
-    .contacto__fb img:hover {
-        width: 130%;
-        animation: none;
-
-    }
-
-
-    .contacto__ins a:hover+.sombra,
-    .contacto__wpp a:hover+.sombra,
-    .contacto__fb a:hover+.sombra {
-        display: none;
-
-    }
-
-
-
-    .sombra {
-        margin-left: 10px;
-        max-width: 100px;
-        width: 30%;
-        height: 5px;
-        background-color: #000;
-        border-radius: 50%;
-        animation: sombra 1.5s alternate infinite linear;
-        transition: background-color 0.5s;
-
-    }
-
-
-    .navxl {
-        display: none;
-    }
-
-    .dk-footer--row {
-        display: flex;
-        flex-direction: column;
-
-        .col-6 {
-            width: 100%;
-
-            .row {
-                width: 100%;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                padding-top: 10px;
-            }
-        }
-    }
-
-    .copy {
-        text-align: center;
-    }
-
-    .dk-footer .contact-us {
-        margin-top: 0;
-        margin-bottom: 0px;
-        padding-left: 0px;
-
-        .contact-info {
-            width: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            margin-left: 0px;
-        }
-    }
-
+.main__contacto {
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 
 }
+
+.contacto__ins,
+.contacto__wpp,
+.contacto__fb {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 100px;
+
+}
+
+
+.contacto__ins a,
+.contacto__wpp a,
+.contacto__fb a {
+    width: 60%;
+}
+
+
+.contacto__ins img,
+.contacto__wpp img,
+.contacto__fb img {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 70px;
+    animation: flotar 3s infinite;
+    animation-timing-function: linear;
+    transition: width 0.5s, animation 0.5s;
+}
+
+
+
+.contacto__ins img:hover,
+.contacto__wpp img:hover,
+.contacto__fb img:hover {
+    width: 130%;
+    animation: none;
+
+}
+
+
+.contacto__ins a:hover+.sombra,
+.contacto__wpp a:hover+.sombra,
+.contacto__fb a:hover+.sombra {
+    display: none;
+
+}
+
+
+
+.sombra {
+    margin-left: 10px;
+    max-width: 100px;
+    width: 30%;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    animation: sombra 1.5s alternate infinite linear;
+    transition: background-color 0.5s;
+
+}
+
+
+.navxl {
+    display: none;
+}
+
+.dk-footer--row {
+    display: flex;
+    flex-direction: column;
+
+    .col-6 {
+        width: 100%;
+
+        .row {
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-top: 10px;
+        }
+    }
+}
+
+.copy {
+    text-align: center;
+}
+
+.dk-footer .contact-us {
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-left: 0px;
+
+    .contact-info {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-left: 0px;
+    }
+}
+
+
+
 
 
 .footer-left-widget {
     display: none;
 }
-
+}
 @media screen and (min-width: 768px) {
     .navbar {
         display: none;
@@ -575,7 +600,7 @@
 
 @media screen and (min-width: 426px) and (max-width: 767px) {
 
-    .body__contacto{
+    .body__contacto {
         background-image: url(https://i.ibb.co/tBqL0C1/librotangsoodarkalto.jpg);
         background-size: 50%;
         background-position-y: 0px;
@@ -600,17 +625,19 @@
 
     #main__principal {
         background-position: center;
+
         .inicio {
             width: 100%;
             height: 100vh;
             grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr;
             grid-template-areas: "logo"
-                                 "escuela"
-                                 "tangsoo"
-                                 "eventos"
-                                 "contacto";
-            .logo{
+                "escuela"
+                "tangsoo"
+                "eventos"
+                "contacto";
+
+            .logo {
                 display: flex;
                 width: 100%;
             }
@@ -621,21 +648,21 @@
         }
     }
 
-@keyframes rotate {
-    from {
-        background-image: url(https://i.ibb.co/VVsCC42/logotipo.png);
-        background-position: center;
-        background-size: 20%;
-        transform: rotatey(0deg);
-    }
+    @keyframes rotate {
+        from {
+            background-image: url(https://i.ibb.co/VVsCC42/logotipo.png);
+            background-position: center;
+            background-size: 20%;
+            transform: rotatey(0deg);
+        }
 
-    100% {
-        background-image: url(https://i.ibb.co/Symszvt/logowtsd1.png);
-        background-size: 20%;
-        background-position: center;
-        transform: rotatey(180deg);
+        100% {
+            background-image: url(https://i.ibb.co/Symszvt/logowtsd1.png);
+            background-size: 20%;
+            background-position: center;
+            transform: rotatey(180deg);
+        }
     }
-}
 
     .escuela,
     .tangSoo,
@@ -653,7 +680,7 @@
         .carousel-item {
             img {
                 height: 80vw;
-                object-fit:fill;
+                object-fit: fill;
                 transform: translateY(50px);
             }
         }
@@ -732,7 +759,7 @@
         .tramadoOndas1 {
             height: 80%;
 
-            .danesTitulo{
+            .danesTitulo {
                 font-size: 8vw;
             }
 
@@ -755,20 +782,22 @@
 
     .abrirMarian,
     .abrirLucas,
-    .abrirRocio{
+    .abrirRocio {
         flex-direction: column;
         justify-content: center;
     }
 
     .abrirMarian p,
-.abrirLucas p,
-.abrirRocio p{
-    font-size: 3vw;
-    line-height: 25px;
-}
+    .abrirLucas p,
+    .abrirRocio p {
+        font-size: 3vw;
+        line-height: 25px;
+    }
 
-    .abrirjae, .abrirbeaudoin, .abrirstrong{
-        display: none ;
+    .abrirjae,
+    .abrirbeaudoin,
+    .abrirstrong {
+        display: none;
     }
 
     .carrouselDaniel {
@@ -799,38 +828,40 @@
         font-size: 3vw;
     }
 
-    
+
 
     .nuestraEscuela {
         height: 100vh;
-        .nuestraEscuela__parallax {
-            background-attachment:scroll;
 
-            .nuestraEscuela__historia{
-                p{
+        .nuestraEscuela__parallax {
+            background-attachment: scroll;
+
+            .nuestraEscuela__historia {
+                p {
                     font-size: 3vw;
                 }
-                h5{
+
+                h5 {
                     font-size: 5vw;
                 }
             }
         }
 
-}
+    }
 
 
 
     .main2 {
         .main2__header {
-                background-attachment:scroll;
-                filter: brightness(1.8);
+            background-attachment: scroll;
+            filter: brightness(1.8);
 
             .main2__header--separador {
 
                 background-size: 100%;
                 background-position: bottom;
                 background-repeat: repeat-x;
-                
+
             }
         }
 
@@ -844,9 +875,9 @@
                 justify-content: space-evenly;
                 overflow: scroll;
                 flex-wrap: nowrap;
-                
 
-                .col {  
+
+                .col {
                     flex: 0;
 
                 }
@@ -862,7 +893,7 @@
                     align-self: flex-start;
                     font-size: 3vw;
                     transform: translateY(50px);
-                    
+
 
                 }
             }
@@ -1129,4 +1160,3 @@
     }
 
 }
-

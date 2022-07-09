@@ -119,6 +119,20 @@
 
 .contact-info {
     color: #fff;
+    ul{
+        list-style:none;
+        line-height: 30px;
+        text-align: center;
+        padding-left: 0px;
+
+        a{
+            color: white;
+        }
+
+        a:hover{
+            color:darkred;
+        }
+    }
 }
 
 .copyright {
