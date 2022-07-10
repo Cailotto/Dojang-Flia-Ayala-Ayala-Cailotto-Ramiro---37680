@@ -368,8 +368,9 @@
         height: 220vh;
         border-top-left-radius: 0%;
         border-top-right-radius: 0%;
-        background-position-y: 20px;
-        background-position-x: 0px;
+        background-position: bottom;
+        background-position-y: 50px;
+        background-position-x: -100vw;
 
         .yinyang {
             align-self: center;
