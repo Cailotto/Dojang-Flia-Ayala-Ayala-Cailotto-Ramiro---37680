@@ -691,34 +691,6 @@ header nav .navbar-toggler {
     margin-right: 4vw;
   }
 }
-@-webkit-keyframes showup {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes showup {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @-webkit-keyframes slidein {
   0% {
     margin-left: -300vw;
@@ -757,14 +729,14 @@ header nav .navbar-toggler {
     width: 0px;
   }
   30% {
-    width: 355px;
+    width: 50%;
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    width: 355px;
+    width: 50%;
   }
 }
 @keyframes reveal {
@@ -777,54 +749,54 @@ header nav .navbar-toggler {
     width: 0px;
   }
   30% {
-    width: 355px;
+    width: 50%;
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    width: 355px;
+    width: 50%;
   }
 }
-@-webkit-keyframes reveal1 {
+@-webkit-keyframes showup {
   0% {
-    opacity: 0;
-    width: 0px;
+    text-shadow: 0px 0px 2px white;
   }
-  20% {
-    opacity: 1;
-    width: 0px;
+  25% {
+    text-shadow: 0px 0px 4px white;
   }
-  30% {
-    width: 100%;
+  50% {
+    text-shadow: 0px 0px 5px white;
   }
-  80% {
-    opacity: 1;
+  60% {
+    text-shadow: 0px 0px 5px white;
+  }
+  75% {
+    text-shadow: 0px 0px 4px white;
   }
   100% {
-    opacity: 0;
-    width: 100%;
+    text-shadow: 0px 0px 2px white;
   }
 }
-@keyframes reveal1 {
+@keyframes showup {
   0% {
-    opacity: 0;
-    width: 0px;
+    text-shadow: 0px 0px 2px white;
   }
-  20% {
-    opacity: 1;
-    width: 0px;
+  25% {
+    text-shadow: 0px 0px 4px white;
   }
-  30% {
-    width: 100%;
+  50% {
+    text-shadow: 0px 0px 5px white;
   }
-  80% {
-    opacity: 1;
+  60% {
+    text-shadow: 0px 0px 5px white;
+  }
+  75% {
+    text-shadow: 0px 0px 4px white;
   }
   100% {
-    opacity: 0;
-    width: 100%;
+    text-shadow: 0px 0px 2px white;
   }
 }
 @-webkit-keyframes slideinF {
@@ -837,8 +809,17 @@ header nav .navbar-toggler {
   35% {
     margin-left: 0px;
   }
-  100% {
+  50% {
     margin-left: 0px;
+  }
+  65% {
+    margin-left: 0px;
+  }
+  80% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -150vw;
   }
 }
 @keyframes slideinF {
@@ -851,8 +832,17 @@ header nav .navbar-toggler {
   35% {
     margin-left: 0px;
   }
-  100% {
+  50% {
     margin-left: 0px;
+  }
+  65% {
+    margin-left: 0px;
+  }
+  80% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -150vw;
   }
 }
 @-webkit-keyframes slideinE {
@@ -865,8 +855,17 @@ header nav .navbar-toggler {
   35% {
     margin-left: 0px;
   }
-  100% {
+  50% {
     margin-left: 0px;
+  }
+  65% {
+    margin-left: 0px;
+  }
+  80% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 300vw;
   }
 }
 @keyframes slideinE {
@@ -879,8 +878,17 @@ header nav .navbar-toggler {
   35% {
     margin-left: 0px;
   }
-  100% {
+  50% {
     margin-left: 0px;
+  }
+  65% {
+    margin-left: 0px;
+  }
+  80% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 300vw;
   }
 }
 .header__carrousel {
@@ -1024,11 +1032,12 @@ hr {
   display: flex;
   justify-content: center;
   white-space: nowrap;
+  text-shadow: 0px 0px 2px white;
 }
 .tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo .maestro {
   width: 40%;
-  -webkit-animation: showup 7s infinite;
-          animation: showup 7s infinite;
+  -webkit-animation: reveal 7s infinite linear;
+          animation: reveal 7s infinite linear;
 }
 .tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo .ayalaDaniel {
   -webkit-animation: reveal 7s infinite;
@@ -1085,7 +1094,9 @@ hr {
   height: 90%;
   display: flex;
   align-items: flex-start;
-  background-color: rgba(211, 7, 0, 0.719);
+  background-color: rgba(248, 14, 6, 0.575);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   z-index: 1;
   border: 15px solid rgba(139, 4, 4, 0.589);
   padding-right: 15px;
@@ -1101,8 +1112,8 @@ hr {
   font-weight: bold;
   font-size: 5vw;
   z-index: -10;
-  -webkit-animation: showup 5s infinite;
-          animation: showup 5s infinite;
+  -webkit-animation: showup 2s infinite ease-in-out;
+          animation: showup 2s infinite ease-in-out;
   text-transform: uppercase;
 }
 
@@ -1123,6 +1134,7 @@ hr {
 
 .cardMarian img, .cardLucas img, .cardRocio img {
   filter: brightness(1.2);
+  border-radius: 20%;
 }
 
 .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
@@ -1364,20 +1376,19 @@ hr {
 }
 .main2__historia .main2__historia--contenedor .dragonP {
   font-size: 2vw;
-}
-.main2__historia .main2__historia--contenedor .dragonP p {
+  padding: 5%;
   overflow: scroll;
 }
-.main2__historia .main2__historia--contenedor .dragonP p::-webkit-scrollbar {
+.main2__historia .main2__historia--contenedor .dragonP::-webkit-scrollbar {
   background-color: transparent;
   width: 10px;
 }
-.main2__historia .main2__historia--contenedor .dragonP p::-webkit-scrollbar-thumb {
-  background-color: black;
+.main2__historia .main2__historia--contenedor .dragonP::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.932);
   border-radius: 5px;
   border: 0.25em rgba(128, 128, 128, 0.801);
 }
-.main2__historia .main2__historia--contenedor .dragonP p::-webkit-scrollbar-corner {
+.main2__historia .main2__historia--contenedor .dragonP::-webkit-scrollbar-corner {
   display: none;
 }
 .main2__asociacionMundial {
@@ -1387,7 +1398,7 @@ hr {
   justify-content: center;
   margin-top: 200px;
   width: 100%;
-  height: 280vh;
+  height: 320vh;
   background-color: rgb(7, 7, 99);
   border-top-left-radius: 28%;
   border-top-right-radius: 28%;
@@ -1422,7 +1433,7 @@ hr {
   align-items: baseline;
   align-content: space-between;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1.5fr 2fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
   grid-template-areas: "wtsd wtsd" "parrafo1 parrafo2" "maestros maestros";
 }
 .main2__asociacionMundial .asociacionMundial__contenedor #wtsd {
@@ -1437,16 +1448,18 @@ hr {
   grid-area: parrafo1;
   text-align: center;
   color: rgb(214, 205, 205);
-  font-size: 1.5vw;
+  font-size: 2vw;
   width: 100%;
   text-align: center;
+  padding: 5%;
 }
 .main2__asociacionMundial .asociacionMundial__contenedor .parrafo2 {
   text-align: center;
   color: rgb(214, 205, 205);
-  font-size: 1.5vw;
+  font-size: 2vw;
   width: 100%;
   text-align: center;
+  padding: 5%;
 }
 .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros {
   grid-area: maestros;
@@ -1461,10 +1474,10 @@ hr {
   grid-area: tituloMaestros;
   text-transform: uppercase;
   text-align: center;
-  font-size: 5vw;
+  font-size: 4.2vw;
   color: wheat;
   text-shadow: 0px 5px 5px black;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .maestros {
   text-align: center;
@@ -1620,6 +1633,7 @@ hr {
 
 .cardMarian img, .cardLucas img, .cardRocio img {
   filter: brightness(1.2);
+  border-radius: 20%;
 }
 
 .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
@@ -2841,4 +2855,23 @@ hr {
     gap: 10px;
     margin-left: 0px;
   }
+}
+.paginaEventos {
+  width: 100%;
+  height: 100vh;
+}
+.paginaEventos .eventosTitulo {
+  text-align: center;
+  font-size: 6vw;
+  color: rgb(236, 201, 3);
+  text-shadow: -2px -5px 2px black, -4px -8px 5px black;
+  font-weight: 600;
+}
+.paginaEventos .eventosLista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 50%;
 }/*# sourceMappingURL=styles.css.map */

@@ -46,20 +46,22 @@
                     display: flex;
                     justify-content: center;
                     white-space: nowrap;
+                    text-shadow: 0px 0px 2px white;
                 }
 
                 .maestro {
                     width: 40%;
-                    animation: showup 7s infinite;
+                    animation: reveal 7s infinite linear;
+
                 }
 
-                .ayalaDaniel {
-                    
+                .ayalaDaniel {               
                     animation: reveal 7s infinite;
                 }
 
                 .ayalaDaniel span {
                     animation: slidein 7s infinite;
+
                 }
 
             }
@@ -119,7 +121,8 @@
         height: 90%;
         display: flex;
         align-items: flex-start;
-        background-color: rgba(211, 7, 0, 0.719);
+        background-color: rgba(248, 14, 6, 0.575);
+        backdrop-filter: blur(3px);
         z-index: 1;
         border: 15px solid rgba(139, 4, 4, 0.589);
         padding-right: 15px;
@@ -137,7 +140,7 @@
             font-weight: bold;
             font-size: 5vw;
             z-index: -10;
-            animation: showup 5s infinite;
+            animation: showup 2s infinite ease-in-out;
             text-transform: uppercase;
         }
     }

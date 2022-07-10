@@ -12,12 +12,17 @@
     border: 1px solid black;
     padding: .6px;
     background-color: white;
+    
+    
 
 }
 
 .cardMarian img, .cardLucas img, .cardRocio img{
     @extend %card;
     filter: brightness(1.2);
+    border-radius: 20%;
+    
+    
     
 }
 
@@ -101,6 +106,7 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    
 
 
 
