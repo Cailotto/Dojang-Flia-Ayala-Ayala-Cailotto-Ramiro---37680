@@ -204,3 +204,22 @@
         }
     }
 }
+
+.dan{
+    background-color: white;
+    height: 80vh;
+
+    .modal-header{
+        background-color: darkred;  
+    .modal-title{
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+    }
+    .modal-footer{
+        border-top: 2px solid black;
+        background-color: rgb(182, 182, 182);
+    }
+
+}
