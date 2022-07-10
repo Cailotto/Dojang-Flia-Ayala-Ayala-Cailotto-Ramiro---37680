@@ -2856,9 +2856,28 @@ hr {
     margin-left: 0px;
   }
 }
-.paginaEventos {
-  width: 100%;
+.mainEventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(40deg, darkred 10%, #ffcc5c 25% 45%, black 55% 75%, blue 90%);
   height: 100vh;
+}
+
+.paginaEventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 80%;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.199);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.87);
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  z-index: 0;
 }
 .paginaEventos .eventosTitulo {
   text-align: center;
@@ -2873,5 +2892,28 @@ hr {
   align-items: center;
   align-items: flex-end;
   width: 100%;
-  height: 50%;
+  height: 60%;
+  background-image: url(../recursos/campeonatoregional.jpeg);
+  background-size: 100%;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0;
+}
+.paginaEventos .eventosLista:hover {
+  filter: brightness(0.8);
+  transition: 0.2s;
+  border: none;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+}
+.modal-header .modal-title {
+  text-align: start;
+}
+.modal-header .modal-title1 {
+  text-align: end;
 }/*# sourceMappingURL=styles.css.map */
