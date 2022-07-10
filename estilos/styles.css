@@ -716,10 +716,10 @@ header nav .navbar-toggler {
 }
 @-webkit-keyframes slidein {
   0% {
-    margin-left: -200vw;
+    margin-left: -300vw;
   }
   20% {
-    margin-left: -200vw;
+    margin-left: -300vw;
   }
   35% {
     margin-left: 0px;
@@ -730,10 +730,10 @@ header nav .navbar-toggler {
 }
 @keyframes slidein {
   0% {
-    margin-left: -200vw;
+    margin-left: -300vw;
   }
   20% {
-    margin-left: -200vw;
+    margin-left: -300vw;
   }
   35% {
     margin-left: 0px;
@@ -853,6 +853,11 @@ header nav .navbar-toggler {
   width: 40vw;
   height: 80%;
   border: 1px solid rgba(0, 0, 0, 0.726);
+  box-shadow: 1px 0.5px 3px black;
+}
+
+.headerMedia {
+  display: none;
 }
 
 hr {
@@ -1088,7 +1093,7 @@ hr {
   width: 100vw;
   height: 100vh;
   left: 0;
-  top: 0;
+  top: -10px;
   transition: all 0.5s;
   transition-timing-function: ease-in-out;
   opacity: 0;
@@ -1525,7 +1530,7 @@ hr {
   width: 100vw;
   height: 100vh;
   left: 0;
-  top: 0;
+  top: -10px;
   transition: all 0.5s;
   transition-timing-function: ease-in-out;
   opacity: 0;
@@ -1730,13 +1735,38 @@ hr {
   }
 
   .header__carrousel {
-    height: 80vw;
+    display: none;
   }
-  .header__carrousel .carousel-item img {
-    height: 80vw;
-    -o-object-fit: fill;
-       object-fit: fill;
-    transform: translateY(50px);
+
+  .headerMedia {
+    margin-top: 50px;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(../recursos/patadaverde.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: 0px;
+    color: #000;
+  }
+  .headerMedia h1 {
+    width: 100%;
+    text-align: end;
+    font-size: 10vw;
+    text-transform: uppercase;
+    background: rgba(128, 128, 128, 0.63);
+    font-weight: 600;
+    padding-right: 10px;
+  }
+  .headerMedia h2 {
+    width: 100%;
+    text-align: end;
+    font-size: 8vw;
+    text-transform: uppercase;
+    background: rgba(107, 107, 107, 0.781);
+    padding-right: 10px;
   }
 
   .separador {
@@ -1793,14 +1823,37 @@ hr {
     height: 100%;
     justify-content: space-around;
   }
+  .tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
   .tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo div {
-    font-size: 5vw;
+    display: flex;
+    font-size: 7vw;
   }
   .tramado .tramadoOndas .tramadoOndas__texto p {
     font-size: 4vw;
     padding: 5%;
   }
 
+  @-webkit-keyframes margin {
+    0% {
+      margin-right: 0vw;
+    }
+    100% {
+      margin-right: 0vw;
+    }
+  }
+
+  @keyframes margin {
+    0% {
+      margin-right: 0vw;
+    }
+    100% {
+      margin-right: 0vw;
+    }
+  }
   .tramadoNegro {
     height: 150vh;
     z-index: 1;
@@ -1855,9 +1908,6 @@ hr {
     width: 90vw;
     height: 45%;
   }
-  .carrouselDaniel .carrouselDaniel__inner .carousel-item .strong {
-    transform: translateY(-50px);
-  }
 
   .cardMarian img, .cardLucas img, .cardRocio img {
     width: 70vw;
@@ -1870,6 +1920,9 @@ hr {
     height: 6vh;
     font-size: 3vw;
     border-left: 0.5px solid white;
+    background-color: #bb2525;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
   }
 
   .nuestraEscuela {
@@ -1878,11 +1931,15 @@ hr {
   .nuestraEscuela .nuestraEscuela__parallax {
     background-attachment: scroll;
   }
+  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo {
+    width: 100%;
+  }
+  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo h5 {
+    width: 100%;
+    font-size: 5vw;
+  }
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p {
     font-size: 3vw;
-  }
-  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia h5 {
-    font-size: 5vw;
   }
 
   .main2 .main2__header {
