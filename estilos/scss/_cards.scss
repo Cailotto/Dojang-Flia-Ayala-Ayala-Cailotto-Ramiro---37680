@@ -16,11 +16,14 @@
 }
 
 .cardMarian img, .cardLucas img, .cardRocio img{
-    @extend %card
+    @extend %card;
+    filter: brightness(1.2);
+    
 }
 
 .btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
     @extend %btn;
+    z-index: 2;
     
 
 }
@@ -75,7 +78,7 @@
 .cerrarbeaudoin,
 .cerrarstrong {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 10px;
     padding: .6em;
     background-color: tomato;

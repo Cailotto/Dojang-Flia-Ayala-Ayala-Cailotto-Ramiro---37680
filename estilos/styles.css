@@ -1076,6 +1076,14 @@ hr {
   background-color: white;
 }
 
+.cardMarian img, .cardLucas img, .cardRocio img {
+  filter: brightness(1.2);
+}
+
+.btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
+  z-index: 2;
+}
+
 .btnMarian:hover, .btnLucas:hover, .btnRocio:hover, .btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover {
   border-left: 20px solid darkred;
   color: black;
@@ -1119,7 +1127,7 @@ hr {
 .cerrarbeaudoin,
 .cerrarstrong {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 10px;
   padding: 0.6em;
   background-color: tomato;
@@ -1511,6 +1519,14 @@ hr {
   background-color: white;
 }
 
+.cardMarian img, .cardLucas img, .cardRocio img {
+  filter: brightness(1.2);
+}
+
+.btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
+  z-index: 2;
+}
+
 .btnMarian:hover, .btnLucas:hover, .btnRocio:hover, .btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover {
   border-left: 20px solid darkred;
   color: black;
@@ -1554,7 +1570,7 @@ hr {
 .cerrarbeaudoin,
 .cerrarstrong {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 10px;
   padding: 0.6em;
   background-color: tomato;
@@ -1934,7 +1950,7 @@ hr {
   }
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo h5 {
     width: 100%;
-    font-size: 5vw;
+    font-size: 7vw;
   }
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p {
     font-size: 3vw;
