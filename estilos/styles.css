@@ -1116,6 +1116,52 @@ hr {
           animation: showup 2s infinite ease-in-out;
   text-transform: uppercase;
 }
+.tramadoNegro .tramadoOndas1 .danes1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.tramadoNegro .tramadoOndas1 .danes1 .marian {
+  width: 30%;
+  height: 80vh;
+  background-image: url(../recursos/danmarianlargo.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+  border-left: 1px solid white;
+}
+.tramadoNegro .tramadoOndas1 .danes1 .marian:hover {
+  filter: brightness(0.8);
+}
+.tramadoNegro .tramadoOndas1 .danes1 .lucas {
+  width: 30%;
+  height: 80vh;
+  background-image: url(../recursos/danlucaslargo.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+  border-left: 1px solid white;
+}
+.tramadoNegro .tramadoOndas1 .danes1 .lucas:hover {
+  filter: brightness(0.6);
+}
+.tramadoNegro .tramadoOndas1 .danes1 .rocio {
+  width: 30%;
+  height: 80vh;
+  background-image: url(../recursos/danrociolargo.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+  border-left: 1px solid white;
+}
+.tramadoNegro .tramadoOndas1 .danes1 .rocio:hover {
+  filter: brightness(0.6);
+}
 
 .card-body {
   display: flex;
