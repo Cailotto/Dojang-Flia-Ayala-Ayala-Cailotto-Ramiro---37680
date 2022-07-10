@@ -132,6 +132,13 @@
       100% {opacity:0;width:355px;}
   }
 
+  @keyframes slideinF {
+    0% { margin-left: 300vw; }
+    20% { margin-left:300vw; }
+    35% { margin-left:0px;}
+    100% { margin-left:0px; }
+}
+
   @keyframes slideinE {
     0% { margin-left:-150vw; }
     20% { margin-left:-150vw; }
@@ -139,9 +146,3 @@
     100% { margin-left:0px; }
 }
 
-@keyframes slideinF {
-    0% { margin-right:-150vw; }
-    20% { margin-right:-150vw; }
-    35% { margin-right:0px;}
-    100% { margin-right:0px; }
-}

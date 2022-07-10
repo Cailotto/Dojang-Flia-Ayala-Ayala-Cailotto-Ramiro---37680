@@ -782,6 +782,34 @@ header nav .navbar-toggler {
     width: 355px;
   }
 }
+@-webkit-keyframes slideinF {
+  0% {
+    margin-left: 300vw;
+  }
+  20% {
+    margin-left: 300vw;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes slideinF {
+  0% {
+    margin-left: 300vw;
+  }
+  20% {
+    margin-left: 300vw;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
 @-webkit-keyframes slideinE {
   0% {
     margin-left: -150vw;
@@ -808,34 +836,6 @@ header nav .navbar-toggler {
   }
   100% {
     margin-left: 0px;
-  }
-}
-@-webkit-keyframes slideinF {
-  0% {
-    margin-right: -150vw;
-  }
-  20% {
-    margin-right: -150vw;
-  }
-  35% {
-    margin-right: 0px;
-  }
-  100% {
-    margin-right: 0px;
-  }
-}
-@keyframes slideinF {
-  0% {
-    margin-right: -150vw;
-  }
-  20% {
-    margin-right: -150vw;
-  }
-  35% {
-    margin-right: 0px;
-  }
-  100% {
-    margin-right: 0px;
   }
 }
 .header__carrousel {
@@ -1056,8 +1056,8 @@ hr {
   font-weight: bold;
   font-size: 5vw;
   z-index: -10;
-  -webkit-animation: showup 7s infinite;
-          animation: showup 7s infinite;
+  -webkit-animation: showup 5s infinite;
+          animation: showup 5s infinite;
   text-transform: uppercase;
 }
 
@@ -1209,6 +1209,14 @@ hr {
   align-items: center;
   overflow: hidden;
 }
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraE {
+  -webkit-animation: slideinE 7s infinite;
+          animation: slideinE 7s infinite;
+}
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraF {
+  -webkit-animation: slideinF 7s infinite;
+          animation: slideinF 7s infinite;
+}
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia h5 {
   text-shadow: 3px 2px 2px rgb(126, 126, 126);
   text-align: center;
@@ -1227,16 +1235,6 @@ hr {
   padding: 5%;
   font-size: 1.5vw;
 }
-.nuestraE {
-  -webkit-animation: slideinE 7s infinite;
-          animation: slideinE 7s infinite;
-}
-
-.nuestraF {
-  -webkit-animation: slideinF 7s infinite;
-          animation: slideinF 7s infinite;
-}
-
 .main2 {
   background-color: rgb(223, 223, 25);
 }

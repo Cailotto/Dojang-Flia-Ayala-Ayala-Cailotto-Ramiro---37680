@@ -38,6 +38,14 @@
             align-items: center;
             overflow: hidden;
 
+            .nuestraE{
+                animation: slideinE 7s infinite;
+            }
+            
+            .nuestraF{
+                animation: slideinF 7s infinite;
+            }
+
             h5 {
                 
                 text-shadow: 3px 2px 2px rgb(126, 126, 126);
@@ -77,10 +85,3 @@
 }
 
 
-.nuestraE{
-    animation: slideinE 7s infinite;
-}
-
-.nuestraF{
-    animation: slideinF 7s infinite;
-}
