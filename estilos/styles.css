@@ -1282,6 +1282,7 @@ hr {
 }
 .main2__historia .main2__historia--contenedor {
   width: 60%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1299,7 +1300,22 @@ hr {
   font-weight: 600;
 }
 .main2__historia .main2__historia--contenedor .dragonP {
-  font-size: 4vw;
+  font-size: 2vw;
+}
+.main2__historia .main2__historia--contenedor .dragonP p {
+  overflow: scroll;
+}
+.main2__historia .main2__historia--contenedor .dragonP p::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+.main2__historia .main2__historia--contenedor .dragonP p::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 5px;
+  border: 0.25em rgba(128, 128, 128, 0.801);
+}
+.main2__historia .main2__historia--contenedor .dragonP p::-webkit-scrollbar-corner {
+  display: none;
 }
 .main2__asociacionMundial {
   display: grid;

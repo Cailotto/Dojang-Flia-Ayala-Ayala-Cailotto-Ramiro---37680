@@ -38,6 +38,7 @@
 
         .main2__historia--contenedor {
             width: 60%;
+            height: 100%;
             @include display();
             flex-direction: column;
             text-align: center;
@@ -54,7 +55,26 @@
             }
 
             .dragonP {
-                font-size: 4vw;
+                font-size: 2vw;
+                p{
+                    overflow: scroll;
+
+
+                    &::-webkit-scrollbar {
+                        background-color: transparent;
+                        width: 10px;
+                    }
+    
+                    &::-webkit-scrollbar-thumb {
+                        background-color: black;
+                        border-radius: 5px;
+                        border: .25em rgba(128, 128, 128, 0.801);
+                    }
+    
+                    &::-webkit-scrollbar-corner {
+                        display: none;
+                    }
+                }
             }
         }
 
@@ -313,9 +333,6 @@
                 }
 
             }
-
-
-
         }
     }
 
