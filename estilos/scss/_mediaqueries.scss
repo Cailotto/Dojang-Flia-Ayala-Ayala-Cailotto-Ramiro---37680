@@ -345,23 +345,23 @@
             .main2__historia--contenedor {
                 width: 90%;
                 height: 80%;
-                align-items: center;
-               
-
-
+                justify-content: center;
+                gap: 40px;
+            
                 h1 {
                     font-size: 10vw;
                     color: darkred;
-                    margin-bottom: 20px;
+                    font-weight: 600;
 
                 }
 
-                p {
-                    align-self: flex-start;
-                    font-size: 3vw;
+                .dragonP{
                     overflow-y: scroll;
 
+              p{
+                    font-size: 5vw;
                 }
+            }
             }
 
         }
@@ -397,7 +397,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            grid-template-rows: 1fr 1.5fr 1fr;
 
             #wtsd {
                 text-align: center;

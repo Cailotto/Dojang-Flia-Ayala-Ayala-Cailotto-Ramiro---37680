@@ -1296,10 +1296,10 @@ hr {
   text-align: center;
   font-size: 5vw;
   color: darkred;
-  margin-bottom: 60px;
+  font-weight: 600;
 }
-.main2__historia .main2__historia--contenedor p {
-  font-size: 2vw;
+.main2__historia .main2__historia--contenedor .dragonP {
+  font-size: 4vw;
 }
 .main2__asociacionMundial {
   display: grid;
@@ -1993,17 +1993,19 @@ hr {
   .main2 .main2__historia .main2__historia--contenedor {
     width: 90%;
     height: 80%;
-    align-items: center;
+    justify-content: center;
+    gap: 40px;
   }
   .main2 .main2__historia .main2__historia--contenedor h1 {
     font-size: 10vw;
     color: darkred;
-    margin-bottom: 20px;
+    font-weight: 600;
   }
-  .main2 .main2__historia .main2__historia--contenedor p {
-    align-self: flex-start;
-    font-size: 3vw;
+  .main2 .main2__historia .main2__historia--contenedor .dragonP {
     overflow-y: scroll;
+  }
+  .main2 .main2__historia .main2__historia--contenedor .dragonP p {
+    font-size: 5vw;
   }
   .main2__asociacionMundial {
     display: flex;
@@ -2033,7 +2035,6 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    grid-template-rows: 1fr 1.5fr 1fr;
   }
   .main2 .asociacionMundial__contenedor #wtsd {
     text-align: center;
