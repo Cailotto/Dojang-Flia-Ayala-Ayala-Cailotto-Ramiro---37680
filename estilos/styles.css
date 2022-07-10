@@ -1260,18 +1260,19 @@ hr {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  overflow: hidden;
 }
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraE {
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 100%;
+  flex-wrap: nowrap;
   -webkit-animation: slideinE 7s infinite, reveal1 7s infinite;
           animation: slideinE 7s infinite, reveal1 7s infinite;
 }
@@ -1279,10 +1280,13 @@ hr {
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 100%;
+  flex-wrap: nowrap;
   -webkit-animation: slideinF 7s infinite, reveal1 7s infinite;
           animation: slideinF 7s infinite, reveal1 7s infinite;
 }
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo h5 {
+  width: 100%;
   text-shadow: 3px 2px 2px rgb(126, 126, 126);
   text-align: center;
   font-weight: bold;
