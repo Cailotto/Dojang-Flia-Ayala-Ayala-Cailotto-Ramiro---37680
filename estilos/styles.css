@@ -2060,10 +2060,10 @@ hr {
     grid-area: maestros;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     width: 100%;
     height: 100%;
+    gap: 30px;
   }
   .main2 .asociacionMundial__contenedor .main2__maestros .tituloMaestros {
     grid-area: tituloMaestros;
@@ -2073,7 +2073,6 @@ hr {
     color: wheat;
     text-shadow: 0px 5px 5px black;
     margin-bottom: 0px;
-    margin-top: 80px;
   }
   .main2 .asociacionMundial__contenedor .main2__maestros .maestros {
     text-align: center;
