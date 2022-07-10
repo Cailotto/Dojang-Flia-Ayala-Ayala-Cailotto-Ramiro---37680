@@ -104,18 +104,20 @@
             align-items: baseline;
             align-content: space-between;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 2fr 2fr;
+            grid-template-rows: 1fr 2fr 1fr 2fr;
             grid-template-areas: "wtsd wtsd"
-                "parrafo1 parrafo2"
-                "maestros maestros"
+                            "parrafo1 parrafo2"
+                            "tituloMaestros  tituloMaestros"
+                            "maestros maestros"
             ;
 
             #wtsd {
                 text-align: center;
                 font-size: 4vw;
                 grid-area: wtsd;
-                color: rgb(214, 205, 205);
+                color: wheat;
                 margin-bottom: 0%;
+                text-shadow: 0px 5px 5px black;
             }
 
             .parrafo1 {
@@ -134,6 +136,17 @@
                 width: 100%;
                 text-align: center;
             }
+
+            .tituloMaestros{
+                grid-area: tituloMaestros;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 5vw;
+                color: wheat;
+                text-shadow: 0px 5px 5px black;
+            }
+
+
 
             .main2__maestros {
                 grid-area: maestros;
@@ -176,14 +189,15 @@
         
 
         .nubes {
-
+            display: flex;
+            align-items: center;
+            position: relative;
             max-height: 100%;
             font-size: 7vw;
             color: rgb(211, 180, 5);
             text-align: center;
             letter-spacing: 5px;
             word-spacing: 40px;
-            top: -7px;
             text-shadow: 4px 4px 0px rgb(83, 72, 8);
             animation: scalenubes 3s infinite linear;
         }
