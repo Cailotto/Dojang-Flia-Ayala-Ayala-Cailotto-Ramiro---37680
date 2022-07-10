@@ -1,5 +1,5 @@
 .nuestraEscuela {
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     position: relative;
     width: 100%;
     height: 150vh;
@@ -38,22 +38,41 @@
             align-items: center;
             overflow: hidden;
 
-            .nuestraE{
-                animation: slideinE 7s infinite;
-            }
-            
-            .nuestraF{
-                animation: slideinF 7s infinite;
+            .nuestraEscuela__historiaTitulo{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .nuestraE{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    animation: slideinE 7s infinite, reveal1 7s infinite;
+                    
+                        
+                }
+                
+                .nuestraF{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    animation: slideinF 7s infinite, reveal1 7s infinite;
+                    
+                }
+    
+                h5 {
+                    
+                    text-shadow: 3px 2px 2px rgb(126, 126, 126);
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 5vw;
+                    color: white;
+                }
+
             }
 
-            h5 {
-                
-                text-shadow: 3px 2px 2px rgb(126, 126, 126);
-                text-align: center;
-                font-weight: bold;
-                font-size: 5vw;
-                color: white;
-            }
+
 
             p{
                 color: white;

@@ -88,7 +88,7 @@
     }
 
     .headerMedia {
-        margin-top: 50px;
+        margin-top: 40px;
         height: 90vh;
         width: 100%;
         display: flex;
@@ -246,6 +246,14 @@
     #strong:target {
         margin-top: 57px;
     }
+
+#marian,
+#lucas,
+#rocio{
+    top: -10px;
+}
+
+    
 
     .abrirMarian,
     .abrirLucas,

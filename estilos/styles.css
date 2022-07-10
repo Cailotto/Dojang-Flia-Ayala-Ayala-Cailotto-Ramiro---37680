@@ -430,6 +430,7 @@ header nav .navbar-toggler {
 
 #escuela:hover {
   text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(184, 50, 50);
+  transition: 0.3s;
 }
 
 #escuela:active {
@@ -438,6 +439,7 @@ header nav .navbar-toggler {
 
 #tangSoo:hover {
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(12, 12, 153);
+  transition: 0.3s;
 }
 
 #tangSoo:active {
@@ -446,6 +448,7 @@ header nav .navbar-toggler {
 
 #eventos:hover {
   text-shadow: 1px 1px 2px black, 0 0 15px yellow, 0 0 5px rgba(133, 133, 8, 0.616);
+  transition: 0.3s;
 }
 
 #eventos:active {
@@ -454,12 +457,14 @@ header nav .navbar-toggler {
 
 #contacto:hover {
   text-shadow: 1px 1px 2px black, 0 0 15px rgb(255, 253, 253), 0 0 5px rgba(255, 255, 255, 0.493);
+  transition: 0.3s;
 }
 
 #contacto:active {
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
+  transition: 0.3s;
 }
 
 .h1media {
@@ -782,6 +787,46 @@ header nav .navbar-toggler {
     width: 355px;
   }
 }
+@-webkit-keyframes reveal1 {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 100%;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+@keyframes reveal1 {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 100%;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
 @-webkit-keyframes slideinF {
   0% {
     margin-left: 300vw;
@@ -1101,7 +1146,7 @@ hr {
   width: 100vw;
   height: 100vh;
   left: 0;
-  top: -10px;
+  top: 0px;
   transition: all 0.5s;
   transition-timing-function: ease-in-out;
   opacity: 0;
@@ -1179,7 +1224,7 @@ hr {
 }
 
 .nuestraEscuela {
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   position: relative;
   width: 100%;
   height: 150vh;
@@ -1217,15 +1262,27 @@ hr {
   align-items: center;
   overflow: hidden;
 }
-.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraE {
-  -webkit-animation: slideinE 7s infinite;
-          animation: slideinE 7s infinite;
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraF {
-  -webkit-animation: slideinF 7s infinite;
-          animation: slideinF 7s infinite;
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraE {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  -webkit-animation: slideinE 7s infinite, reveal1 7s infinite;
+          animation: slideinE 7s infinite, reveal1 7s infinite;
 }
-.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia h5 {
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraF {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  -webkit-animation: slideinF 7s infinite, reveal1 7s infinite;
+          animation: slideinF 7s infinite, reveal1 7s infinite;
+}
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo h5 {
   text-shadow: 3px 2px 2px rgb(126, 126, 126);
   text-align: center;
   font-weight: bold;
@@ -1580,7 +1637,7 @@ hr {
   width: 100vw;
   height: 100vh;
   left: 0;
-  top: -10px;
+  top: 0px;
   transition: all 0.5s;
   transition-timing-function: ease-in-out;
   opacity: 0;
@@ -1789,7 +1846,7 @@ hr {
   }
 
   .headerMedia {
-    margin-top: 50px;
+    margin-top: 40px;
     height: 90vh;
     width: 100%;
     display: flex;
@@ -1931,6 +1988,12 @@ hr {
 #beaudoin:target,
 #strong:target {
     margin-top: 57px;
+  }
+
+  #marian,
+#lucas,
+#rocio {
+    top: -10px;
   }
 
   .abrirMarian,
