@@ -32,6 +32,15 @@
         background-position-x: 100vw;
     }
 }
+@keyframes nubes1 {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: 100vw;
+    }
+}
 
 @keyframes scalenubes {
     from{ transform: scale(1);}
@@ -104,11 +113,11 @@
 }
 
 
-@keyframes margin {
-    0%{ margin-right: 0vw;}
-    100%{margin-right: 4vw;}
+// @keyframes margin {
+//     0%{ margin-right: 0vw;}
+//     100%{margin-right: 4vw;}
     
-  }
+//   }
   
   @keyframes slidein {
       0% { margin-left:-300vw; }
