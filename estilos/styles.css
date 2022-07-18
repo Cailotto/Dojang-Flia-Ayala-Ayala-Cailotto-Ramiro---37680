@@ -115,9 +115,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .body__contacto {
-  background-image: url(../recursos/manual.jpeg);
-  background-size: cover;
-  background-position-y: -220px;
+  background-image: url(../recursos/masterdibujo.jpg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-x: 30%;
   height: 100vh;
   display: grid;
   grid-template-areas: "header" "main";
