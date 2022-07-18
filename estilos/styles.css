@@ -115,7 +115,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .body__contacto {
-  background-image: url(https://i.ibb.co/smff8vk/librotangsoodark.jpg);
+  background-image: url(../recursos/manual.jpeg);
   background-size: cover;
   background-position-y: -220px;
   height: 100vh;
@@ -1011,7 +1011,6 @@ hr {
 }
 .tramado .tramadoOndas .tramadoOndas__texto {
   width: 100%;
-  height: 70%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -1055,6 +1054,7 @@ hr {
   overflow: scroll;
   padding: 8%;
   color: black;
+  align-self: center;
 }
 .tramado .tramadoOndas .tramadoOndas__texto p::-webkit-scrollbar {
   background-color: transparent;
