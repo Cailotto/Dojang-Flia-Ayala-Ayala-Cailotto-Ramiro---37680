@@ -1884,10 +1884,10 @@ hr {
 .contacto__wpp,
 .contacto__fb {
   width: 100%;
-  height: 100%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 
