@@ -183,7 +183,8 @@
                     margin-left: 0px;
 
                     div {
-                        font-size: 2.5em;
+                        font-size: 3em;
+                        text-shadow: 0px 0px 1px white;
                     }
                 }
 
@@ -204,7 +205,7 @@
 
 
     .tramadoNegro {
-        height: 300vh;
+        height: 180vh;
         z-index: 1;
 
         .tramadoOndas1 {
@@ -215,7 +216,7 @@
             border: none;
             box-shadow: none;
             justify-content: start;
-            backdrop-filter: blur(1.5px);
+            backdrop-filter: blur(0px);
             gap: 10%;
             
 
@@ -535,7 +536,7 @@
     }
 
     .tramadoNegro {
-        height: 300vh;
+        height: 200vh;
 
     }
 
@@ -1050,25 +1051,9 @@
     text-align: center;
 }
 
-@media screen and (max-width:320px) {
-
-    .separador {
-        .separador__frase h2 {
-            font-size: 2.5em;
-            line-height: 600%;
-        }
-    }
-
-    .headerMedia h1 {
-        font-size: 1.5em;
-
-    }
-}
 
 
-.copy{
-    text-align: center;
-}
+
 
 @media screen and (min-width:768px) {
     .header__carrousel {
@@ -1102,9 +1087,6 @@
 
     }
 
-    .nuestraEscuela{
-        background-attachment: scroll;
-    }
 
 
 
@@ -1162,7 +1144,7 @@
         }
     
         .tramadoNegro {
-            height: 200vh;
+            height: 180vh;
     
     }
 
@@ -1181,3 +1163,4 @@
     }
 
     }
+
