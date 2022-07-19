@@ -32,19 +32,18 @@
         background-position-x: 100vw;
     }
 }
-@keyframes nubes1 {
-    from {
-        background-position-x: 0;
-    }
 
-    to {
-        background-position-x: 100vw;
-    }
-}
 
 @keyframes scalenubes {
     from{ transform: scale(1);}
     50%{ transform: scale(1.02);}
+    
+}
+
+@keyframes fontnubes {
+    from{ font-size: 3em;}
+    50%{ font-size: 3.2em;}
+    100%{ font-size: 3em;}
     
 }
 

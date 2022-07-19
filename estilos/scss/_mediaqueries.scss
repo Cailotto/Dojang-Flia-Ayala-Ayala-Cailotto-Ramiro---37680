@@ -42,9 +42,10 @@
 @media screen and (max-width: 576px) {
 
     .body__contacto {
-        background-image: url(https://i.ibb.co/tBqL0C1/librotangsoodarkalto.jpg);
-        background-size: 100%;
+        background-image: url(../recursos/manuallargo.jpg);
+        background-size: 115%;
         background-position-y: 0px;
+        background-position-x: -50px;
         height: 100vh;
         display: grid;
         grid-template-areas: "header"
@@ -201,56 +202,48 @@
 
 
     .tramadoNegro {
-        height: 350vh;
+        height: 200vh;
         z-index: 1;
 
         .tramadoOndas1 {
+            
             width: 100%;
             height: 100%;
             background-color: transparent;
             border: none;
             box-shadow: none;
-            justify-content: center;
+            justify-content: start;
             backdrop-filter: blur(1.5px);
+            gap: 10%;
+            
 
             .danesTitulo {
-                font-size: 2.3em;
+                font-size: 3.5em;
             }
 
-            .danes {
-                display: flex;
-                height: 70%;
-                width: 100%;
-
-            }
 
             .danes1 {
-                display: none;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                gap: 50px;
+                 .lucas,.rocio{
+                    width: 90%;
+                    height: 20%;
+                    background-position-y: -60px;
+                 }
+                    .marian{
+                        width: 90%;
+                    height: 20%;
+                    background-position-y: -100px;
+                    }
+
+                
             }
 
         }
     }
 
-    #marian:target,
-    #lucas:target,
-    #rocio:target {
-        margin-top: 98px;
-    }
-
-
-    .abrirMarian,
-    .abrirLucas,
-    .abrirRocio {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .abrirMarian p,
-    .abrirLucas p,
-    .abrirRocio p {
-        font-size: 1.2em;
-        line-height: 25px;
-    }
 
     .abrirjae,
     .abrirbeaudoin,
@@ -266,20 +259,6 @@
         justify-content: center;
     }
 
-    %card {
-        width: 90%;
-        height: 90%;
-        box-shadow: 0px 0px 5px white;
-    }
-
-    %btn {
-        width: 45%;
-        font-size: 1em;
-        border-left: .5px solid white;
-        background-color: #bb2525;
-        border-right: 1px solid grey;
-        border-bottom: 1px solid grey;
-    }
 
     .nuestraEscuela {
         height: 100vh;
@@ -404,7 +383,7 @@
                     .btnmaestros {
                         display: flex;
                         width: 30%;
-                        height: 20%;
+                        height: 15%;
                         font-size: 1em;
                     }
                 }
@@ -413,26 +392,30 @@
 
         &__separador--nubes {
             height: 100vh;
-            animation: nubes1 10s infinite linear;
+            animation: nubes 10s infinite linear;
             border-top: 2px solid gold;
             border-bottom: 2px solid gold;
 
             .nubes {
-                height: 35%;
+                height: 50%;
                 width: 100%;
                 text-shadow: 0px 0px 0px;
                 font-weight: 600;
                 background-color: #000;
                 font-size: 2.7em;
                 justify-content: center;
+                animation: fontnubes 3s infinite linear;
             }
         }
 
 
         &__viejaHistoria {
+            gap: 50px;
             .main2__viejaHistoria--contenedor {
+                
                 .historia__background {
                     display: none;
+                    
                 }
 
                 .historia {
@@ -524,7 +507,9 @@
     }
 }
 
-
+.copy{
+    text-align: center;
+}
 
 
 @media screen and (max-width:320px) {
@@ -543,6 +528,9 @@
 
 
 
+}
+.copy{
+    text-align: center;
 }
 
 @media screen and (max-width: 425px) {
@@ -600,6 +588,9 @@
             }
         }
     }
+}
+.copy{
+    text-align: center;
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px) {
@@ -773,7 +764,7 @@
             backdrop-filter: blur(1.5px);
 
             .danesTitulo {
-                font-size: 3.5em;
+                font-size: 4.5em;
             }
 
             .danes {
@@ -918,7 +909,7 @@
                     .btnmaestros {
                         display: flex;
                         width: 30%;
-                        height: 15%;
+                        height: 10%;
                         font-size: 1em;
                     }
                 }
@@ -927,7 +918,7 @@
 
         &__separador--nubes {
             height: 100vh;
-            animation: nubes1 10s infinite linear;
+            animation: nubes 10s infinite linear;
             border-top: 2px solid gold;
             border-bottom: 2px solid gold;
 
@@ -939,6 +930,7 @@
                 background-color: #000;
                 font-size: 3em;
                 justify-content: center;
+                animation: fontnubes 3s infinite linear;
             }
         }
 
@@ -985,13 +977,12 @@
 
 
     .body__contacto {
-        background-image: url(https://i.ibb.co/tBqL0C1/librotangsoodarkalto.jpg);
-        background-size: 100%;
-        background-position-y: 0px;
-        height: 100vh;
-        display: grid;
-        grid-template-areas: "header"
-            "main";
+        background-size: 240%;
+        background-position-x: 95%;
+        background-position-y: 18%;
+        height: 90vh;
+
+
     }
 
     .main__contacto {
@@ -1064,6 +1055,9 @@
         }
     }
 }
+.copy{
+    text-align: center;
+}
 
 @media screen and (max-width:320px) {
 
@@ -1079,8 +1073,14 @@
 
     }
 }
+.copy{
+    text-align: center;
+}
 
 @media screen and (min-width:768px) {
+    .header__carrousel {
+        height: 70vh;
+    }
     .navxl {
         display: block;
 
@@ -1099,10 +1099,46 @@
     }
 
     #escuela, #tangSoo, #eventos, #contacto{
-        font-size: 1.5vw;
+        font-size: 1em;
         text-align: center;
+    }
+
+    .body__contacto {
+        background-position-y: 20%;
+
+
     }
 
 
 
 }
+
+    @media screen and (min-width:769px) and (max-width:1024px){
+
+        .header__carrousel {
+            height: 70vh;
+        }
+        .main2__asociacionMundial {
+            border-top-left-radius: 0%;
+            border-top-right-radius: 0%;
+        }
+
+        .tramado .tramadoOndas {
+            width: 50%;
+            height: 50%}
+
+            .tramadoNegro .tramadoOndas1 .danesTitulo{
+                font-size: 5em;
+            }
+
+            .main2__asociacionMundial .asociacionMundial__contenedor #wtsd{
+                font-size: 3em;
+            }
+            .main2__viejaHistoria .main2__viejaHistoria--contenedor .historia{
+                gap: 20px;
+            }
+
+       
+
+
+    }

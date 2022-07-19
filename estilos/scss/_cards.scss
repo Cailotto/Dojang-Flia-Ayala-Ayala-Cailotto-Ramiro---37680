@@ -17,22 +17,14 @@
 
 }
 
-.cardMarian img, .cardLucas img, .cardRocio img{
-    @extend %card;
-    filter: brightness(1.2);
-    border-radius: 20%;
-    
-    
-    
-}
 
-.btnMarian, .btnLucas, .btnRocio, .btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
+.btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
     @extend %btn;
     z-index: 2;
     
 
 }
-.btnMarian:hover, .btnLucas:hover, .btnRocio:hover, .btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover {
+.btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover {
     @extend %btn;
     
     border-left: 20px solid darkred;
@@ -41,9 +33,7 @@
 
 }
 
-#marian,
-#lucas,
-#rocio,
+
 #jae,
 #beaudoin,
 #strong {
@@ -66,9 +56,6 @@
 
 
 
-#marian:target,
-#lucas:target,
-#rocio:target,
 #jae:target,
 #beaudoin:target,
 #strong:target {
@@ -79,9 +66,7 @@
 
 
 
-.cerrarMarian,
-.cerrarLucas,
-.cerrarRocio,
+
 .cerrarjae,
 .cerrarbeaudoin,
 .cerrarstrong {
@@ -97,9 +82,7 @@
 
 }
 
-.abrirMarian,
-.abrirLucas,
-.abrirRocio,
+
 .abrirjae,
 .abrirbeaudoin,
 .abrirstrong {
@@ -114,9 +97,6 @@
 }
 
 
-.abrirMarian p,
-.abrirLucas p,
-.abrirRocio p,
 .abrirjae p,
 .abrirbeaudoin p,
 .abrirstrong p {
