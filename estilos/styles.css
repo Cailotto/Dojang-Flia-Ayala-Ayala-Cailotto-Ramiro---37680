@@ -1984,9 +1984,10 @@ hr {
     height: 200vh;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 10px;
   }
   .tramado .tramadoOndas {
-    width: 100%;
+    width: 95%;
     height: 50%;
     padding: 10px;
     -webkit-backdrop-filter: blur(2px);
@@ -2058,8 +2059,6 @@ hr {
   }
   .nuestraEscuela {
     height: 100vh;
-  }
-  .nuestraEscuela .nuestraEscuela__parallax {
     background-attachment: scroll;
   }
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo h5 {
@@ -2678,6 +2677,9 @@ hr {
   .body__contacto {
     background-position-y: 20%;
   }
+  .nuestraEscuela {
+    background-attachment: scroll;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .header__carrousel {
@@ -2701,6 +2703,13 @@ hr {
     gap: 20px;
   }
 }
+@media screen and (max-width: 425px) {
+  .body__contacto {
+    background-size: 150%;
+    background-position-x: -100px;
+    background-position-y: -70px;
+  }
+}
 @media screen and (max-width: 320px) {
   .separador .separador__frase h2 {
     font-size: 2.5em;
@@ -2717,5 +2726,11 @@ hr {
   }
   .copy {
     text-align: center;
+  }
+  .main__contacto {
+    padding: 0px;
+  }
+  .contacto__ins, .contacto__wpp, .contacto__fb {
+    height: 80vh;
   }
 }/*# sourceMappingURL=styles.css.map */

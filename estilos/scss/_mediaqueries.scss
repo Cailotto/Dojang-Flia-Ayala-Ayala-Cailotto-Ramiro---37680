@@ -164,9 +164,10 @@
         height: 200vh;
         flex-direction: column;
         justify-content: space-between;
+        padding-top: 10px;
 
         .tramadoOndas {
-            width: 100%;
+            width: 95%;
             height: 50%;
             padding: 10px;
             backdrop-filter: blur(2px);
@@ -263,10 +264,10 @@
 
     .nuestraEscuela {
         height: 100vh;
+        background-attachment: scroll;
 
         .nuestraEscuela__parallax {
-            background-attachment: scroll;
-
+            
             .nuestraEscuela__historia {
                 .nuestraEscuela__historiaTitulo {
                     h5 {
@@ -1101,6 +1102,10 @@
 
     }
 
+    .nuestraEscuela{
+        background-attachment: scroll;
+    }
+
 
 
 }
@@ -1134,6 +1139,14 @@
 
 
     }
+
+    @media screen and (max-width: 425px) {
+        .body__contacto{
+            background-size: 150%;
+            background-position-x: -100px;
+            background-position-y: -70px;
+        }
+    }
     @media screen and (max-width:320px) {
 
         .separador {
@@ -1158,6 +1171,13 @@
     }
     .copy{
         text-align: center;
+    }
+    .main__contacto{
+        padding: 0px;
+        
+    }
+    .contacto__ins, .contacto__wpp, .contacto__fb{
+        height: 80vh;
     }
 
     }
