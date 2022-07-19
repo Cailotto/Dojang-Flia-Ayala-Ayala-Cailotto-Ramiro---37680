@@ -408,7 +408,6 @@ header nav .navbar-toggler {
   background-color: rgba(0, 0, 0, 0.664);
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5vw;
   letter-spacing: 1px;
 }
 #contacto:hover,
@@ -562,28 +561,6 @@ header nav .navbar-toggler {
   }
   50% {
     transform: scale(1.02);
-  }
-}
-@-webkit-keyframes fontnubes {
-  from {
-    font-size: 3em;
-  }
-  50% {
-    font-size: 3.2em;
-  }
-  100% {
-    font-size: 3em;
-  }
-}
-@keyframes fontnubes {
-  from {
-    font-size: 3em;
-  }
-  50% {
-    font-size: 3.2em;
-  }
-  100% {
-    font-size: 3em;
   }
 }
 @-webkit-keyframes flotar {
@@ -1013,12 +990,13 @@ hr {
   text-align: center;
   overflow: hidden;
   align-items: center;
+  padding-top: 50px;
 }
 .tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo {
   width: 90%;
   display: flex;
   justify-content: center;
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: 600;
   color: black;
   text-transform: uppercase;
@@ -2021,9 +1999,10 @@ hr {
   .tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo {
     flex-direction: column;
     align-items: center;
+    margin-left: 0px;
   }
   .tramado .tramadoOndas .tramadoOndas__texto .maestroTitulo div {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .tramado .tramadoOndas .tramadoOndas__texto p {
     font-size: 1.3em;
@@ -2035,7 +2014,7 @@ hr {
     margin-bottom: 10px;
   }
   .tramadoNegro {
-    height: 200vh;
+    height: 300vh;
     z-index: 1;
   }
   .tramadoNegro .tramadoOndas1 {
@@ -2050,7 +2029,7 @@ hr {
     gap: 10%;
   }
   .tramadoNegro .tramadoOndas1 .danesTitulo {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
   .tramadoNegro .tramadoOndas1 .danes1 {
     flex-direction: column;
@@ -2059,12 +2038,12 @@ hr {
     gap: 50px;
   }
   .tramadoNegro .tramadoOndas1 .danes1 .lucas, .tramadoNegro .tramadoOndas1 .danes1 .rocio {
-    width: 90%;
+    width: 100%;
     height: 20%;
     background-position-y: -60px;
   }
   .tramadoNegro .tramadoOndas1 .danes1 .marian {
-    width: 90%;
+    width: 100%;
     height: 20%;
     background-position-y: -100px;
   }
@@ -2180,6 +2159,7 @@ hr {
             animation: nubes 10s infinite linear;
     border-top: 2px solid gold;
     border-bottom: 2px solid gold;
+    overflow: hidden;
   }
   .main2__separador--nubes .nubes {
     height: 50%;
@@ -2189,8 +2169,8 @@ hr {
     background-color: #000;
     font-size: 2.7em;
     justify-content: center;
-    -webkit-animation: fontnubes 3s infinite linear;
-            animation: fontnubes 3s infinite linear;
+    -webkit-animation: scalenubes 3s infinite linear;
+            animation: scalenubes 3s infinite linear;
   }
   .main2__viejaHistoria {
     gap: 50px;
@@ -2265,19 +2245,6 @@ hr {
   text-align: center;
 }
 
-@media screen and (max-width: 320px) {
-  .separador .separador__frase h2 {
-    font-size: 2.5em;
-    line-height: 600%;
-  }
-  .headerMedia h1 {
-    font-size: 1.5em;
-  }
-}
-.copy {
-  text-align: center;
-}
-
 @media screen and (max-width: 425px) {
   .logo {
     width: 25%;
@@ -2287,8 +2254,11 @@ hr {
   .headerMedia {
     background-position: center;
   }
+  .separador .separador__frase h2 {
+    font-size: 2.8em;
+  }
   .tramadoNegro {
-    height: 200vh;
+    height: 300vh;
   }
   .main2__asociacionMundial {
     height: 250vh;
@@ -2573,6 +2543,7 @@ hr {
             animation: nubes 10s infinite linear;
     border-top: 2px solid gold;
     border-bottom: 2px solid gold;
+    overflow: hidden;
   }
   .main2__separador--nubes .nubes {
     height: 35%;
@@ -2582,8 +2553,8 @@ hr {
     background-color: #000;
     font-size: 3em;
     justify-content: center;
-    -webkit-animation: fontnubes 3s infinite linear;
-            animation: fontnubes 3s infinite linear;
+    -webkit-animation: scalenubes 3s infinite linear;
+            animation: scalenubes 3s infinite linear;
   }
   .main2__viejaHistoria .main2__viejaHistoria--contenedor .historia__background {
     display: none;
@@ -2701,7 +2672,7 @@ hr {
     font-size: 1.5em;
   }
   #escuela, #tangSoo, #eventos, #contacto {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
   }
   .body__contacto {
@@ -2728,5 +2699,23 @@ hr {
   }
   .main2__viejaHistoria .main2__viejaHistoria--contenedor .historia {
     gap: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .separador .separador__frase h2 {
+    font-size: 2.5em;
+    line-height: 600%;
+  }
+  .headerMedia h1 {
+    font-size: 1.5em;
+  }
+  .tramadoNegro {
+    height: 200vh;
+  }
+  .main2 .asociacionMundial__contenedor .main2__maestros .maestros .btnmaestros {
+    font-size: 70%;
+  }
+  .copy {
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */
