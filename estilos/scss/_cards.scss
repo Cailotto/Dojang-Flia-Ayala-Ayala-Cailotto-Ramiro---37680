@@ -18,20 +18,6 @@
 }
 
 
-.btnjae, .btnbeaudoin, .btnstrong, .btnmaestros {
-    @extend %btn;
-    z-index: 2;
-    
-
-}
-.btnjae:hover, .btnbeaudoin:hover, .btnstrong:hover, .btnmaestros:hover {
-    @extend %btn;
-    
-    border-left: 20px solid darkred;
-    color: black;
-    
-
-}
 
 
 #jae,
@@ -41,6 +27,7 @@
     color: #fff;
     position: fixed;
     width: 100vw;
+    height: 100vh;
     left: 0px;
     top: 0px;
     transition: all .5s;
@@ -90,7 +77,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-   
 
 }
 
@@ -100,32 +86,41 @@
 .abrirstrong p {
     padding-top: 20px;
     padding-bottom: 20px;
-    display: flex;
-    align-items: center;
     font-size: 1em;
     width: 70%;
-    height: 50%;
+    height: 70%;
     text-align: center;
     line-height: 1.2;
-    overflow: scroll;
+    overflow-y: scroll;
 
-    // &::-webkit-scrollbar {
-    //     @extend %whitescrollbar
-    // }
-
-    // &::-webkit-scrollbar-thumb {
-    //     @extend %whitescrollbar-thumb
-    // }
-
-    // &::-webkit-scrollbar-corner {
-    //     @extend %whitescrollbar-corner
-    // }
 }
+
+.abrirjae p::-webkit-scrollbar,
+.abrirbeaudoin p::-webkit-scrollbar,
+.abrirstrong p::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+.abrirjae p::-webkit-scrollbar-thumb,
+.abrirbeaudoin p::-webkit-scrollbar-thumb,
+.abrirstrong p::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 5px;
+    border: 0.25em rgba(128, 128, 128, 0.801);
+  }
+
+  .abrirjae p::-webkit-scrollbar-corner,
+.abrirbeaudoin p::-webkit-scrollbar-corner,
+.abrirstrong p::-webkit-scrollbar-corner {
+    display: none;
+  }
+  
 
 .abrirjae img,
 .abrirbeaudoin img,
 .abrirstrong img{
-    height: 60%;
+    height: 50%;
     width: 20%;
     border-radius: 2%;
     border: 1px solid gold;
