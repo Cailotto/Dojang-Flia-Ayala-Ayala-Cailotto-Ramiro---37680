@@ -20,7 +20,6 @@
         content: "";
         background-image: url(../recursos/tramadoondas.jpg);
         background-size: cover;
-        background-position: center;
         position: absolute;
         top: 0px;
         right: 0px;
@@ -52,12 +51,16 @@
 
         }
 
+        
+
         .nuestraEscuela__parallax .nuestraEscuela__historia p {
             font-size: 1em;
         }
 
     }
-
+    .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo h5{
+        font-size: 4em;
+    }
 
     .main2__historia .main2__historia--contenedor {
         width: 70%;

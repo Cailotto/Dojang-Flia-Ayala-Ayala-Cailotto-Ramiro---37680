@@ -236,7 +236,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dk-footer .contact-us {
-  padding-left: 80px;
+  padding-left: 0px;
 }
 
 .dk-footer .contact-us .contact-info {
@@ -302,7 +302,9 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 15px;
   margin-bottom: 15px;
+  color: white;
 }
 
 .footer-widget iframe {
@@ -327,7 +329,7 @@ body::-webkit-scrollbar-thumb {
 
 .copyright {
   padding: 28px 0;
-  margin-top: 55px;
+  margin-top: 20px;
   background-color: #202020;
 }
 
@@ -1230,7 +1232,6 @@ hr {
   overflow-y: scroll;
   width: 80%;
   height: 60%;
-  text-align: center;
   box-shadow: 0px 2px 50px rgb(100, 100, 100);
   padding: 5%;
   font-size: 1em;
@@ -1768,7 +1769,6 @@ hr {
     content: "";
     background-image: url(../recursos/tramadoondas.jpg);
     background-size: cover;
-    background-position: center;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -1791,6 +1791,9 @@ hr {
   }
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p {
     font-size: 1em;
+  }
+  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo h5 {
+    font-size: 4em;
   }
   .main2__historia .main2__historia--contenedor {
     width: 70%;
