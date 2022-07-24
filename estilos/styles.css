@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .body__contacto {
-  background-image: url(../recursos/manual.jpg);
+  background-image: url(../recursos/manualC.jpg);
   background-size: cover;
   height: 100vh;
   display: grid;
@@ -1234,7 +1234,7 @@ hr {
   height: 60%;
   box-shadow: 0px 2px 50px rgb(100, 100, 100);
   padding: 5%;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .main2 {
   background-color: rgb(223, 223, 25);
@@ -1653,8 +1653,8 @@ hr {
 .abrirjae p,
 .abrirbeaudoin p,
 .abrirstrong p {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-inline: 5px;
+  padding-block: 20px;
   font-size: 1em;
   width: 70%;
   height: 70%;
@@ -1699,7 +1699,7 @@ hr {
 .contacto__wpp,
 .contacto__fb {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1790,20 +1790,14 @@ hr {
     top: 0px;
   }
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p {
-    font-size: 1em;
-  }
-  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo h5 {
-    font-size: 4em;
+    font-size: 1.2em;
   }
   .main2__historia .main2__historia--contenedor {
     width: 70%;
     justify-content: space-between;
   }
   .main2__historia .main2__historia--contenedor h1 {
-    font-size: 4em;
-  }
-  .main2__historia .main2__historia--contenedor p {
-    font-size: 1em;
+    font-size: 5em;
   }
   .main2__asociacionMundial {
     border-top-left-radius: 35vw;
@@ -1813,7 +1807,7 @@ hr {
     width: 100%;
   }
   .main2__asociacionMundial .asociacionMundial__contenedor #wtsd {
-    font-size: 3em;
+    font-size: 4em;
   }
   .main2__asociacionMundial .asociacionMundial__contenedor .parrafo2 {
     height: 100%;
@@ -1821,7 +1815,7 @@ hr {
     align-items: center;
   }
   .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .tituloMaestros {
-    font-size: 3em;
+    font-size: 4em;
   }
   .main2__viejaHistoria .main2__viejaHistoria--contenedor .historia h1 {
     font-size: 3em;
