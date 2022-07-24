@@ -29,7 +29,7 @@
     &:active {
         color: black;
         text-shadow: 1px 1px 2px black, 0 0 15px rgba(0, 0, 0, 0.884), 0 0 5px rgba(0, 0, 0, 0.712);
-        background-color: map-get($paginas, contacto);;
+        background-color: map-get($colores, contacto);
     }
 
 }
@@ -42,7 +42,7 @@
     }
 
     &:active {
-        background-color: map-get($paginas, escuela);
+        background-color: map-get($colores, escuela);
     }
 }
 
@@ -54,7 +54,7 @@
     }
 
     &:active {
-        background-color: map-get($paginas, tangSoo);
+        background-color: map-get($colores, tangSoo);
     }
 
 }
@@ -68,7 +68,7 @@
     }
 
     &:active {
-        background-color: map-get($paginas, eventos);
+        background-color: map-get($colores, eventos);
     }
 }
 

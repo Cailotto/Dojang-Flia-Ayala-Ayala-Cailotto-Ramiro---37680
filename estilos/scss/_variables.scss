@@ -1,4 +1,18 @@
+/*Variables de mixin*/
 
+
+@mixin display {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    
+}
+@mixin mp0($m0,$p0) {
+    margin: $m0;
+    padding: $p0;
+}
+
+/*Variables de Elementos*/
 
 
 %whitescrollbar {
@@ -38,25 +52,6 @@
     top: -10px;
 }
 
-@mixin display {
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-    
-}
-@mixin mp0($m0,$p0) {
-    margin: $m0;
-    padding: $p0;
-}
-
-$paginas: (
-    escuela: #5c0000cb,
-    tangSoo: #010132bb,
-    eventos: #8585089d,
-    contacto: #ffffff86
-);
-
-
 
 %btn {
     @include display();
@@ -75,3 +70,26 @@ $paginas: (
     background-color: rgb(102, 101, 101);
     
 }
+
+
+
+
+
+
+
+
+/*Variables de Colores*/
+
+
+$colores: (
+    escuela: #5c0000cb,
+    tangSoo: #010132bb,
+    eventos: #8585089d,
+    contacto: #ffffff86,
+    navbar:#bb2525,
+    nbh1:#808080d0,
+    nbh2:#6b6b6bd0,
+    rojoOscuro:#8b0000,
+    separadorD:ecc903,
+
+)

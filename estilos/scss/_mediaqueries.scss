@@ -1,1166 +1,130 @@
-.navbar {
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-    border-bottom: 2px solid black;
-
-
-    .navbar__row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #bb2525;
-        padding-inline: 15px;
-
-        .h1media {
-            color: white;
-        }
-
-        #logo__img {
-            background-color: transparent;
-            border: 0px;
-
-
-
-            img {
-                position: static;
-                animation: none;
-
-            }
-        }
-
-        .navbar-toggler {
-            align-self: center;
-        }
-    }
-}
-
-
-
-
-
-@media screen and (max-width: 576px) {
-
-    .body__contacto {
-        background-image: url(../recursos/manuallargo.jpg);
-        background-size: 115%;
-        background-position-y: 0px;
-        background-position-x: -50px;
-        height: 100vh;
-        display: grid;
-        grid-template-areas: "header"
-            "main";
-    }
-
-
-    #main__principal {
-        background-position: center;
-
-        .inicio {
-            display: flex;
-            flex-direction: column;
-
-            a {
-                font-size: 1.5em;
-            }
-        }
-    }
-
-
-    .logo {
-        width: 20%;
-        height: 100%;
-        align-self: center;
-    }
-
-    .escuela,
-    .tangSoo,
-    .eventos,
-    .contacto {
-        border-radius: 0px;
-        border-top: 1px solid rgba(255, 255, 255, 0.116);
-
-    }
-
-    .header__carrousel {
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .navbar {
         display: none;
     }
 
-    .headerMedia {
-        margin-top: 40px;
-        height: 90vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        background-image: url(../recursos/patadaverde.jpeg);
-        background-size: cover;
-        color: #000;
-
-
-        h1 {
-            width: 100%;
-            text-align: end;
-            font-size: 2em;
-            text-transform: uppercase;
-            background: rgba(128, 128, 128, 0.815);
-            font-weight: 600;
-            padding-right: 10px;
-
-        }
-
-        h2 {
-            width: 100%;
-            text-align: end;
-            font-size: 1.6em;
-            text-transform: uppercase;
-            background: rgba(107, 107, 107, 0.815);
-            padding-right: 10px;
-        }
-    }
-
-    .separador {
-        width: 100%;
-        height: 100vh;
-
-        .separador__frase--img {
-            display: none;
-        }
-
-        .separador__frase {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            background-color: #bb2525;
-            border-top: #000 5px solid;
-            border-bottom: #000 5px solid;
-        }
-
-        .separador__frase h2 {
-
-            @include display();
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            background-image: url(https://i.ibb.co/Mkf5pWx/img-logo.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 40%;
-            font-size: 3.5em;
-            line-height: 600%;
-        }
-
-        .separador__frase--back {
-            background-color: black;
-            height: 3%;
-        }
-
-    }
-
-
-    .tramado {
-        height: 200vh;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-top: 10px;
-
-        .tramadoOndas {
-            width: 95%;
-            height: 50%;
-            padding: 10px;
-            backdrop-filter: blur(2px);
-
-            .tramadoOndas__texto {
-                width: 100%;
-                height: 100%;
-
-
-                .maestroTitulo {
-                    flex-direction: column;
-                    align-items: center;
-                    margin-left: 0px;
-
-                    div {
-                        font-size: 3em;
-                        text-shadow: 0px 0px 1px white;
-                    }
-                }
-
-                p {
-                    font-size: 1.3em;
-                    padding: 5%;
-                }
-            }
-        }
-    }
-
-    .carrouselDaniel {
-        width: 90vw;
-        height: 45%;
-        margin-bottom: 10px;
-
-    }
-
-
-    .tramadoNegro {
-        height: 180vh;
-        z-index: 1;
-
-        .tramadoOndas1 {
-            
-            width: 100%;
-            height: 100%;
-            background-color: transparent;
-            border: none;
-            box-shadow: none;
-            justify-content: start;
-            backdrop-filter: blur(0px);
-            gap: 10%;
-            
-
-            .danesTitulo {
-                font-size: 2.5em;
-            }
-
-
-            .danes1 {
-                flex-direction: column;
-                justify-content: start;
-                align-items: center;
-                gap: 50px;
-                 .lucas,.rocio{
-                    width: 100%;
-                    height: 20%;
-                    background-position-y: -60px;
-                 }
-                    .marian{
-                        width: 100%;
-                    height: 20%;
-                    background-position-y: -100px;
-                    }
-
-                
-            }
-
-        }
-    }
-
-
-    .abrirjae,
-    .abrirbeaudoin,
-    .abrirstrong {
-        display: none;
-    }
-
-
-
-
-    .danes {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-
-    .nuestraEscuela {
-        height: 100vh;
-        background-attachment: scroll;
-
-        .nuestraEscuela__parallax {
-            
-            .nuestraEscuela__historia {
-                .nuestraEscuela__historiaTitulo {
-                    h5 {
-                        width: 100%;
-                        font-size: 1.8em;
-                    }
-                }
-
-                p {
-                    font-size: .9em;
-                }
-            }
-        }
-    }
-
-
-
-    .main2 {
-        .main2__header {
-            background-attachment: scroll;
-            background-image: url(../recursos/paredasociacioncla.jpg);
-
-
-            .main2__header--separador {
-                background-size: 100%;
-            }
-        }
-
-        .main2__historia {
-            width: 100%;
-            height: 100vh;
-            margin-top: 10px;
-
-            .main2__historia--contenedor {
-                width: 90%;
-                height: 80%;
-                justify-content: center;
-                gap: 40px;
-
-                h1 {
-                    font-size: 2.5em;
-                    color: darkred;
-                    font-weight: 600;
-
-                }
-
-                .dragonP {
-                    overflow-y: scroll;
-
-                    p {
-                        font-size: 2.5em;
-                    }
-                }
-            }
-
-        }
-
-        &__asociacionMundial {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 330vh;
-            border-top-left-radius: 0%;
-            border-top-right-radius: 0%;
-            background-position: bottom;
-            background-position-y: 50px;
-            background-position-x: -100vw;
-
-            .yinyang {
-                align-self: center;
-                margin-top: 150px;
-
-                img {
-                    width: 70%;
-                }
-            }
-        }
-
-        .asociacionMundial__contenedor {
-            height: 100%;
-            align-self: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            #wtsd {
-                font-size: 2em;
-                margin-bottom: 10%;
-            }
-
-            .parrafo1 {
-                font-size: 1.2em;
-            }
-
-            .parrafo2 {
-                font-size: 1.2em;
-            }
-
-            .main2__maestros {
-                justify-content: end;
-                gap: 30px;
-
-                .tituloMaestros {
-                    font-size: 2em;
-                    margin-bottom: 0px;
-                }
-
-                .maestros {
-                    height: 50%;
-
-                    a {
-                        display: none;
-                    }
-
-                    .btnmaestros {
-                        display: flex;
-                        width: 30%;
-                        height: 15%;
-                        font-size: 1em;
-                    }
-                }
-            }
-        }
-
-        &__separador--nubes {
-            height: 100vh;
-            animation: nubes 10s infinite linear;
-            border-top: 2px solid gold;
-            border-bottom: 2px solid gold;
-            overflow: hidden;
-
-            .nubes {
-                height: 50%;
-                width: 100%;
-                text-shadow: 0px 0px 0px;
-                font-weight: 600;
-                background-color: #000;
-                font-size: 2.7em;
-                justify-content: center;
-                animation: scalenubes 3s infinite linear;
-                
-            }
-        }
-
-
-        &__viejaHistoria {
-            gap: 50px;
-            .main2__viejaHistoria--contenedor {
-                
-                .historia__background {
-                    display: none;
-                    
-                }
-
-                .historia {
-                    gap: 20px;
-
-                    p {
-                        font-size: .8em;
-                        margin-left: 0px;
-                    }
-
-                    h1 {
-                        font-size: 2em;
-                    }
-                }
-            }
-
-            .main2__historiaModerna--contenedor {
-                .historiaModerna__background {
-                    display: none;
-                }
-
-                .historiaModerna {
-                    p {
-                        font-size: .8em;
-                        margin-left: 0px;
-                    }
-
-                    h1 {
-                        font-size: 2em;
-                    }
-                }
-            }
-        }
-    }
-
-    .main__contacto {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-
-    .navxl {
-        display: none;
-    }
-
-    .dk-footer--row {
-        .col-6 {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-
-            .row {
-                flex-direction: column;
-                padding-top: 10px;
-            }
-        }
-    }
-
-    .dk-footer .contact-us {
-        padding-left: 0px;
-
-        .contact-info {
-            margin-left: 0px;
-            margin-top: 10px;
-        }
-    }
-
-    .footer-left-widget {
-        display: none;
-    }
-
-    .paginaEventos {
-        margin-top: 57px;
-        width: 90%;
-        height: 80%;
-        backdrop-filter: blur(10px);
-
-        .eventosTitulo {
-            font-size: 2em;
-            color: rgb(236, 201, 3);
-            text-shadow: -1px -3px 2px black, -3px -5px 5px black;
-        }
-
-        .eventosLista {
-            height: 40%;
-        }
-    }
-}
-
-.copy{
-    text-align: center;
-}
-
-
-
-
-@media screen and (max-width: 425px) {
-
-    .logo {
-        width: 25%;
-        height: 100%;
-        align-self: center;
-    }
-
-    .headerMedia {
-        background-position: center;
-    }
-
-    .separador .separador__frase h2{
-        font-size: 2.8em;
-    }
-
-    .tramadoNegro {
-        height: 200vh;
-
-    }
-
-
-    .main2 {
-
-        &__asociacionMundial {
-            height: 250vh;
-
-            .yinyang {
-                margin-top: 50px;
-                margin-bottom: 0px;
-
-                img {
-                    width: 50%;
-                }
-            }
-        }
-
-        .asociacionMundial__contenedor {
-
-            #wtsd {
-                margin-bottom: 50%;
-            }
-
-            .parrafo1 {
-                font-size: .8em;
-            }
-
-            .parrafo2 {
-                font-size: .8em;
-            }
-
-            .main2__maestros {
-                .maestros {
-                    .btnmaestros {
-                        width: 55%;
-                    }
-                }
-            }
-        }
-    }
-}
-.copy{
-    text-align: center;
-}
-
-@media screen and (min-width: 577px) and (max-width: 767px) {
-
-    #main__principal {
-        background-position: center;
-
-        .inicio {
-            display: flex;
-            flex-direction: column;
-
-            a {
-                font-size: 1.5em;
-            }
-        }
-    }
-
-
-    .logo {
-        width: 15%;
-        height: 100%;
-        align-self: center;
-    }
-
-    .escuela,
-    .tangSoo,
-    .eventos,
-    .contacto {
-        border-radius: 0px;
-        border-top: 1px solid rgba(255, 255, 255, 0.116);
-
-    }
-
-    .header__carrousel {
-        display: none;
-    }
-
-    .headerMedia {
-        margin-top: 40px;
-        height: 90vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        background-image: url(../recursos/patadaverde.jpeg);
-        background-size: cover;
-        background-position-y: -100px;
-        color: #000;
-
-
-        h1 {
-            width: 100%;
-            text-align: end;
-            font-size: 2em;
-            text-transform: uppercase;
-            background: rgba(128, 128, 128, 0.815);
-            font-weight: 600;
-            padding-right: 10px;
-
-        }
-
-        h2 {
-            width: 100%;
-            text-align: end;
-            font-size: 1.6em;
-            text-transform: uppercase;
-            background: rgba(107, 107, 107, 0.815);
-            padding-right: 10px;
-        }
-    }
-
-    .separador {
-        width: 100%;
-        height: 120vh;
-
-        .separador__frase--img {
-            display: none;
-        }
-
-        .separador__frase {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            background-color: #bb2525;
-            border-top: #000 5px solid;
-            border-bottom: #000 5px solid;
-        }
-
-        .separador__frase h2 {
-            @include display();
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            background-image: url(https://i.ibb.co/Mkf5pWx/img-logo.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 20%;
-            font-size: 5em;
-            line-height: 400%;
-        }
-
-        .separador__frase--back {
-            background-color: black;
-            height: 3%;
-        }
-
-    }
-
-
-    .tramado {
-        height: 200vh;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .tramadoOndas {
-            width: 100%;
-            height: 50%;
-            padding: 10px;
-            backdrop-filter: blur(2px);
-
-            .tramadoOndas__texto {
-                width: 100%;
-                height: 100%;
-
-
-                .maestroTitulo {
-                    flex-direction: column;
-                    align-items: center;
-
-                    div {
-                        font-size: 3em;
-                    }
-                }
-
-                p {
-                    font-size: 1.3em;
-                    padding: 5%;
-                }
-            }
-        }
-    }
-
-    .carrouselDaniel {
-        width: 90vw;
-        height: 45%;
-        margin-bottom: 10px;
-
-    }
-
-    .carousel-item{
-        .strong{
-            transform: translateY(-80px);
-        }
-    }
-
-
-
-    .tramadoNegro {
-        height: 150vh;
-        z-index: 1;
-
-        .tramadoOndas1 {
-            width: 100%;
-            height: 100%;
-            background-color: transparent;
-            border: none;
-            box-shadow: none;
-            justify-content: center;
-            backdrop-filter: blur(1.5px);
-
-            .danesTitulo {
-                font-size: 4.5em;
-            }
-
-            .danes {
-                display:none
-
-            }
-
-            .danes1 {
-                display: flex;
-            }
-
-        }
-    }
-
-    .abrirjae,
-    .abrirbeaudoin,
-    .abrirstrong {
-        display: none;
-    }
-
-
-    .nuestraEscuela {
-        height: 100vh;
-
-        .nuestraEscuela__parallax {
-            background-attachment: scroll;
-
-            .nuestraEscuela__historia {
-                .nuestraEscuela__historiaTitulo {
-                    h5 {
-                        width: 100%;
-                        font-size: 2.2em;
-                    }
-                }
-
-                p {
-                    font-size: .9em;
-                }
-            }
-        }
-    }
-
-
-
-    .main2 {
-        .main2__header {
-            background-attachment: scroll;
-            background-image: url(../recursos/paredasociacioncla.jpg);
-
-
-            .main2__header--separador {
-                background-size: 80%;
-            }
-        }
-
-        .main2__historia {
-            width: 100%;
-            height: 100vh;
-            margin-top: 200px;
-
-            .main2__historia--contenedor {
-                width: 90%;
-                height: 80%;
-                justify-content: center;
-                gap: 40px;
-
-                h1 {
-                    font-size: 3em;
-                    color: darkred;
-                    font-weight: 600;
-
-                }
-
-                .dragonP {
-                    overflow-y: scroll;
-
-                    p {
-                        font-size: 1.8em;
-                    }
-                }
-            }
-
-        }
-
-        &__asociacionMundial {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 330vh;
-            border-top-left-radius: 0%;
-            border-top-right-radius: 0%;
-            background-position: bottom;
-            background-position-y: 50px;
-            background-position-x: -100vw;
-
-            .yinyang {
-                align-self: center;
-                margin-top: 150px;
-
-                img {
-                    width: 90%;
-                }
-            }
-        }
-
-        .asociacionMundial__contenedor {
-            height: 100%;
-            align-self: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            #wtsd {
-                font-size: 3.5em;
-                margin-bottom: 10%;
-            }
-
-            .parrafo1 {
-                font-size: 1.2em;
-            }
-
-            .parrafo2 {
-                font-size: 1.2em;
-            }
-
-            .main2__maestros {
-                justify-content: end;
-                gap: 30px;
-
-                .tituloMaestros {
-                    font-size:3.5em;
-                    margin-bottom: 0px;
-                }
-
-                .maestros {
-                    height: 80%;
-
-                    a {
-                        display: none;
-                    }
-
-                    .btnmaestros {
-                        display: flex;
-                        width: 30%;
-                        height: 10%;
-                        font-size: 1em;
-                    }
-                }
-            }
-        }
-
-        &__separador--nubes {
-            height: 100vh;
-            animation: nubes 10s infinite linear;
-            border-top: 2px solid gold;
-            border-bottom: 2px solid gold;
-            overflow: hidden;
-
-            .nubes {
-                height: 35%;
-                width: 100%;
-                text-shadow: 0px 0px 0px;
-                font-weight: 600;
-                background-color: #000;
-                font-size: 3em;
-                justify-content: center;
-                animation: scalenubes 3s infinite linear;
-            }
-        }
-
-
-        &__viejaHistoria {
-            .main2__viejaHistoria--contenedor {
-                .historia__background {
-                    display: none;
-                }
-
-                .historia {
-                    gap: 20px;
-
-                    p {
-                        font-size: 1em;
-                        margin-left: 0px;
-                    }
-
-                    h1 {
-                        font-size: 2.5em;
-                    }
-                }
-            }
-
-            .main2__historiaModerna--contenedor {
-                .historiaModerna__background {
-                    display: none;
-                }
-
-                .historiaModerna {
-                    p {
-                        font-size: .8em;
-                        margin-left: 0px;
-                    }
-
-                    h1 {
-                        font-size: 2em;
-                    }
-                }
-            }
-        }
-    }
-
-
-
-    .body__contacto {
-        background-size: 240%;
-        background-position-x: 95%;
-        background-position-y: 18%;
-        height: 90vh;
-
-
-    }
-
-    .main__contacto {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-.contacto__ins,
-.contacto__wpp,
-.contacto__fb {
-    width: 50%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    padding-bottom: 100px;
-    text-align: start;
-
-}
-
-
-    .navxl {
-        display: none;
-    }
-
-    .dk-footer--row {
-        .col-6 {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-
-            .row {
-                flex-direction: column;
-                padding-top: 10px;
-            }
-        }
-    }
-
-    .dk-footer .contact-us {
-        padding-left: 0px;
-
-        .contact-info {
-            margin-left: 0px;
-            margin-top: 10px;
-        }
-    }
-
-    .footer-left-widget {
-        display: none;
-    }
-
-    .paginaEventos {
-        margin-top: 57px;
-        width: 90%;
-        height: 80%;
-        backdrop-filter: blur(10px);
-
-        .eventosTitulo {
-            font-size: 3em;
-            color: rgb(236, 201, 3);
-            text-shadow: -1px -3px 2px black, -3px -5px 5px black;
-        }
-
-        .eventosLista {
-            height: 60%;
-        }
-    }
-}
-.copy{
-    text-align: center;
-}
-
-
-
-
-
-@media screen and (min-width:768px) {
-    .header__carrousel {
-        height: 70vh;
-    }
-    .navxl {
-        display: block;
-
-    }
-
-    .navbar{
-        display: none;
-    }
-
-    #main__principal {
-        .inicio {
-            a {
-                font-size: 1.5em;
-            }
-        }
-    }
-
-    #escuela, #tangSoo, #eventos, #contacto{
+    #main__principal .inicio a {
         font-size: 1.2em;
-        text-align: center;
     }
 
-    .body__contacto {
-        background-position-y: 20%;
+    .tramado .tramadoAzul .tramadoAzul__texto .maestroTitulo {
+        font-size: 2em;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
 
+    .tramadoNegro::before {
+        content: "";
+        background-image: url(../recursos/tramadoondas.jpg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.25;
+        z-index: 1;
 
     }
 
+    .tramadoNegro .tramadoRojo {
+        .danesTitulo {
+            font-size: 5em;
+        }
+
+        .danes1 {
+            height: auto;
+        }
+
+    }
+
+    .nuestraEscuela {
+        .nuestraEscuela__parallax::after {
+            top: 20px;
+        }
+
+        .nuestraEscuela__parallax::before {
+            top: 0px;
+
+        }
+
+        .nuestraEscuela__parallax .nuestraEscuela__historia p {
+            font-size: 1em;
+        }
+
+    }
+
+
+    .main2__historia .main2__historia--contenedor {
+        width: 70%;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 4em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+
+    .main2__asociacionMundial {
+        border-top-left-radius: 35vw;
+        border-top-right-radius: 35vw;
+
+        .yinyang img {
+            width: 100%;
+        }
+
+        .asociacionMundial__contenedor {
+
+            #wtsd {
+                font-size: 3em;
+            }
+
+            .parrafo2 {
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+
+            .main2__maestros .tituloMaestros{
+                font-size: 3em;
+            }
+
+        }
+    }
+
+    .main2__viejaHistoria{
+        .main2__viejaHistoria--contenedor{
+
+            
+            .historia{
+                h1{
+                    font-size: 3em;
+                }
+                p{
+                    font-size: 1em;
+                }
+            } 
+            
+    
+        } 
+        .main2__historiaModerna--contenedor{
+            .historiaModerna{
+                p{
+                    font-size: 1em;
+                }
+            }
+        }
+
+    } 
+
+    
 
 
 
 }
-
-    @media screen and (min-width:769px) and (max-width:1024px){
-
-        .header__carrousel {
-            height: 70vh;
-        }
-        .main2__asociacionMundial {
-            border-top-left-radius: 0%;
-            border-top-right-radius: 0%;
-        }
-
-        .tramado .tramadoOndas {
-            width: 50%;
-            height: 50%}
-
-            .tramadoNegro .tramadoOndas1 .danesTitulo{
-                font-size: 5em;
-            }
-
-            .main2__asociacionMundial .asociacionMundial__contenedor #wtsd{
-                font-size: 3em;
-            }
-            .main2__viejaHistoria .main2__viejaHistoria--contenedor .historia{
-                gap: 20px;
-            }
-
-       
-
-
-    }
-
-    @media screen and (max-width: 425px) {
-        .body__contacto{
-            background-size: 150%;
-            background-position-x: -100px;
-            background-position-y: -70px;
-        }
-    }
-    @media screen and (max-width:320px) {
-
-        .separador {
-            .separador__frase h2 {
-                font-size: 2.5em;
-                line-height: 600%;
-            }
-        }
-    
-        .headerMedia h1 {
-            font-size: 1.5em;
-    
-        }
-    
-        .tramadoNegro {
-            height: 180vh;
-    
-    }
-
-    .main2 .asociacionMundial__contenedor .main2__maestros .maestros .btnmaestros {
-    font-size:70%;
-    }
-    .copy{
-        text-align: center;
-    }
-    .main__contacto{
-        padding: 0px;
-        
-    }
-    .contacto__ins, .contacto__wpp, .contacto__fb{
-        height: 80vh;
-    }
-
-    }
-
