@@ -1982,7 +1982,7 @@ hr {
     overflow-y: scroll;
   }
   .main2__historia .main2__historia--contenedor .dragonP p {
-    font-size: 2em;
+    font-size: 1.2em;
   }
   .main2__asociacionMundial {
     border-top-left-radius: 35vw;
@@ -2188,7 +2188,7 @@ hr {
     margin-left: 0px;
   }
   .tramado .tramadoAzul .tramadoAzul__texto .maestroTitulo div {
-    font-size: 3em;
+    font-size: 8vw;
     text-shadow: 0px 0px 1px white;
   }
   .tramado .tramadoAzul .tramadoAzul__texto p {
@@ -2285,7 +2285,7 @@ hr {
     overflow-y: scroll;
   }
   .main2 .main2__historia .main2__historia--contenedor .dragonP p {
-    font-size: 2em;
+    font-size: 0.8em;
   }
   .main2__asociacionMundial {
     display: flex;
