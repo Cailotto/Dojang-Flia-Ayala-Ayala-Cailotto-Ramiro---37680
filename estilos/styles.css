@@ -2257,7 +2257,7 @@ hr {
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo {
     justify-content: center;
   }
-  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo h5 {
+  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraE, .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraF {
     height: auto;
     font-size: 2.5em;
   }
@@ -2419,7 +2419,7 @@ hr {
     height: 70%;
   }
   .body__contacto {
-    background-image: url(../recursos/manuallargo.jpg);
+    background-image: url(../recursos/manuallarge.jpg);
     background-size: 120%;
     background-position-x: 55%;
     background-repeat: no-repeat;
@@ -2502,7 +2502,7 @@ hr {
     margin-top: 60px;
   }
   .body__contacto {
-    background-image: url(../recursos/manuallargo.jpg);
+    background-image: url(../recursos/manuallarge.jpg);
   }
   .body__contacto .main__contacto {
     height: 180vh;
@@ -2555,7 +2555,7 @@ hr {
     margin-top: 0px;
   }
   .body__contacto {
-    background-image: url(../recursos/manuallargo.jpg);
+    background-image: url(../recursos/manuallarge.jpg);
     background-position-y: -200px;
   }
   .sombra {
@@ -2592,9 +2592,9 @@ hr {
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo {
     justify-content: center;
   }
-  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo h5 {
+  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraE, .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraF {
     height: auto;
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .main2 .main2__header .main2__header--separador {
     background-size: 90%;
@@ -2605,7 +2605,7 @@ hr {
 }
 @media screen and (max-width: 360px) {
   .body__contacto {
-    background-image: url(../recursos/manuallargo.jpg);
+    background-image: url(../recursos/manuallarge.jpg);
     background-position-y: -160px;
   }
 }
@@ -2628,7 +2628,7 @@ hr {
     height: 40%;
   }
   .body__contacto {
-    background-image: url(../recursos/manuallargo.jpg);
+    background-image: url(../recursos/manuallarge.jpg);
     background-position-y: -50px;
   }
   .body__contacto .main__contacto .contacto__ins img,
@@ -2639,7 +2639,7 @@ hr {
 }
 @media screen and (max-width: 344px) {
   .body__contacto {
-    background-image: url(../recursos/manuallargo.jpg);
+    background-image: url(../recursos/manuallarge.jpg);
     background-position-y: 50px;
     background-repeat: repeat;
   }
