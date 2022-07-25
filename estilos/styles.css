@@ -1954,6 +1954,9 @@ hr {
   .tramadoNegro .tramadoRojo .danes1 .lucas {
     background-position-x: -30px;
   }
+  .nuestraEscuela {
+    background-attachment: scroll;
+  }
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo {
     font-size: 0.7em;
   }
@@ -2498,6 +2501,9 @@ hr {
     height: 55%;
     margin-top: 60px;
   }
+  .body__contacto {
+    background-image: url(../recursos/manuallargo.jpg);
+  }
   .body__contacto .main__contacto {
     height: 180vh;
   }
@@ -2549,6 +2555,7 @@ hr {
     margin-top: 0px;
   }
   .body__contacto {
+    background-image: url(../recursos/manuallargo.jpg);
     background-position-y: -200px;
   }
   .sombra {
@@ -2598,6 +2605,7 @@ hr {
 }
 @media screen and (max-width: 360px) {
   .body__contacto {
+    background-image: url(../recursos/manuallargo.jpg);
     background-position-y: -160px;
   }
 }
@@ -2620,6 +2628,7 @@ hr {
     height: 40%;
   }
   .body__contacto {
+    background-image: url(../recursos/manuallargo.jpg);
     background-position-y: -50px;
   }
   .body__contacto .main__contacto .contacto__ins img,
@@ -2630,6 +2639,7 @@ hr {
 }
 @media screen and (max-width: 344px) {
   .body__contacto {
+    background-image: url(../recursos/manuallargo.jpg);
     background-position-y: 50px;
     background-repeat: repeat;
   }
