@@ -229,9 +229,6 @@
         display: none;
     }
 
-    header nav .row #logo__img img {
-        top: 0px;
-    }
 
     .tramado {
         height: 200vh;
@@ -537,6 +534,7 @@
         justify-content: end;
         background-image: url(../recursos/patadaverde.jpeg);
         background-size: cover;
+        background-position: center;
         color: #000;
         text-transform: uppercase;
         text-align: end;
