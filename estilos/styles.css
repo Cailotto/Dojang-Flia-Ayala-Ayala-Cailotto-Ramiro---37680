@@ -1955,7 +1955,8 @@ hr {
     background-attachment: scroll;
   }
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo {
-    font-size: 0.7em;
+    font-size: 0.5em;
+    height: auto;
   }
   .nuestraEscuela .nuestraEscuela__parallax::after {
     top: 4%;
