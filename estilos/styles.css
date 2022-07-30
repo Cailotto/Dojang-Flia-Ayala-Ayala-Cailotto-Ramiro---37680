@@ -940,6 +940,10 @@ hr {
           animation: aparecer 0.6s linear forwards;
 }
 
+.brSeparador {
+  display: none;
+}
+
 .tramado {
   display: flex;
   justify-content: space-around;
@@ -1050,7 +1054,7 @@ hr {
 }
 .tramadoNegro .tramadoRojo {
   width: 90%;
-  height: 90%;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   background-color: rgba(248, 14, 6, 0.575);
@@ -1080,7 +1084,6 @@ hr {
   align-items: start;
   justify-content: space-around;
   width: 100%;
-  height: 100%;
 }
 .tramadoNegro .tramadoRojo .danes1 .marian {
   width: 30%;
@@ -1752,7 +1755,7 @@ hr {
           animation: sombra 1.5s alternate infinite linear;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 921px) {
   .navbar {
     display: none;
   }
@@ -1834,7 +1837,7 @@ hr {
     background-position-y: 50%;
   }
 }
-@media screen and (min-width: 769px) and (min-width: 1100px) {
+@media screen and (min-width: 921px) and (min-width: 1100px) {
   .tramadoNegro::before {
     content: "";
     background-image: url(../recursos/tramadoondas.jpg);
@@ -1853,7 +1856,10 @@ hr {
   #main__principal .inicio a {
     font-size: 2em;
   }
-  #contacto, #eventos, #tangSoo, #escuela {
+  #contacto,
+#eventos,
+#tangSoo,
+#escuela {
     font-size: 1.8em;
   }
   .tramado .tramadoAzul .tramadoAzul__texto .maestroTitulo {
@@ -1901,7 +1907,7 @@ hr {
     background-position-y: 60%;
   }
 }
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 920px) {
   .navbar {
     display: none;
   }
@@ -2069,6 +2075,150 @@ hr {
     gap: 30px;
   }
 }
+@media screen and (min-width: 576px) and (max-width: 920px) and (orientation: landscape) {
+  .navxl {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+    padding: 0;
+    border-bottom: 2px solid black;
+  }
+  .navbar .navbar__row {
+    background-color: #bb2525;
+    padding-inline: 15px;
+  }
+  .navbar .navbar__row .h1media {
+    color: white;
+  }
+  .navbar .navbar__row #logo__img {
+    background-color: transparent;
+    border: 0px;
+  }
+  .navbar .navbar__row #logo__img img {
+    position: static;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .header__carrousel {
+    display: none;
+  }
+  .headerMedia {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url(../recursos/patadaverde.jpeg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -110px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: end;
+  }
+  .headerMedia h1 {
+    font-size: 2em;
+    background-color: rgba(128, 128, 128, 0.8156862745);
+    padding-right: 10px;
+  }
+  .headerMedia h2 {
+    font-size: 1.6em;
+    background-color: rgba(107, 107, 107, 0.8156862745);
+    padding-right: 10px;
+  }
+  .brSeparador {
+    display: flex;
+  }
+  .separador {
+    height: 180vh;
+  }
+  .separador .separador__frase--img {
+    display: none;
+  }
+  .separador .separador__frase {
+    display: flex;
+    height: 100%;
+    background-color: #bb2525;
+    border-top: #000 5px solid;
+    border-bottom: #000 5px solid;
+  }
+  .separador .separador__frase h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://i.ibb.co/Mkf5pWx/img-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    font-size: 5em;
+    line-height: 600%;
+  }
+  .separador .separador__frase--back {
+    background-color: black;
+    height: 15px;
+  }
+  .tramado {
+    height: 300vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .tramado .tramadoAzul {
+    width: 95%;
+    height: 50%;
+    padding: 10px;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  .tramado .tramadoAzul .tramadoAzul__texto .maestroTitulo {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .tramado .tramadoAzul .tramadoAzul__texto .maestroTitulo div {
+    font-size: 7vw;
+    text-shadow: 0px 0px 1px white;
+  }
+  .tramado .tramadoAzul .tramadoAzul__texto p {
+    font-size: 1.3em;
+    padding: 3%;
+  }
+  .carrouselDaniel {
+    width: 70%;
+    height: 45%;
+    margin-bottom: 10px;
+  }
+  .nuestraEscuela {
+    height: 250vh;
+    background-attachment: scroll;
+  }
+  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraE,
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraF {
+    font-size: 6em;
+  }
+  .main2 .main2__header {
+    height: 120vh;
+    background-attachment: scroll;
+    background-image: url(../recursos/paredasociacioncla.jpg);
+  }
+  .main2 .main2__header .main2__header--separador {
+    background-size: 60%;
+  }
+  .main2__historia .main2__historia--contenedor {
+    width: 80%;
+  }
+  .main2__historia .main2__historia--contenedor h1 {
+    font-size: 4em;
+  }
+  .mainEventos {
+    height: 150vh;
+  }
+  .body__contacto {
+    background-position-y: -40px;
+  }
+}
 @media screen and (max-width: 575px) {
   #main__principal .inicio {
     display: flex;
@@ -2128,6 +2278,7 @@ hr {
     justify-content: end;
     background-image: url(../recursos/patadaverde.jpeg);
     background-size: cover;
+    background-position-x: center;
     color: #000;
     text-transform: uppercase;
     text-align: end;
@@ -2255,12 +2406,13 @@ hr {
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo {
     justify-content: center;
   }
-  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraE, .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraF {
+  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraE,
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraF {
     height: auto;
     font-size: 2.5em;
   }
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p {
-    font-size: 0.9em;
+    font-size: 1.5em;
     height: 70%;
   }
   .main2 .main2__header {
@@ -2489,7 +2641,6 @@ hr {
   .tramadoNegro .tramadoRojo .danes1 .marian {
     width: 90%;
     height: 43%;
-    background-position-y: -100px;
   }
   .main2__asociacionMundial .asociacionMundial__contenedor #wtsd,
 .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .tituloMaestros {
@@ -2526,8 +2677,6 @@ hr {
     width: 12%;
     margin-left: 0px;
   }
-}
-@media screen and (max-width: 475px) {
   #main__principal .inicio .logo {
     width: 25%;
   }
@@ -2560,8 +2709,6 @@ hr {
     width: 15%;
     margin-left: 0px;
   }
-}
-@media screen and (max-width: 375px) {
   .separador .separador__frase h2 {
     font-size: 3em;
     line-height: 700%;
@@ -2590,7 +2737,8 @@ hr {
   .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo {
     justify-content: center;
   }
-  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraE, .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraF {
+  .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraE,
+.nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia .nuestraEscuela__historiaTitulo .nuestraF {
     height: auto;
     font-size: 2.5em;
   }
@@ -2625,17 +2773,11 @@ hr {
   .paginaEventos .eventosLista {
     height: 40%;
   }
-  .body__contacto {
-    background-image: url(../recursos/manuallarge.jpg);
-    background-position-y: -50px;
-  }
   .body__contacto .main__contacto .contacto__ins img,
 .body__contacto .main__contacto .contacto__wpp img,
 .body__contacto .main__contacto .contacto__fb img {
     width: 90%;
   }
-}
-@media screen and (max-width: 344px) {
   .body__contacto {
     background-image: url(../recursos/manuallarge.jpg);
     background-position-y: 50px;
