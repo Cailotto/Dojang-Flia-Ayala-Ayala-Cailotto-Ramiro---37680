@@ -1909,6 +1909,9 @@ hr {
 }
 @media screen and (min-width: 576px) and (max-width: 920px) {
   .navbar {
+    display: flex;
+  }
+  .navxl {
     display: none;
   }
   .tramado {
