@@ -1542,7 +1542,7 @@ hr {
   padding-top: 50px;
   padding-bottom: 50px;
   width: 80%;
-  height: 90vh;
+  height: 90%;
   background-color: rgba(255, 255, 255, 0.199);
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.87);
   -webkit-backdrop-filter: blur(100px);
@@ -2151,7 +2151,7 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30%;
-    font-size: 5em;
+    font-size: 4em;
     line-height: 600%;
   }
   .separador .separador__frase--back {
@@ -2245,6 +2245,7 @@ hr {
   }
   .mainEventos {
     height: 150vh;
+    padding-block: 50px;
   }
   .body__contacto {
     background-position-y: -40px;
