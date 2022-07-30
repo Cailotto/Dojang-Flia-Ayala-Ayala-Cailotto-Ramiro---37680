@@ -60,6 +60,7 @@
 
     .main2__historia .main2__historia--contenedor {
         width: 70%;
+        height: 500px;
         justify-content: space-between;
 
         h1 {
@@ -323,12 +324,12 @@
     }
 
     .main2__historia {
-        height: 100vh;
+        height: 150vh;
         margin-top: 10px;
 
         .main2__historia--contenedor {
             width: 90%;
-            height: 80%;
+            height: 400px;
             gap: 40px;
 
             h1 {
@@ -508,7 +509,7 @@
         background-image: url(../recursos/patadaverde.jpeg);
         background-size: cover;
         background-position-x: center;
-        background-position-y: -110px;
+        background-position-y: top;
         color: #000;
         text-transform: uppercase;
         text-align: end;
@@ -596,6 +597,15 @@
             }
         }
     }
+    .tramadoNegro .tramadoRojo {
+        gap: 0px;
+        .danes1 {
+            height: auto;
+
+            .marian, .lucas,
+            .rocio {
+                background-position-x: 0px;
+            }}}
 
     .carrouselDaniel {
         width: 70%;
@@ -633,11 +643,35 @@
         }
     }
 
+
     .main2__historia .main2__historia--contenedor {
         width: 80%;
+        height: 500px;
 
         h1 {
             font-size: 4em;
+        }
+    }
+    .main2__asociacionMundial .asociacionMundial__contenedor{
+        gap: 50px;
+    }
+    .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .maestros{
+        height: 250px;
+        
+
+        a{
+            display: none;
+        }
+        .btnmaestros {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 12%;
+            font-size: 1em;
+            padding: 5px;
+            border: none;
+            background-color: map-get($colores, rojoOscuro);
         }
     }
 
@@ -961,7 +995,7 @@
                 margin-bottom: 95px;
 
                 img {
-                    width: 70%;
+                    width: 100%;
                 }
             }
 
