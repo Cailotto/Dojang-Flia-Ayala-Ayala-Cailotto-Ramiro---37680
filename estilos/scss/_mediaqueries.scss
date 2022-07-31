@@ -979,7 +979,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 330vh;
+            height: 230vh;
             margin-top: 0px;
             border-top-left-radius: 35vw;
             border-top-right-radius: 35vw;
@@ -1007,7 +1007,10 @@
 
                 #wtsd {
                     font-size: 2em;
-                    margin-bottom: 20%;
+                    height: 50%;
+                    display:flex;
+                    align-items: flex-end;
+                    padding-inline:20px;
                 }
 
                 .parrafo1 {
@@ -1029,9 +1032,7 @@
                     .tituloMaestros {
                         font-size: 2em;
                         margin-bottom: 0px;
-
-
-
+                        padding-inline:20px;
                     }
 
                     .maestros {
