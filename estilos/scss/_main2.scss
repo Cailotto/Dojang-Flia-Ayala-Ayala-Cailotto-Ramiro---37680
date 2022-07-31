@@ -137,6 +137,9 @@
 
             .parrafo1 {
                 grid-area: parrafo1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 text-align: center;
                 color: rgb(214, 205, 205);
                 font-size: 2vw;
@@ -147,6 +150,9 @@
 
             .parrafo2 {
                 text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 color: rgb(214, 205, 205);
                 font-size: 2vw;
                 width: 100%;

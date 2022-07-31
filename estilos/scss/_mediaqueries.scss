@@ -60,7 +60,7 @@
 
     .main2__historia .main2__historia--contenedor {
         width: 70%;
-        height: 500px;
+        height:700px;
         justify-content: space-between;
 
         h1 {
@@ -82,9 +82,13 @@
             #wtsd {
                 font-size: 3.5em;
             }
+            .parrafo1{
+                display: flex;
+            }
 
             .parrafo2 {
                 height: 100%;
+                    display: flex;
             }
 
             .main2__maestros .tituloMaestros {
@@ -131,6 +135,7 @@
 
     .body__contacto {
         background-position-y: 50%;
+        background-repeat:repeat;
     }
 
 
@@ -227,6 +232,7 @@
 
     .body__contacto {
         background-position-y: 60%;
+        background-repeat:repeat;
     }
 }
 
@@ -289,14 +295,6 @@
         .danes1 {
             height: auto;
 
-            .marian,
-            .rocio {
-                background-position-x: -50px;
-            }
-
-            .lucas {
-                background-position-x: -30px;
-            }
         }
     }
 
@@ -458,6 +456,7 @@
     .body__contacto {
         background-size: 100%;
         background-position-y: 70%;
+        background-repeat:repeat;
     }
 
     .contacto__ins,
@@ -682,6 +681,7 @@
 
     .body__contacto {
         background-position-y: -40px;
+        background-repeat:repeat;
     }
 
 
@@ -697,7 +697,7 @@
             flex-direction: column;
 
             .logo {
-                width: 20%;
+                width: 30%;
                 height: 100%;
                 align-self: center;
             }
@@ -807,7 +807,7 @@
             background-repeat: no-repeat;
             background-position: center;
             font-size: 3.7em;
-            line-height: 500%;
+            line-height: 800%;
         }
 
         .separador__frase--back {
@@ -894,13 +894,13 @@
                 .rocio {
                     width: 60%;
                     height: 50%;
-                    background-position-y: -30px;
+
                 }
 
                 .marian {
                     width: 60%;
                     height: 50%;
-                    background-position-y: -50px;
+
                 }
             }
         }
@@ -1049,7 +1049,7 @@
                             align-items: center;
                             justify-content: center;
                             width: 90%;
-                            height: 12%;
+                            height: 40px;
                             font-size: 1em;
                             padding: 5px;
                             border: none;
@@ -1152,10 +1152,10 @@
         background-image: url(../recursos/manuallarge.jpg);
         background-size: 120%;
         background-position-x: 55%;
-        background-repeat: no-repeat;
+        background-repeat:repeat;
 
         .main__contacto {
-            height: 100%;
+            height: 170vh;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -1261,6 +1261,7 @@
 
     .body__contacto {
         background-image: url(../recursos/manuallarge.jpg);
+        background-repeat:repeat;
 
         .main__contacto {
             height: 150vh;
@@ -1329,6 +1330,7 @@
     .body__contacto {
         background-image: url(../recursos/manuallarge.jpg);
         background-position-y: -200px;
+        background-repeat:repeat;
     }
 
     .sombra {
@@ -1398,6 +1400,10 @@
         background-position-y: 450px;
     }
 
+    .main2__separador--nubes .nubes{
+        height: 75%;
+    }
+
 }
 
 
@@ -1406,6 +1412,7 @@
     .body__contacto {
         background-image: url(../recursos/manuallarge.jpg);
         background-position-y: -160px;
+        background-repeat:repeat;
     }
 
 }
@@ -1444,6 +1451,6 @@
     .body__contacto {
         background-image: url(../recursos/manuallarge.jpg);
         background-position-y: 50px;
-        background-repeat: repeat;
+        background-repeat:repeat;
     }
 }

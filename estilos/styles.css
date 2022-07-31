@@ -1362,6 +1362,9 @@ hr {
 }
 .main2__asociacionMundial .asociacionMundial__contenedor .parrafo1 {
   grid-area: parrafo1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: rgb(214, 205, 205);
   font-size: 2vw;
@@ -1371,6 +1374,9 @@ hr {
 }
 .main2__asociacionMundial .asociacionMundial__contenedor .parrafo2 {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: rgb(214, 205, 205);
   font-size: 2vw;
   width: 100%;
@@ -1793,7 +1799,7 @@ hr {
   }
   .main2__historia .main2__historia--contenedor {
     width: 70%;
-    height: 500px;
+    height: 700px;
     justify-content: space-between;
   }
   .main2__historia .main2__historia--contenedor h1 {
@@ -1809,8 +1815,12 @@ hr {
   .main2__asociacionMundial .asociacionMundial__contenedor #wtsd {
     font-size: 3.5em;
   }
+  .main2__asociacionMundial .asociacionMundial__contenedor .parrafo1 {
+    display: flex;
+  }
   .main2__asociacionMundial .asociacionMundial__contenedor .parrafo2 {
     height: 100%;
+    display: flex;
   }
   .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .tituloMaestros {
     font-size: 3.5em;
@@ -1832,6 +1842,7 @@ hr {
   }
   .body__contacto {
     background-position-y: 50%;
+    background-repeat: repeat;
   }
 }
 @media screen and (min-width: 921px) and (min-width: 1100px) {
@@ -1902,6 +1913,7 @@ hr {
   }
   .body__contacto {
     background-position-y: 60%;
+    background-repeat: repeat;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 920px) {
@@ -1949,13 +1961,6 @@ hr {
   }
   .tramadoNegro .tramadoRojo .danes1 {
     height: auto;
-  }
-  .tramadoNegro .tramadoRojo .danes1 .marian,
-.tramadoNegro .tramadoRojo .danes1 .rocio {
-    background-position-x: -50px;
-  }
-  .tramadoNegro .tramadoRojo .danes1 .lucas {
-    background-position-x: -30px;
   }
   .nuestraEscuela {
     background-attachment: scroll;
@@ -2068,6 +2073,7 @@ hr {
   .body__contacto {
     background-size: 100%;
     background-position-y: 70%;
+    background-repeat: repeat;
   }
   .contacto__ins,
 .contacto__wpp,
@@ -2249,6 +2255,7 @@ hr {
   }
   .body__contacto {
     background-position-y: -40px;
+    background-repeat: repeat;
   }
 }
 @media screen and (max-width: 575px) {
@@ -2257,7 +2264,7 @@ hr {
     flex-direction: column;
   }
   #main__principal .inicio .logo {
-    width: 20%;
+    width: 30%;
     height: 100%;
     align-self: center;
   }
@@ -2347,7 +2354,7 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     font-size: 3.7em;
-    line-height: 500%;
+    line-height: 800%;
   }
   .separador .separador__frase--back {
     background-color: black;
@@ -2416,12 +2423,10 @@ hr {
 .tramadoNegro .tramadoRojo .danes1 .rocio {
     width: 60%;
     height: 50%;
-    background-position-y: -30px;
   }
   .tramadoNegro .tramadoRojo .danes1 .marian {
     width: 60%;
     height: 50%;
-    background-position-y: -50px;
   }
   .nuestraEscuela {
     height: 120vh;
@@ -2531,7 +2536,7 @@ hr {
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 12%;
+    height: 40px;
     font-size: 1em;
     padding: 5px;
     border: none;
@@ -2604,10 +2609,10 @@ hr {
     background-image: url(../recursos/manuallarge.jpg);
     background-size: 120%;
     background-position-x: 55%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
   }
   .body__contacto .main__contacto {
-    height: 100%;
+    height: 170vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -2684,6 +2689,7 @@ hr {
   }
   .body__contacto {
     background-image: url(../recursos/manuallarge.jpg);
+    background-repeat: repeat;
   }
   .body__contacto .main__contacto {
     height: 150vh;
@@ -2736,6 +2742,7 @@ hr {
   .body__contacto {
     background-image: url(../recursos/manuallarge.jpg);
     background-position-y: -200px;
+    background-repeat: repeat;
   }
   .sombra {
     width: 15%;
@@ -2780,11 +2787,15 @@ hr {
   .main2__asociacionMundial {
     background-position-y: 450px;
   }
+  .main2__separador--nubes .nubes {
+    height: 75%;
+  }
 }
 @media screen and (max-width: 360px) {
   .body__contacto {
     background-image: url(../recursos/manuallarge.jpg);
     background-position-y: -160px;
+    background-repeat: repeat;
   }
 }
 @media screen and (max-width: 344px) {
