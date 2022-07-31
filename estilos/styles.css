@@ -1815,12 +1815,8 @@ hr {
   .main2__asociacionMundial .asociacionMundial__contenedor #wtsd {
     font-size: 3.5em;
   }
-  .main2__asociacionMundial .asociacionMundial__contenedor .parrafo1 {
-    display: flex;
-  }
   .main2__asociacionMundial .asociacionMundial__contenedor .parrafo2 {
     height: 100%;
-    display: flex;
   }
   .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .tituloMaestros {
     font-size: 3.5em;
