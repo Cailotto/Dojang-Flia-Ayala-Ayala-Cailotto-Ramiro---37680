@@ -2193,7 +2193,8 @@ hr {
   .tramadoNegro .tramadoRojo .danes1 {
     height: auto;
   }
-  .tramadoNegro .tramadoRojo .danes1 .marian, .tramadoNegro .tramadoRojo .danes1 .lucas,
+  .tramadoNegro .tramadoRojo .danes1 .marian,
+.tramadoNegro .tramadoRojo .danes1 .lucas,
 .tramadoNegro .tramadoRojo .danes1 .rocio {
     background-position-x: 0px;
   }
@@ -2271,7 +2272,7 @@ hr {
     margin-left: 0px;
     border-radius: 0px;
     border-top: solid rgba(255, 255, 255, 0.116) 1px;
-    font-size: 1.7em;
+    font-size: 1.3em;
   }
   .navxl {
     display: none;
@@ -2659,6 +2660,70 @@ hr {
     padding: 2px;
   }
 }
+@media screen and (max-width: 575px) and (orientation: landscape) {
+  #main__principal .inicio {
+    display: grid;
+  }
+  #main__principal .inicio .logo {
+    width: auto;
+  }
+  .headerMedia {
+    height: 150vh;
+  }
+  .separador {
+    height: 180vh;
+  }
+  .separador .separador__frase h2 {
+    line-height: 600%;
+  }
+  .tramado {
+    height: 300vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .tramado .tramadoAzul .tramadoAzul__texto .maestroTitulo div {
+    font-size: 2em;
+  }
+  .tramadoNegro .tramadoRojo .danes1 {
+    flex-direction: row;
+    height: 100%;
+  }
+  .nuestraEscuela {
+    height: 220vh;
+  }
+  .main2 .main2__header {
+    height: 120vh;
+  }
+  .main2 .main2__historia {
+    height: 150vh;
+  }
+  .main2__asociacionMundial {
+    height: auto;
+  }
+  .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros {
+    height: 300px;
+  }
+  .mainEventos {
+    height: 150vh;
+  }
+  .paginaEventos .eventosLista {
+    height: 40%;
+  }
+  .body__contacto {
+    background-image: url(../recursos/manualC.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+  .body__contacto .main__contacto {
+    flex-direction: row;
+    height: auto;
+  }
+  #offcanvasNavbar {
+    height: 100vh;
+  }
+}
 @media screen and (max-width: 475px) {
   .tramadoNegro {
     height: 200vh;
@@ -2793,25 +2858,28 @@ hr {
 }
 @media screen and (max-width: 360px) {
   .body__contacto {
-    background-image: url(../recursos/manuallarge.jpg);
     background-position-y: -160px;
     background-repeat: repeat;
   }
 }
 @media screen and (max-width: 344px) {
+  #main__principal .inicio .escuela, #main__principal .inicio .tangSoo, #main__principal .inicio .eventos, #main__principal .inicio .contacto {
+    font-size: 1em;
+  }
   .main2 .main2__historia .main2__historia--contenedor h1 {
     font-size: 2.7em;
   }
   .main2__asociacionMundial {
+    height: auto;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-  }
-  .main2__asociacionMundial {
     background-position-y: 480px;
+  }
+  .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros {
+    height: 400px;
   }
   .main2__separador--nubes .nubes {
     height: 60%;
-    margin-top: 10px;
   }
   .paginaEventos .eventosLista {
     height: 40%;

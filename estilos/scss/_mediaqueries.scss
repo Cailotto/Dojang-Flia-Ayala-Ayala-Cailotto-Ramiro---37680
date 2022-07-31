@@ -60,7 +60,7 @@
 
     .main2__historia .main2__historia--contenedor {
         width: 70%;
-        height:700px;
+        height: 700px;
         justify-content: space-between;
 
         h1 {
@@ -85,7 +85,7 @@
 
             .parrafo2 {
                 height: 100%;
-                    
+
             }
 
             .main2__maestros .tituloMaestros {
@@ -132,7 +132,7 @@
 
     .body__contacto {
         background-position-y: 50%;
-        background-repeat:repeat;
+        background-repeat: repeat;
     }
 
 
@@ -229,7 +229,7 @@
 
     .body__contacto {
         background-position-y: 60%;
-        background-repeat:repeat;
+        background-repeat: repeat;
     }
 }
 
@@ -237,7 +237,8 @@
     .navbar {
         display: flex;
     }
-    .navxl{
+
+    .navxl {
         display: none;
     }
 
@@ -453,7 +454,7 @@
     .body__contacto {
         background-size: 100%;
         background-position-y: 70%;
-        background-repeat:repeat;
+        background-repeat: repeat;
     }
 
     .contacto__ins,
@@ -593,15 +594,20 @@
             }
         }
     }
+
     .tramadoNegro .tramadoRojo {
         gap: 0px;
+
         .danes1 {
             height: auto;
 
-            .marian, .lucas,
+            .marian,
+            .lucas,
             .rocio {
                 background-position-x: 0px;
-            }}}
+            }
+        }
+    }
 
     .carrouselDaniel {
         width: 70%;
@@ -648,16 +654,19 @@
             font-size: 4em;
         }
     }
-    .main2__asociacionMundial .asociacionMundial__contenedor{
+
+    .main2__asociacionMundial .asociacionMundial__contenedor {
         gap: 50px;
     }
-    .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .maestros{
-        height: 250px;
-        
 
-        a{
+    .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .maestros {
+        height: 250px;
+
+
+        a {
             display: none;
         }
+
         .btnmaestros {
             display: flex;
             align-items: center;
@@ -678,7 +687,7 @@
 
     .body__contacto {
         background-position-y: -40px;
-        background-repeat:repeat;
+        background-repeat: repeat;
     }
 
 
@@ -706,7 +715,7 @@
                 margin-left: 0px;
                 border-radius: 0px;
                 border-top: solid rgba(255, 255, 255, 0.116) 1px;
-                font-size: 1.7em;
+                font-size: 1.3em;
             }
         }
     }
@@ -1008,9 +1017,9 @@
                 #wtsd {
                     font-size: 2em;
                     height: 50%;
-                    display:flex;
+                    display: flex;
                     align-items: flex-end;
-                    padding-inline:20px;
+                    padding-inline: 20px;
                 }
 
                 .parrafo1 {
@@ -1032,7 +1041,7 @@
                     .tituloMaestros {
                         font-size: 2em;
                         margin-bottom: 0px;
-                        padding-inline:20px;
+                        padding-inline: 20px;
                     }
 
                     .maestros {
@@ -1150,7 +1159,7 @@
         background-image: url(../recursos/manuallarge.jpg);
         background-size: 120%;
         background-position-x: 55%;
-        background-repeat:repeat;
+        background-repeat: repeat;
 
         .main__contacto {
             height: 170vh;
@@ -1213,6 +1222,78 @@
     }
 
 }
+@media screen and (max-width:575px) and (orientation:landscape){
+    #main__principal .inicio{
+        display: grid;
+
+        .logo{
+            width: auto;
+        }
+    }
+
+    .headerMedia {
+        height: 150vh;}
+
+        .separador {
+            height: 180vh;
+            .separador__frase{
+                h2{
+                    line-height: 600%;
+                }
+            } 
+            
+        }
+
+
+        .tramado {
+            height: 300vh;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        
+            .tramadoAzul .tramadoAzul__texto .maestroTitulo div {
+                font-size: 2em;
+            }}
+
+            .tramadoNegro .tramadoRojo .danes1{
+                flex-direction: row;
+                height: 100%;
+            }
+            .nuestraEscuela{
+                height: 220vh;
+            }
+            .main2 .main2__header{
+                height: 120vh;
+            }
+            .main2 .main2__historia {
+                height: 150vh;
+            }
+            .main2__asociacionMundial{
+                height: auto;
+            }
+            .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros{
+                height: 300px;
+            }
+            .mainEventos{
+                height: 150vh;
+            }
+            .paginaEventos .eventosLista {
+                height: 40%;
+            }
+
+            .body__contacto {
+                background-image: url(../recursos/manualC.jpg);
+                background-size: cover;
+                height: 100vh;}
+                .body__contacto .main__contacto{
+                    flex-direction: row;
+                    height: auto;
+                }
+                #offcanvasNavbar {
+                    height: 100vh;
+                }
+}
 
 @media screen and (max-width:475px) {
 
@@ -1259,7 +1340,7 @@
 
     .body__contacto {
         background-image: url(../recursos/manuallarge.jpg);
-        background-repeat:repeat;
+        background-repeat: repeat;
 
         .main__contacto {
             height: 150vh;
@@ -1328,7 +1409,7 @@
     .body__contacto {
         background-image: url(../recursos/manuallarge.jpg);
         background-position-y: -200px;
-        background-repeat:repeat;
+        background-repeat: repeat;
     }
 
     .sombra {
@@ -1398,7 +1479,7 @@
         background-position-y: 450px;
     }
 
-    .main2__separador--nubes .nubes{
+    .main2__separador--nubes .nubes {
         height: 75%;
     }
 
@@ -1408,31 +1489,39 @@
 @media screen and (max-width:360px) {
 
     .body__contacto {
-        background-image: url(../recursos/manuallarge.jpg);
         background-position-y: -160px;
-        background-repeat:repeat;
+        background-repeat: repeat;
     }
 
 }
 
 @media screen and (max-width:344px) {
 
+    #main__principal {
+        .inicio {
+            .escuela, .tangSoo, .eventos, .contacto{
+                font-size: 1em;
+            }
+        }
+    }
+
     .main2 .main2__historia .main2__historia--contenedor h1 {
         font-size: 2.7em;
     }
 
     .main2__asociacionMundial {
+        height: auto;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-    }
-
-    .main2__asociacionMundial {
         background-position-y: 480px;
     }
+    .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros{
+        height: 400px;
+    }
+
 
     .main2__separador--nubes .nubes {
         height: 60%;
-        margin-top: 10px;
 
     }
 
@@ -1449,6 +1538,6 @@
     .body__contacto {
         background-image: url(../recursos/manuallarge.jpg);
         background-position-y: 50px;
-        background-repeat:repeat;
+        background-repeat: repeat;
     }
 }
