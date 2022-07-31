@@ -14,19 +14,6 @@
         margin-left: 0px;
     }
 
-    .tramadoNegro::before {
-        content: "";
-        background-image: url(../recursos/tramadoondas.jpg);
-        background-size: cover;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        opacity: 0.25;
-        z-index: 1;
-
-    }
 
     .tramadoNegro .tramadoRojo {
         .danesTitulo {
@@ -135,23 +122,6 @@
         background-repeat: repeat;
     }
 
-
-    @media screen and (min-width:1100px) {
-        .tramadoNegro::before {
-            content: "";
-            background-image: url(../recursos/tramadoondas.jpg);
-            background-size: cover;
-            background-position: 50%;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-            opacity: 0.25;
-            z-index: 1;
-
-        }
-    }
 
 
 }
@@ -1045,7 +1015,6 @@
                     }
 
                     .maestros {
-                        height: 100%;
 
                         a {
                             display: none;

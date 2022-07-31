@@ -28,6 +28,10 @@ p {
   line-height: auto;
 }
 
+ol, ul {
+  padding-left: 0px;
+}
+
 /*Variables de mixin*/
 /*Variables de Elementos*/
 .nuestraEscuela .nuestraEscuela__parallax .nuestraEscuela__historia p::-webkit-scrollbar {
@@ -359,6 +363,10 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   background: #FA6742;
   border-color: #FA6742;
+}
+
+.dk-footer-box-info .footer-social-link a i {
+  background-color: rgb(0, 171, 0);
 }
 
 header nav .row {
@@ -1770,18 +1778,6 @@ hr {
     align-items: center;
     margin-left: 0px;
   }
-  .tramadoNegro::before {
-    content: "";
-    background-image: url(../recursos/tramadoondas.jpg);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.25;
-    z-index: 1;
-  }
   .tramadoNegro .tramadoRojo .danesTitulo {
     font-size: 5em;
   }
@@ -1839,21 +1835,6 @@ hr {
   .body__contacto {
     background-position-y: 50%;
     background-repeat: repeat;
-  }
-}
-@media screen and (min-width: 921px) and (min-width: 1100px) {
-  .tramadoNegro::before {
-    content: "";
-    background-image: url(../recursos/tramadoondas.jpg);
-    background-size: cover;
-    background-position: 50%;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.25;
-    z-index: 1;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -2525,9 +2506,6 @@ hr {
     font-size: 2em;
     margin-bottom: 0px;
     padding-inline: 20px;
-  }
-  .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .maestros {
-    height: 100%;
   }
   .main2__asociacionMundial .asociacionMundial__contenedor .main2__maestros .maestros a {
     display: none;
